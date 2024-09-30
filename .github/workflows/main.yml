@@ -34,7 +34,7 @@ jobs:
     run: cp ./build/libs/*.jar ./deply
 
   - name: Make zip file
-    run: zip -r ./sebadong.zip ./deploy
+    run: zip -r ./yaeottae-main.zip ./deploy
     shell: bash
 
   - name: Configure AWS credentials
@@ -45,4 +45,4 @@ jobs:
       aws-region: ap-northeast-2
 
   - name: Upload to S3
-    run: aws s3 cp --region ap-northeast-2 ./sebadog.zip s3://$S3_BUCKET_NAME/
+    run: aws s3 cp --region ap-northeast-2 ./yaeottae-main.zip s3://$S3_BUCKET_NAME/
