@@ -516,7 +516,7 @@
   align-items: center;
   display: inline-flex;
   flex: 0 0 auto;
-  gap: 64px;
+  gap: 10px;
   position: relative;
 }
 

@@ -37,6 +37,7 @@
         </div>
     </div>
     <div class="view-9">
+        <form th:action method="post">
         <div class="x">
             <div class="view-10">
                 <div class="view-11">
@@ -49,21 +50,23 @@
                                 <div class="text_label-4 text_label-10 pretendardvariable-medium-black-22px">아이디</div>
                             </div>
                             <div class="frame-506-1">
-                                <input type="text" class="input-text">
+                                <input id="memberId" name="memberId" type="text" class="input-text">
+                                <div class="view-21" id="message">
+                                </div>
                                 <div class="view-21">
                                 </div>
                             </div>
                         </div>
-                        <button class="view-14">
+                        <div class="view-14" th:onclick="checkMemberId();">
                             <div class="text-3 text-19 pretendardvariable-medium-fuscous-gray-18px-2">중복확인</div>
-                        </button>
+                        </div>
                     </div>
                     <div class="view-2">
                         <div class="frame-28">
                             <div class="text-4 text-19 pretendardvariable-medium-black-22px">비밀번호</div>
                         </div>
                         <div class="frame-506">
-                            <input type="password" class="input-text">
+                            <input id="password" name="password" type="password" class="input-text">
                             <div class="view-23">
                             </div>
                         </div>
@@ -73,7 +76,7 @@
                             <div class="text_label-5 text_label-10 pretendardvariable-medium-black-22px">비밀번호 확인</div>
                         </div>
                         <div class="frame-506">
-                            <input type="password" class="input-text">
+                            <input id="checkPassword" name="checkPassword" type="password" class="input-text">
                             <div class="view-21">
                             </div>
                         </div>
@@ -83,7 +86,7 @@
                             <div class="text_label-6 text_label-10 pretendardvariable-medium-black-22px">이름</div>
                         </div>
                         <div class="frame-506">
-                            <input type="text" class="input-text">
+                            <input id="memberName" name="memberName" type="text" class="input-text">
                         </div>
                     </div>
                     <div class="view-15">
@@ -93,10 +96,11 @@
                         <div class="frame-462">
                             <div class="frame-461">
                                 <!-- 연도 셀렉트 박스 -->
-                                <div class="text text-9 pretendardvariable-regular-normal-white-20px" onclick="document.getElementById('yearSelect').click()">
+                                <div class="text text-9 pretendardvariable-regular-normal-white-20px" id="selectedYear" onclick="document.getElementById('yearSelect').click()">
+                                    1970
                                 </div>
                                 <img class="icbaseline-expand-more" src="../img/ic-baseline-expand-more@2x.png" alt="ic:baseline-expand-more"/>
-                                <select id="yearSelect" class="select-hidden" th:field="*{memberYears}" onchange="updateYearDisplay()">
+                                <select id="yearSelect" class="select-hidden" name="year" onchange="updateYearDisplay()">
                                     <option value=""></option>
                                     <option th:each="year : ${memberYears}" th:value="${year}" th:text="${year}"></option>
                                 </select>
@@ -104,28 +108,31 @@
                         </div>
                         <div class="frame-462-1 frame-462-3">
                             <div class="frame-461">
-                                <!-- 연도 셀렉트 박스 -->
-                                <div class="text text-9 pretendardvariable-regular-normal-white-20px" onclick="document.getElementById('monthSelect').click()">
+                                <!-- 월 셀렉트 박스 -->
+                                <div class="text text-9 pretendardvariable-regular-normal-white-20px" id="selectedMonth" onclick="document.getElementById('monthSelect').click()">
+                                    1
                                 </div>
                                 <img class="icbaseline-expand-more" src="../img/ic-baseline-expand-more@2x.png" alt="ic:baseline-expand-more"/>
-                                <select id="monthSelect" class="select-hidden" th:field="*{memberMonth}" onchange="updateYearDisplay()">
+                                <select id="monthSelect" class="select-hidden" name="month" onchange="updateMonthDisplay(); updateDaysByMonth();">
                                     <option value=""></option>
                                     <option th:each="month : ${memberMonth}" th:value="${month}" th:text="${month}"></option>
                                 </select>
                             </div>
                         </div>
+
+                        <!-- 일 선택 -->
                         <div class="frame-462-1 frame-462-3">
                             <div class="frame-461">
-                                <!-- 연도 셀렉트 박스 -->
-                                <div class="text text-9 pretendardvariable-regular-normal-white-20px" onclick="document.getElementById('daySelect').click()">
+                                <div class="text text-9 pretendardvariable-regular-normal-white-20px" id="dayDisplay" onclick="document.getElementById('daySelect').click()">
+                                    1
                                 </div>
                                 <img class="icbaseline-expand-more" src="../img/ic-baseline-expand-more@2x.png" alt="ic:baseline-expand-more"/>
-                                <select id="daySelect" class="select-hidden" th:field="*{memberDaysByMonth}" onchange="updateYearDisplay()">
+                                <select id="daySelect" class="select-hidden" name="date" onchange="updateDayDisplay()">
                                     <option value=""></option>
-                                    <option th:each="day : ${memberDaysByMonth}" th:value="${day}" th:text="${day}"></option>
                                 </select>
                             </div>
                         </div>
+
                     </div>
                     <div class="view-1">
                         <div class="view-3">
@@ -133,15 +140,15 @@
                                 <div class="text_label-8 text_label-10 pretendardvariable-medium-black-22px">이메일</div>
                             </div>
                             <div class="frame-506">
-                                <input type="text" class="input-text">
-                                <div class="view-22">
-                                    <div class="text-17 text-19 pretendardvariable-medium-fuscous-gray-18px">인증번호를 보냈습니다.</div>
+                                <input id="email" name="email" type="text" class="input-text">
+                                <div class="view-22" id="message1">
+                                    <div class="text-17 text-19 pretendardvariable-medium-fuscous-gray-18px"></div>
                                 </div>
                             </div>
                         </div>
-                        <button class="view-4">
+                        <div class="view-4" th:onclick="sendEmail();">
                             <div class="text-5 text-19 pretendardvariable-medium-fuscous-gray-18px-2">인증번호 전송</div>
-                        </button>
+                        </div>
                     </div>
                     <div class="view-1">
                         <div class="view-3">
@@ -149,23 +156,25 @@
                                 <div class="text_label-9 text_label-10 pretendardvariable-medium-black-22px">인증번호</div>
                             </div>
                             <div class="frame-506">
-                                <input type="text" class="input-text">
+                                <input id="checkNumber" name="checkNumber" type="text" class="input-text">
                                 <div class="view-22">
-                                    <div class="text-17 text-19 pretendardvariable-medium-fuscous-gray-18px">인증번호가 틀립니다.</div>
+                                    <div class="text-17 text-19 pretendardvariable-medium-fuscous-gray-18px" id="message2"></div>
                                 </div>
                             </div>
                         </div>
-                        <button class="view-4">
+                        <div class="view-4" th:onclick="checkNumber();">
                             <div class="text-6 text-19 pretendardvariable-medium-fuscous-gray-18px-2">인증번호 확인</div>
-                        </button>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="view-16">
-                <div class="view"><div class="text_label text_label-10">약관동의</div></div>
+                <div class="view">
+                    <div class="text_label text_label-10">약관동의</div>
+                </div>
                 <div class="view-17">
                     <div class="frame-306">
-                        <div class="frame-30">
+                        <!-- <div class="frame-30">
                             <div class="view-5" onclick="toggleCheckbox()">
                                 <div class="ellipse-19"></div>
                                 <input type="checkbox" id="customCheckbox1" class="custom-checkbox" />
@@ -173,61 +182,59 @@
                             <div class="frame-301">
                                 <div class="text-7 text-19 pretendardvariable-regular-normal-black-20px">전체 동의</div>
                             </div>
-                        </div>
+                        </div> -->
                         <div class="frame-30">
-                            <div class="view-5" onclick="toggleCheckbox()">
+                            <div class="view-5" onclick="toggleCheckbox(event, 'termOfUse');" style="cursor: pointer;">
                                 <div class="ellipse-19"></div>
-                                <input type="checkbox" id="customCheckbox2" class="custom-checkbox" />
+                                <input type="checkbox" id="customCheckbox2" class="custom-checkbox" name="termOfUse" />
                             </div>
                             <div class="frame-301">
                                 <div class="text-8 text-19 pretendardvariable-regular-normal-black-20px">이용약관 동의 [필수]</div>
                             </div>
                         </div>
-                    </div>
-                    <div class="frame-307">
                         <div class="frame-30">
-                            <div class="view-5" onclick="toggleCheckbox()">
+                            <div class="view-5" onclick="toggleCheckbox(event, 'marketingReception');" style="cursor: pointer;">
                                 <div class="ellipse-19"></div>
-                                <input type="checkbox" id="customCheckbox3" class="custom-checkbox" />
+                                <input type="checkbox" id="customCheckbox3" class="custom-checkbox" name="marketingReception" />
                             </div>
                             <div class="frame-301">
-                                <p class="sns pretendardvariable-regular-normal-black-20px">마케팅 수신 동의 [이메일 , SNS]</p>
+                                <p class="sns pretendardvariable-regular-normal-black-20px">마케팅 수신 동의</p>
                             </div>
                         </div>
                         <div class="frame-30">
-                            <div class="view-5" onclick="toggleCheckbox()">
+                            <div class="view-5" onclick="toggleCheckbox(event, 'personalInformation');" style="cursor: pointer;">
                                 <div class="ellipse-19"></div>
-                                <input type="checkbox" id="customCheckbox4" class="custom-checkbox" />
+                                <input type="checkbox" id="customCheckbox4" class="custom-checkbox" name="personalInformation" />
                             </div>
                             <div class="frame-301">
-                                <p class="text-9 text-19 pretendardvariable-regular-normal-black-20px">
-                                    개인정보 수집 및 이용 동의 [필수]
-                                </p>
+                                <p class="text-9 text-19 pretendardvariable-regular-normal-black-20px">개인정보 수집 및 이용 동의 [필수]</p>
                             </div>
                         </div>
+
                     </div>
                 </div>
-                <button class="view-18">
+                <button class="view-18" type="submit">
                     <div class="text-10 text-19 pretendardvariable-regular-normal-black-20px">가입하기</div>
                 </button>
             </div>
         </div>
+        </form>
         <div class="view-19">
             <div class="frame-2">
                 <div class="flex-container-7611480 pretendardvariable-regular-normal-white-16px">
                     <div class="text text-19">
                 <span class="pretendardvariable-regular-normal-star-dust-16px"
-                >상호명 (주)야어때ㅣ대표 양준형ㅣ사업자등록번호 : 123-45-67890 </span
-                ><span class="span1">사업자정보확인</span>
+                >야어때ㅣ대표 양준형 </span
+                ><span class="span1"></span>
                     </div>
                     <div class="text text-19">
                 <span class="pretendardvariable-regular-normal-star-dust-16px"
-                >이메일 0000@naver.com l 마케팅 문의 0000@naver.com l 통신판매번호 : 제0000-서울서초-0000</span
+                >이메일 kangyang2002@naver.com</span
                 >
                     </div>
                     <div class="text text-19">
                 <span class="pretendardvariable-regular-normal-star-dust-16px"
-                >주소 : 서울특별시 강남구ㅣ문의 0000-0000ㅣ팩스 00-0000-0000
+                >
                 </span>
                     </div>
                 </div>
@@ -246,52 +253,182 @@
         </div>
     </div>
 </div>
-</div>
+
+<script th:inline="javascript">
+    var daysByMonth = /*[[${memberDaysByMonth}]]*/ {};
+</script>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script>
-    function toggleCheckbox(event) {
-        const view = event.currentTarget; // 클릭된 .view-5 div
-        const checkbox = view.querySelector('.custom-checkbox'); // 클릭된 div 안의 체크박스
-        const ellipse = view.querySelector('.ellipse-19'); // 클릭된 div 안의 작은 원
+let termOfUse = false;
+let marketingReception = false;
+let personalInformation = false;
 
-        checkbox.checked = !checkbox.checked; // 체크박스 상태 토글
+function toggleCheckbox(event, checkboxName) {
+    const view = event.currentTarget; // 클릭된 .view-5 div
+    const checkbox = view.querySelector('.custom-checkbox'); // 클릭된 div 안의 체크박스
+    const ellipse = view.querySelector('.ellipse-19'); // 클릭된 div 안의 작은 원
 
-        if (checkbox.checked) {
-            view.style.backgroundColor = 'var(--hawkes-blue)'; // 큰 원을 하늘색으로 변경
-            view.style.borderColor = 'var(--hawkes-blue)'; // 테두리를 하늘색으로 변경
-            ellipse.style.backgroundColor = 'var(--white)'; // 작은 원은 흰색 유지
-        } else {
-            view.style.backgroundColor = 'var(--white)'; // 큰 원을 다시 흰색으로 변경
-            view.style.borderColor = '#ccc'; // 테두리를 다시 회색으로 변경
-            ellipse.style.backgroundColor = 'var(--white)'; // 작은 원도 흰색 유지
-        }
+    // 체크박스 상태 토글
+    checkbox.checked = !checkbox.checked;
+
+    // 체크박스 상태에 따라 스타일 변경
+    if (checkbox.checked) {
+        view.style.backgroundColor = 'var(--hawkes-blue)'; // 큰 원을 하늘색으로 변경
+        view.style.borderColor = 'var(--hawkes-blue)'; // 테두리를 하늘색으로 변경
+        ellipse.style.backgroundColor = 'var(--hawkes-blue)'; // 작은 원을 하늘색으로 변경 -> 동그라미 채우는 효과
+    } else {
+        view.style.backgroundColor = 'var(--white)'; // 큰 원을 다시 흰색으로 변경
+        view.style.borderColor = '#ccc'; // 테두리를 다시 회색으로 변경
+        ellipse.style.backgroundColor = 'var(--white)'; // 작은 원도 흰색 유지 -> 동그라미 비우는 효과
     }
 
-    // 모든 .view-5 div에 클릭 이벤트 핸들러 추가
-    document.querySelectorAll('.view-5').forEach(function(view) {
-        view.addEventListener('click', toggleCheckbox);
+    // 상태를 변경하는 로직
+    if (checkboxName === 'termOfUse') {
+        termOfUse = checkbox.checked;
+    } else if (checkboxName === 'marketingReception') {
+        marketingReception = checkbox.checked;
+    } else if (checkboxName === 'personalInformation') {
+        personalInformation = checkbox.checked;
+    }
+
+    // 각 상태를 확인하려면 콘솔 로그로 확인할 수 있습니다.
+    console.log('termOfUse:', termOfUse);
+    console.log('marketingReception:', marketingReception);
+    console.log('personalInformation:', personalInformation);
+}
+
+
+
+// 연도 선택 시 화면에 표시
+function updateYearDisplay() {
+    const yearSelect = document.getElementById('yearSelect');
+    const selectedYear = yearSelect.options[yearSelect.selectedIndex].text;
+    document.getElementById('selectedYear').innerText = selectedYear;
+}
+
+// 월 선택 시 화면에 표시
+function updateMonthDisplay() {
+    const monthSelect = document.getElementById('monthSelect');
+    const selectedMonth = monthSelect.options[monthSelect.selectedIndex].text;
+    document.getElementById('selectedMonth').innerText = selectedMonth;
+}
+
+// 일 선택 시 화면에 표시
+function updateDayDisplay() {
+    const daySelect = document.getElementById('daySelect');
+    const selectedDay = daySelect.options[daySelect.selectedIndex].text;
+    document.getElementById('dayDisplay').innerText = selectedDay;
+}
+
+// 월 선택 시 해당 월에 맞는 일수 설정
+function updateDaysByMonth() {
+    const monthSelect = document.getElementById('monthSelect');
+    const selectedMonth = parseInt(monthSelect.options[monthSelect.selectedIndex].value);
+    const daySelect = document.getElementById('daySelect');
+
+    // 일수를 모두 제거
+    daySelect.innerHTML = '<option value=""></option>'; // 기본 옵션 추가
+
+    // 해당 월의 일수 가져오기 (daysByMonth는 서버에서 렌더링된 데이터)
+    const daysInSelectedMonth = daysByMonth[selectedMonth] || [];
+
+    // 선택된 월의 일수 옵션 추가
+    daysInSelectedMonth.forEach(day => {
+        const option = document.createElement('option');
+        option.value = day;
+        option.text = day;
+        daySelect.appendChild(option);
     });
 
+    // 일 디스플레이 업데이트
+    updateDayDisplay();
+}
 
-    // 연도 선택 시 화면에 표시
-  function updateYearDisplay() {
-      const yearSelect = document.getElementById('yearSelect');
-      const selectedYear = yearSelect.options[yearSelect.selectedIndex].text;
-      document.querySelector('.text-9').innerText = selectedYear;
-  }
+// 페이지가 로드될 때 기본적으로 월에 따라 일을 설정
+document.addEventListener('DOMContentLoaded', function () {
+    updateDaysByMonth(); // 기본적으로 처음 로드 시에도 해당 월에 맞는 일수를 표시
+});
 
-  // 월 선택 시 화면에 표시
-  function updateMonthDisplay() {
-      const monthSelect = document.getElementById('monthSelect');
-      const selectedMonth = monthSelect.options[monthSelect.selectedIndex].text;
-      document.querySelector('.text-9').innerText = selectedMonth;
-  }
 
-  // 일 선택 시 화면에 표시
-  function updateDayDisplay() {
-      const daySelect = document.getElementById('daySelect');
-      const selectedDay = daySelect.options[daySelect.selectedIndex].text;
-      document.querySelector('.text-9').innerText = selectedDay;
-  }
+function sendEmail() {
+    const email = $('#email').val().trim(); // 이메일 값 가져오기
+    const memberId = $('#memberId').val().trim(); // 아이디 값 가져오기
+
+    // 이메일 공백 검사
+    if (!email) {
+        $('#message1').text("이메일을 입력해주세요.");
+        return;
+    }
+
+    console.log("sendEmail called with:", email, memberId); // 디버깅용 로그
+
+    // AJAX POST 요청으로 이메일 전송
+    $.post('/mailSend', { email: email, memberId: memberId })
+        .done(function(response) {
+            $('#message1').text("인증번호가 전송되었습니다."); // 성공 시 메시지
+        })
+        .fail(function() {
+            $('#message1').text("인증번호 전송에 실패했습니다."); // 실패 시 메시지
+        });
+}
+
+
+function checkNumber() {
+    const checkNumber = $('#checkNumber').val().trim(); // 입력된 인증번호 값 가져오기
+
+    // 공백 여부 검사
+    if (!checkNumber) {
+        console.log("인증번호가 입력되지 않았습니다."); // 디버깅용 로그
+        $('#message2').text("인증번호를 입력해주세요.");
+        return; // 입력이 없을 때는 서버 요청을 보내지 않음
+    }
+
+    console.log("checkNumber called with:", checkNumber); // 디버깅용 로그
+
+    // AJAX POST 요청으로 인증번호 확인
+    $.post('/mailCheck', { checkNumber: checkNumber })
+        .done(function(response) {
+            console.log("AJAX 요청 성공:", response); // 디버깅용 로그
+            $('#message2').text("인증번호가 확인되었습니다."); // 성공 시 메시지
+        })
+        .fail(function() {
+            console.log("AJAX 요청 실패"); // 디버깅용 로그
+            $('#message2').text("인증번호가 틀립니다."); // 실패 시 메시지
+        });
+}
+
+
+function checkMemberId() {
+    const memberId = $('#memberId').val().trim(); // 사용자가 입력한 memberId 값 가져오기
+
+    // 공백 검사: memberId가 공백일 경우 바로 리턴
+    if (!memberId) {
+        $('#message').text("아이디를 입력해주세요.");
+        return;
+    }
+
+    console.log("checkMemberId called with:", memberId); // 디버깅용 로그
+
+    // AJAX POST 요청으로 중복 아이디 확인
+    $.post('/isSameId', { memberId: memberId })
+        .done(function(response) {
+            // 서버 응답에서 에러 메시지가 있는 경우
+            if (response.errorMessage) {
+                $('#message').text(response.errorMessage); // 중복 아이디 메시지 표시
+            }
+            // 성공 메시지가 있는 경우
+            else if (response.successMessage) {
+                $('#message').text(response.successMessage); // 사용 가능한 아이디 메시지 표시
+            }
+        })
+        .fail(function() {
+            console.error("중복 확인 요청 실패");
+            $('#message').text("중복 확인에 실패했습니다."); // 요청 실패 시 메시지 표시
+        });
+}
+
 </script>
 </body>
 </html>

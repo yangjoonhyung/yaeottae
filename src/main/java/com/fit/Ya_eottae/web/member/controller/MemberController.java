@@ -7,14 +7,12 @@ import com.fit.Ya_eottae.web.member.service.JoinService;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpSession;
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.validation.annotation.Validated;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import java.time.LocalDateTime;
@@ -23,6 +21,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+@Slf4j
 @Controller
 @RequiredArgsConstructor
 public class MemberController {
@@ -104,9 +103,16 @@ public class MemberController {
     }
 
     @PostMapping("/join")
-    public String joinMember(@Validated @ModelAttribute("memberJoinForm") MemberJoinDto memberJoinForm, BindingResult bindingResult, Model model) {
-
+    public String joinMember(@Validated @ModelAttribute MemberJoinDto memberJoinForm, BindingResult bindingResult, Model model, HttpServletRequest request) {
+        HttpSession session = request.getSession();
         List<Member> members = memberRepository.findAll();
+        Boolean isMatch = (Boolean) session.getAttribute("isMatch");
+
+        // 인증이 되지 않았으면 에러 메시지 추가
+        if (isMatch == null || !isMatch) {
+            bindingResult.reject("noMatch", "인증을 완료해주세요."); // 커스텀 에러 메시지
+            return "members/joinForm"; // 인증 실패 시 다시 폼으로 돌아감
+        }
 
         for (Member oneMember : members) {
             if (oneMember.getEmail().equals(memberJoinForm.getEmail())) {
@@ -122,29 +128,43 @@ public class MemberController {
             bindingResult.rejectValue("checkPassword", "isSamePassword");
         }
 
-        Member joinMember = new Member(memberJoinForm.getMemberId(), memberJoinForm.getMemberName(), memberJoinForm.getPassword(),
-                memberJoinForm.getEmail(), memberJoinForm.getYear(), memberJoinForm.getMonth(), memberJoinForm.getDate(),
-                memberJoinForm.getTermOfUse(), memberJoinForm.getMarketingReception(), memberJoinForm.getPersonalInformation());
-        memberRepository.join(joinMember);
-
         if (bindingResult.hasErrors()) {
             return "/members/joinForm";
         }
 
-        return "redirect:/";
+        Member joinMember = new Member(
+                memberJoinForm.getMemberId(),
+                memberJoinForm.getMemberName(),
+                memberJoinForm.getPassword(),
+                memberJoinForm.getEmail(),
+                memberJoinForm.getYear(),
+                memberJoinForm.getMonth(),
+                memberJoinForm.getDate(),
+                memberJoinForm.getTermOfUse(),
+                memberJoinForm.getMarketingReception(),
+                memberJoinForm.getPersonalInformation()
+        );
+        log.info("joinMember={}", joinMember);
+        memberRepository.join(joinMember);
+
+        return "redirect:/login";
     }
 
     @PostMapping("/isSameId")
-    public String isSameId(@RequestParam String memberId, RedirectAttributes redirectAttributes, HttpServletRequest request) {
+    @ResponseBody
+    public Map<String, String> isSameId(@RequestParam String memberId) {
         List<Member> members = memberRepository.findAll();
+        Map<String, String> response = new HashMap<>();
 
         for (Member oneMember : members) {
             if (oneMember.getMemberId().equals(memberId)) {
-                redirectAttributes.addFlashAttribute("errorMessage", "아이디가 중복입니다.");
-                return "redirect:/join";
+                response.put("errorMessage", "아이디가 중복입니다.");
+                return response;
             }
         }
 
-        return "redirect:/join";
+        response.put("successMessage", "사용 가능한 아이디입니다.");
+        return response;
     }
+
 }
