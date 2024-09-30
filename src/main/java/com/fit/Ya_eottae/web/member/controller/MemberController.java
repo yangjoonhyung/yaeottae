@@ -103,10 +103,11 @@ public class MemberController {
     }
 
     @PostMapping("/join")
-    public String joinMember(@Validated @ModelAttribute MemberJoinDto memberJoinForm, BindingResult bindingResult, Model model, HttpServletRequest request) {
+    public String joinMember(@Validated @ModelAttribute("member") MemberJoinDto memberJoinForm, BindingResult bindingResult, Model model, HttpServletRequest request) {
         HttpSession session = request.getSession();
         List<Member> members = memberRepository.findAll();
         Boolean isMatch = (Boolean) session.getAttribute("isMatch");
+        log.info("isMatch={}", isMatch);
 
         // 인증이 되지 않았으면 에러 메시지 추가
         if (isMatch == null || !isMatch) {
@@ -120,15 +121,16 @@ public class MemberController {
             }
         }
 
-        if (joinService.checkPasswordForm(memberJoinForm.getPassword()) == false) {
+        if (!joinService.checkPasswordForm(memberJoinForm.getPassword())) {
             bindingResult.rejectValue("password", "checkPasswordForm");
         }
 
-        if (joinService.isSamePassword(memberJoinForm.getPassword(), memberJoinForm.getCheckPassword()) == false) {
+        if (!joinService.isSamePassword(memberJoinForm.getPassword(), memberJoinForm.getCheckPassword())) {
             bindingResult.rejectValue("checkPassword", "isSamePassword");
         }
 
         if (bindingResult.hasErrors()) {
+            log.error("BindingResult errors: {}", bindingResult.getAllErrors());
             return "/members/joinForm";
         }
 

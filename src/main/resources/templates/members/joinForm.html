@@ -37,7 +37,8 @@
         </div>
     </div>
     <div class="view-9">
-        <form th:action method="post">
+        <form th:object="${member}" th:action="@{/join}" method="post">
+
         <div class="x">
             <div class="view-10">
                 <div class="view-11">
@@ -67,7 +68,7 @@
                         </div>
                         <div class="frame-506">
                             <input id="password" name="password" type="password" class="input-text">
-                            <div class="view-23">
+                            <div class="view-23">비밀번호는 특수문자를 포함하여 10자 이상이여야 합니다.
                             </div>
                         </div>
                     </div>
@@ -100,7 +101,7 @@
                                     1970
                                 </div>
                                 <img class="icbaseline-expand-more" src="../img/ic-baseline-expand-more@2x.png" alt="ic:baseline-expand-more"/>
-                                <select id="yearSelect" class="select-hidden" name="year" onchange="updateYearDisplay()">
+                                <select id="yearSelect" class="select-hidden" th:field="*{year}" onchange="updateYearDisplay()">
                                     <option value=""></option>
                                     <option th:each="year : ${memberYears}" th:value="${year}" th:text="${year}"></option>
                                 </select>
@@ -113,7 +114,7 @@
                                     1
                                 </div>
                                 <img class="icbaseline-expand-more" src="../img/ic-baseline-expand-more@2x.png" alt="ic:baseline-expand-more"/>
-                                <select id="monthSelect" class="select-hidden" name="month" onchange="updateMonthDisplay(); updateDaysByMonth();">
+                                <select id="monthSelect" class="select-hidden" th:field="*{month}" onchange="updateMonthDisplay(); updateDaysByMonth();">
                                     <option value=""></option>
                                     <option th:each="month : ${memberMonth}" th:value="${month}" th:text="${month}"></option>
                                 </select>
@@ -127,7 +128,7 @@
                                     1
                                 </div>
                                 <img class="icbaseline-expand-more" src="../img/ic-baseline-expand-more@2x.png" alt="ic:baseline-expand-more"/>
-                                <select id="daySelect" class="select-hidden" name="date" onchange="updateDayDisplay()">
+                                <select id="daySelect" class="select-hidden" th:field="*{date}" onchange="updateDayDisplay()">
                                     <option value=""></option>
                                 </select>
                             </div>
