@@ -1,0 +1,514 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+/* The following line is used to measure usage of this code. You can remove it if you want. */
+@import url("https://px.animaapp.com/66d08b39d824b3c6e4739bbb.66d08b3ad824b3c6e4739bbe.OWeC8Te.hcp.png");
+
+@font-face {
+  font-family: "Pretendard-Medium";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/GothicA1-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Pretendard-Regular";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/Pretendard-Regular.woff") format("woff");
+}
+@font-face {
+  font-family: "Pretendard-SemiBold";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/Pretendard-SemiBold.otf") format("opentype");
+}
+@font-face {
+  font-family: "Pretendard-Light";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/Pretendard-Light.otf") format("opentype");
+}
+
+
+.screen a {
+  display: contents;
+  text-decoration: none;
+}
+
+.container-center-horizontal {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  pointer-events: none;
+  width: 100%; /* 화면 전체 너비에 맞추기 */
+  max-width: 100vw; /* 화면 너비를 넘지 않도록 제한 */
+  overflow: hidden; /* 넘치는 부분은 숨김 */
+  box-sizing: border-box; /* 패딩과 테두리를 포함한 크기 계산 */
+}
+
+.container-center-horizontal > * {
+  flex-shrink: 0;
+  pointer-events: auto;
+  max-width: 100%; /* 자식 요소도 화면에 맞추도록 설정 */
+}
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --black: #000000;
+  --white: #ffffff;
+
+  --font-size-l: 22px;
+  --font-size-m: 20px;
+  --font-size-xl: 28px;
+
+  --font-family-pretendard-light: "Pretendard-Light", Helvetica;
+  --font-family-pretendard-medium: "Pretendard-Medium", Helvetica;
+  --font-family-pretendard-regular: "Pretendard-Regular", Helvetica;
+  --font-family-pretendard-semibold: "Pretendard-SemiBold", Helvetica;
+}
+.text-style-name {
+  font-family: var(--font-family-pretendard-regular);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: 0;
+  border: none; /* 기본 테두리 제거 */
+  outline: none; /* 클릭 시 외곽선 제거 */
+  background: none; /* 배경 없앰 */
+  z-index: 1; /* 입력 상자가 앞에 보이도록 */
+  position: relative; /* 입력 상자의 상대적 위치 */
+  flex-grow: 1; /* 입력 상자가 남은 공간을 채움 */
+  color: #333333; /* 텍스트 색상 설정 */
+  width: 100%; /* 부모 요소의 너비에 맞추기 */
+  padding: 0; /* padding을 제거하여 맞춤 */
+  margin: 0; /* margin을 제거하여 맞춤 */
+
+}
+
+.text-style-name::placeholder {
+  color: #c7c7c7; /* placeholder 텍스트 색상 설정 */
+  font-family: var(--font-family-pretendard-regular); /* placeholder 폰트 설정 */
+  font-size: var(--font-size-m); /* placeholder 폰트 크기 설정 */
+  font-weight: 500; /* placeholder 폰트 굵기 설정 */
+}
+
+.pretendard-light-black-20px {
+  color: var(--black);
+  font-family: var(--font-family-pretendard-light);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 300;
+}
+
+/* screen - u4363u4449u4363u4469u4355u4469-u4366u4449u4541u4352u4469 */
+
+.u4363u4449u4363u4469u4355u4469-u4366u4449u4541u4352u4469{
+  align-items: flex-start;
+  background-color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* 화면 높이에 맞추도록 변경 */
+  width: 100vw;  /* 화면 너비에 맞추도록 변경 */
+  box-sizing: border-box; /* 패딩과 테두리를 포함하여 크기 계산 */
+  padding: 2vh 2vw; /* 화면 크기에 비례한 여백 */
+}
+
+.view-2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--white);
+  width: 100vw; /* 화면 너비의 90% */
+  max-width: 1920px; /* 최대 너비를 1920px로 설정 */
+  height: 10vh; /* 화면 높이의 10% */
+  padding: 1vh 4vw; /* 상대적인 padding */
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  box-sizing: border-box;
+}
+
+.layer_1 {
+  height: 51px;
+  margin-top: 4.0px;
+  width: 147px;
+}
+
+.frame-5 {
+  align-items: center;
+  align-self: flex-start;
+  display: inline-flex;
+  gap: 56px;
+  margin-left: 49px;
+  position: relative;
+}
+
+.frame {
+  align-items: center;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 10px;
+  height: 64px;
+  justify-content: center;
+  padding: 10px;
+  position: relative;
+}
+
+.text {
+  letter-spacing: 0;
+  line-height: normal;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.frame-1 {
+  align-items: flex-start;
+  display: inline-flex;
+  flex: 0 0 auto;
+  position: relative;
+}
+
+.frame-232 {
+  height: 39px;
+  margin-left: 371px;
+  margin-top: 10.0px;
+  position: relative;
+  width: 423px;
+}
+
+.view-3 {
+  align-items: flex-start;
+  display: flex;
+  height: 24px;
+  margin-bottom: 1.0px;
+  margin-left: 42px;
+  min-width: 128px;
+}
+
+.text-5 {
+  letter-spacing: 0;
+  margin-top: -1px;
+  min-height: 24px;
+}
+
+.view-4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw; /* 화면 너비의 90% */
+  max-width: 1920px; /* 최대 너비 설정 */
+  padding: 2vh 0;
+  margin-top: 5vh; /* 상단 메뉴와 겹치지 않도록 여백 추가 */
+}
+
+
+.view-5 {
+  align-items: center;
+  display: inline-flex;
+  gap: 10px;
+  justify-content: center;
+  padding: 10px;
+  position: relative;
+}
+
+.text_label-1 {
+  color: var(--black);
+  font-family: var(--font-family-pretendard-semibold);
+  font-size: var(--font-size-xl);
+  font-weight: 600;
+  margin-top: -1.00px;
+}
+
+.view-6 {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  margin-right: 2.0px;
+  margin-top: 26px;
+  min-height: 58px;
+  width: 990px;
+}
+
+.line-26 {
+  height: 2px;
+  margin-top: -2px;
+  width: 990px;
+}
+
+.view-container {
+  align-items: flex-start;
+  display: flex;
+  width: 100%; /* 너비를 화면에 맞추도록 설정 */
+}
+
+.view-7 {
+  align-items: center;
+  display: flex;
+  gap: 10px;
+  height: 58px;
+  justify-content: center;
+  padding: 10px;
+  position: relative;
+  width: 495px;
+}
+
+.text-3 {
+  color: #1267cf;
+  font-family: var(--font-family-pretendard-medium);
+  font-size: var(--font-size-l);
+  font-weight: 500;
+  letter-spacing: 0;
+  position: relative;
+  width: fit-content;
+}
+
+.view-8 {
+  align-items: center;
+  background-color: #e4e4e4;
+  border: 1px solid;
+  border-color: #d7d7d7;
+  display: flex;
+  gap: 10px;
+  height: 58px;
+  justify-content: center;
+  padding: 10px;
+  position: relative;
+  width: 495px;
+}
+
+.text_label-2 {
+  color: #7b7b7b;
+  font-family: var(--font-family-pretendard-medium);
+  font-size: var(--font-size-l);
+  font-weight: 500;
+}
+
+.text-2 {
+  color: #5f5f5f;
+  font-family: var(--font-family-pretendard-regular);
+  font-size: var(--font-size-m);
+  font-weight: 400;
+  letter-spacing: 0;
+  margin-top: 55px;
+  min-height: 24px;
+  min-width: 502px;
+  position: relative;
+}
+
+.view-9 {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 49px;
+  padding: 11px 27px;
+  position: relative;
+  width: 996px;
+}
+
+.view-10 {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 138px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 996px;
+  padding: 0 10px; /* padding을 조정하여 입력 상자 안쪽 여백 설정 */
+}
+
+.view-11 {
+  background-color: #f6f6f6;
+  height: 138px;
+  position: relative;
+  width: 279px;
+}
+
+.view-12 {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 69px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 996px;
+}
+
+.line-27 {
+  align-self: stretch;
+  height: 1px;
+  margin-top: -1.00px;
+  object-fit: cover;
+  position: relative;
+  width: 100%;
+}
+
+.line-2 {
+  align-self: stretch;
+  height: 1px;
+  object-fit: cover;
+  position: relative;
+  width: 100%;
+}
+
+.view-13 {
+  align-items: flex-start;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 22px;
+  position: relative;
+  width: 100%; /* 너비를 화면에 맞추도록 설정 */
+}
+
+.view-14 {
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  gap: 248px;
+  position: relative;
+  width: 100%;
+}
+
+.view {
+  align-items: center;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 10px;
+  justify-content: center;
+  padding: 10px 0px;
+  position: relative;
+}
+
+.text_label {
+  color: #2c2c2c;
+  font-family: var(--font-family-pretendard-medium);
+  font-size: var(--font-size-l);
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-top: -1.00px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.view-1 {
+  align-items: center;
+  display: flex;
+  gap: 10px;
+  height: 44px;
+  left: 287px;
+  padding: 10px;
+  position: absolute;
+  top: 2px;
+  width: 500px;
+}
+
+.x {
+  color: #c6c6c6;
+  font-weight: 500;
+  line-height: normal;
+  margin-top: -1.00px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.frame-507 {
+  border: 1px solid;
+  border-color: #c5c5c5;
+  border-radius: 11px;
+  height: 47px;
+  position: relative;
+  width: 511px;
+}
+
+.view-15 {
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  gap: 229px;
+  position: relative;
+  width: 100%;
+}
+
+.text-1 {
+  color: #000000; /* 텍스트 입력 시 검정색으로 변경 */
+  font-weight: 500;
+  margin-top: -1.00px;
+  position: relative;
+  width: fit-content;
+  border: none; /* 기본 테두리 제거 */
+  outline: none; /* 입력 시 외곽선 제거 */
+  background: none; /* 배경 없앰 */
+  padding: 0; /* 기존 스타일에 맞추기 위해 padding 제거 */
+}
+
+.view-16 {
+  display: flex;
+  justify-content: center;
+  margin-right: 1.0px;
+  margin-top: 42px;
+  padding: 0; /* 버튼 자체에 패딩을 설정할 것이므로 div의 padding 제거 */
+  width: 401px;
+}
+
+.button-style {
+  align-items: center;
+  background-color: #4994f1;
+  border: none;
+  border-radius: 0.5vw;
+  color: var(--white);
+  cursor: pointer;
+  display: flex;
+  font-family: var(--font-family-pretendard-medium);
+  font-size: 1vw; /* 화면 너비에 따라 조정 */
+  font-weight: 500;
+  justify-content: center;
+  padding: 1.5vh 10vw; /* 버튼의 패딩을 상대적으로 설정 */
+  transition: background-color 0.3s ease;
+  width: 100%;
+  max-width: 400px;
+}
+
+.button-style:hover {
+  background-color: #3578e5; /* 호버 시 배경색 변경 */
+}
+
+.button-style:focus {
+  outline: none; /* 클릭 시 기본 초점을 제거 */
+}
+
+
+.text_label-3 {
+  color: var(--white);
+  font-family: var(--font-family-pretendard-medium);
+  font-size: var(--font-size-l);
+  font-weight: 500;
+  margin-left: -74.00px;
+  margin-right: -74.00px;
+  margin-top: -1.00px;
+}
+
+.text-4 {
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.text_label-4 {
+  letter-spacing: 0;
+  line-height: normal;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}

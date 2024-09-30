@@ -1,0 +1,479 @@
+/* screen - u4359u4469u4358u4469u4527u4359u4453u4523u4370u4457-u4359u4455u4523u4352u4455u45402-u4361u4462u4364u4453u4540 */
+
+.u4359u4469u4358u4469u4527u4359u4453u4523u4370u4457-u4359u4455u4523u4352u4455u45402-u4361u4462u4364u4453u4540 {
+  align-items: flex-start;
+  background-color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* 화면 높이에 맞추도록 변경 */
+  width: 100vw;  /* 화면 너비에 맞추도록 변경 */
+  box-sizing: border-box; /* 패딩과 테두리를 포함하여 크기 계산 */
+  padding: 2vh 2vw; /* 화면 크기에 비례한 여백 */
+}
+
+.view-2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--white);
+  width: 100vw;
+  max-width: 1920px;
+  height: 10vh;
+  padding: 1vh 1vw;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  box-sizing: border-box;
+}
+
+.flex-row {
+  align-items: center;
+  display: flex;
+  height: 64px;
+  justify-content: space-between;
+  position: relative;
+  width: 100%;
+  padding-left: 1vw; /* 패딩을 최소화 */
+  padding-right: 1vw;
+  box-sizing: border-box;
+  top: 18px;
+}
+
+.layer_1 {
+  height: 51px;
+  margin-top: 5.0px;
+  width: 147px;
+}
+
+.frame-5 {
+  align-items: center;
+  display: inline-flex;
+  gap: 56px;
+  margin-left: 49px;
+  position: relative;
+}
+
+.frame {
+  align-items: center;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 10px;
+  height: 64px;
+  justify-content: center;
+  padding: 10px;
+  position: relative;
+}
+
+.text {
+  letter-spacing: 0;
+  line-height: normal;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.frame-1 {
+  align-items: flex-start;
+  display: inline-flex;
+  flex: 0 0 auto;
+  position: relative;
+}
+
+.frame-232 {
+  height: 39px;
+  margin-left: 371px;
+  margin-top: 11.0px;
+  position: relative;
+  width: 423px;
+}
+
+.view-3 {
+  white-space: nowrap; /* 줄바꿈 방지 */
+  overflow: visible; /* 텍스트가 잘리지 않도록 */
+  min-width: 180px; /* 최소 너비를 조금 더 넓게 설정 */
+  padding-left: 5px;
+  padding-right: 15px; /* 우측 여백 추가 */
+}
+
+.text-2 {
+  flex: 1;
+  width: 128px;
+}
+
+.view-4 {
+  align-items: center;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 38px;
+  position: relative;
+  width: 996px;
+}
+
+.view-5 {
+  align-items: center;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 10px;
+  justify-content: center;
+  padding: 10px;
+  position: relative;
+}
+
+.text_label {
+  color: var(--black);
+  font-family: var(--font-family-pretendard_variable-semibold);
+  font-size: var(--font-size-xl);
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-top: -1.00px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.view-6 {
+  height: 58px;
+  position: relative;
+  width: 990px;
+}
+
+.line-26 {
+  height: 2px;
+  left: 0;
+  position: absolute;
+  top: -2px;
+  width: 990px;
+}
+
+.view-container {
+  align-items: flex-start;
+  display: flex;
+  height: 58px;
+  left: 0;
+  min-width: 990px;
+  position: absolute;
+  top: 0;
+}
+
+.view-7 {
+  align-items: center;
+  background-color: #e4e4e4;
+  border: 1px solid;
+  border-color: #d7d7d7;
+  display: flex;
+  gap: 10px;
+  height: 58px;
+  justify-content: center;
+  padding: 10px;
+  position: relative;
+  width: 495px;
+  cursor: pointer; /* 클릭 가능하게 변경 */
+  transition: background-color 0.3s ease; /* 호버 시 배경색 변화 애니메이션 */
+}
+
+  .view-7:hover {
+    background-color: #cccccc; /* 호버 시 배경색 변경 */
+}
+
+  .view-7:active {
+    background-color: #b0b0b0; /* 클릭 시 배경색 변경 */
+}
+
+.text-3 {
+  color: #7b7b7b;
+  font-family: var(--font-family-pretendard_variable-medium);
+  font-size: var(--font-size-l);
+  font-weight: 500;
+  position: relative;
+  width: fit-content;
+}
+
+.view-8 {
+  align-items: center;
+  display: flex;
+  gap: 10px;
+  height: 58px;
+  justify-content: center;
+  padding: 10px;
+  position: relative;
+  width: 495px;
+}
+
+.text_label-1 {
+  color: #1267cf;
+}
+
+.view-9 {
+  align-items: flex-start;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 10px;
+  padding: 11px 27px;
+  position: relative;
+  width: 996px;
+}
+
+.view-10 {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 138px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 996px;
+}
+
+.view-11 {
+  background-color: #f6f6f6;
+  height: 138px;
+  position: relative;
+  width: 279px;
+}
+
+.view-12 {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 69px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 996px;
+}
+
+.line-27 {
+  align-self: stretch;
+  height: 1px;
+  margin-top: -1.00px;
+  object-fit: cover;
+  position: relative;
+  width: 100%;
+}
+
+.line-2 {
+  align-self: stretch;
+  height: 1px;
+  object-fit: cover;
+  position: relative;
+  width: 100%;
+}
+
+.view-13 {
+  align-items: flex-start;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 22px;
+  position: relative;
+  width: 798px;
+}
+
+.view-14 {
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  gap: 248px;
+  position: relative;
+  width: 100%;
+}
+
+.view {
+  align-items: center;
+  display: flex;
+  flex: 1;
+  flex-grow: 1;
+  gap: 10px;
+  padding: 10px 0px;
+  position: relative;
+}
+
+.text_label-2 {
+  color: #2c2c2c;
+  margin-right: -62.00px;
+  margin-top: -1.00px;
+}
+
+.view-1 {
+  align-items: center;
+  display: flex;
+  gap: 10px;
+  height: 44px;
+  left: 287px;
+  padding: 10px;
+  position: absolute;
+  top: 2px;
+  width: 243px;
+}
+
+.text-1 {
+  color: #c6c6c6;
+  font-family: var(--font-family-pretendard_variable-regular);
+  font-size: var(--font-size-m);
+  font-weight: 400;
+  margin-top: -1.00px;
+  position: relative;
+  width: fit-content;
+}
+
+.frame-507 {
+  border: 1px solid;
+  border-color: #c5c5c5;
+  border-radius: 11px;
+  height: 47px;
+  position: relative;
+  width: 511px;
+  display: flex;
+  align-items: center;
+  padding: 0 15px;  /* 입력 필드 안쪽 여백 설정 */
+}
+
+.frame-507 input {
+  border: none;  /* 기본 테두리 제거 */
+  width: 100%;  /* 입력 필드가 상자의 너비를 모두 차지 */
+  height: 100%;  /* 입력 필드가 상자의 높이를 모두 차지 */
+  padding: 0;
+  outline: none;  /* 입력 필드 선택 시 테두리 없음 */
+  font-size: 16px;  /* 입력 텍스트 크기 */
+  background-color: transparent;  /* 배경색 투명 */
+  color: black;  /* 텍스트 색상 */
+  box-sizing: border-box;  /* 패딩 포함 크기 계산 */
+}
+
+.frame-507 input::placeholder {
+  color: #c6c6c6;
+  font-family: var(--font-family-pretendard_variable-regular);
+  font-size: var(--font-size-m);
+  font-weight: 400;
+  margin-top: -1.00px;
+  position: relative;
+  width: fit-content;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.view-15 {
+  align-items: flex-start;
+  display: flex;
+  flex: 0 0 auto;
+  gap: 229px;
+  position: relative;
+  width: 798px;
+}
+
+.text_label-3 {
+  color: #2c2c2c;
+  margin-right: -86.00px;
+  margin-top: -1.00px;
+}
+
+.view-16 {
+  align-items: center;
+  background-color: #4994f1;
+  border-radius: 4px;
+  display: flex;
+  flex: 0 0 auto;
+  gap: 10px;
+  justify-content: center;
+  padding: 17px 224px;
+  position: relative;
+  width: 401px;
+  cursor: pointer; /* 클릭 가능한 느낌을 주기 위해 포인터로 변경 */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* 부드러운 배경색 및 변환 애니메이션 */
+}
+
+.view-16:hover {
+  background-color: #3578e5; /* 호버 시 배경색 변경 */
+  transition: background-color 0.3s ease; /* 부드러운 전환 효과 */
+}
+
+.text_label-4 {
+  color: var(--white);
+  margin-left: -62.00px;
+  margin-right: -62.00px;
+  margin-top: -1.00px;
+}
+
+.text-4 {
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.text_label-5 {
+  font-family: var(--font-family-pretendard_variable-medium);
+  font-size: var(--font-size-l);
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: normal;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+:root {
+  --black: #000000;
+  --white: #ffffff;
+
+  --font-size-l: 22px;
+  --font-size-m: 20px;
+  --font-size-xl: 28px;
+
+  --font-family-pretendard_variable-light: "Pretendard Variable-Light", Helvetica;
+  --font-family-pretendard_variable-medium: "Pretendard Variable-Medium", Helvetica;
+  --font-family-pretendard_variable-regular: "Pretendard Variable-Regular", Helvetica;
+  --font-family-pretendard_variable-semibold: "Pretendard Variable-SemiBold", Helvetica;
+}
+.pretendardvariable-light-black-20px {
+  color: var(--black);
+  font-family: var(--font-family-pretendard_variable-light);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 300;
+}
+
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+/* The following line is used to measure usage of this code. You can remove it if you want. */
+@import url("https://px.animaapp.com/66d08b39d824b3c6e4739bbb.66d08b3ad824b3c6e4739bbe.OWeC8Te.hcp.png");
+
+@font-face {
+  font-family: "Pretendard Variable-Light";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/PretendardVariable.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Pretendard Variable-SemiBold";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/PretendardVariable.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Pretendard Variable-Medium";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/PretendardVariable.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Pretendard Variable-Regular";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/PretendardVariable.ttf") format("truetype");
+}
+
+
+.screen a {
+  display: contents;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}

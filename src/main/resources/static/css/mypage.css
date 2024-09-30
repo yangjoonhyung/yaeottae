@@ -1,0 +1,812 @@
+/* screen - u4358u4449u4363u4469u4369u4454u4363u4469u4364u4469-u4354u4450-u4364u4453u4540u4359u4457-u4359u4455u4523u4352u4455u4540 */
+
+.u4358u4449u4363u4469u4369u4454u4363u4469u4364u4469-u4354u4450-u4364u4453u4540u4359u4457-u4359u4455u4523u4352u4455u4540 {
+  align-items: center;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  min-height: 1080px;
+  width: 1920px;
+}
+
+body {
+  overflow-x: hidden; /* 전체 페이지에서 좌우 스크롤 제거 */
+}
+
+.view {
+  background-color: var(--white);
+  display: flex;
+  height: 101px;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 1920px; /* 원래 크기 유지 */
+  z-index: 3;
+  margin: 0; /* 마진 제거 */
+  padding: 0; /* 패딩 제거 */
+}
+
+.layer_1 {
+  height: 51px;
+  margin-left: 70px;
+  margin-top: 27px;
+  width: 147px;
+}
+
+.frame-5-1 {
+  align-items: center;
+  display: inline-flex;
+  gap: 56px;
+  height: 64px;
+  margin-left: 49px;
+  margin-top: 18px;
+  position: relative;
+  width: 423px;
+}
+
+.frame {
+  align-items: center;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 10px;
+  height: 64px;
+  justify-content: center;
+  padding: 10px;
+  position: relative;
+}
+
+.text {
+  letter-spacing: 0;
+  line-height: normal;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.frame-1 {
+  align-items: flex-start;
+  display: inline-flex;
+  flex: 0 0 auto;
+  position: relative;
+}
+
+.frame-232 {
+  height: 39px;
+  margin-left: 371px;
+  margin-top: 36px;
+  position: relative;
+  width: 423px;
+}
+
+.view-1 {
+  display: flex;
+  height: 24px;
+  margin-left: 42px;
+  margin-top: 38px;
+  width: 128px;
+}
+
+.text-19 {
+  flex: 1;
+  white-space: nowrap;
+  width: 128px;
+}
+
+.view-2 {
+  align-items: center;
+  background-color: #4994f1;
+  display: flex;
+  gap: 17px;
+  height: 151px;
+  margin-top: 101px;
+  min-width: 990px;
+  padding: 27.4px 42px;
+  z-index: 2;
+}
+
+.overlap-group1 {
+  align-self: flex-end;
+  height: 95px;
+  position: relative;
+  width: 96px;
+}
+
+.ellipse-17 {
+  height: 93px;
+  left: 0;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 93px;
+}
+
+.frame-567 {
+  height: 30px;
+  left: 66px;
+  position: absolute;
+  top: 65px;
+  width: 30px;
+  cursor: pointer; /* 클릭 가능하게 변경 */
+}
+
+.frame-428 {
+  align-items: center;
+  display: inline-flex;
+  gap: 8px;
+  position: relative;
+}
+
+.frame-2 {
+  align-items: center;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 10px;
+  justify-content: center;
+  position: relative;
+}
+
+.text-1 {
+  color: var(--white);
+  font-family: var(--font-family-pretendard_variable-light);
+  font-size: var(--font-size-xxl);
+  font-weight: 300;
+  margin-top: -1.00px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.text-16 {
+  color: var(--white);
+  font-family: var(--font-family-pretendard_variable-semibold);
+  font-size: var(--font-size-xxl);
+  font-weight: 600;
+  margin-top: -1.00px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.flex-row {
+  align-items: flex-start;
+  display: flex;
+  gap: 54px;
+  height: 490px;
+  margin-top: 58px;
+  min-width: 990px;
+  z-index: 1;
+}
+
+.x {
+  align-items: flex-start;
+  border: 1px solid;
+  border-color: #b4b4b4;
+  border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+  height: 153px;
+  position: relative;
+  width: 245px;
+}
+
+.frame-4 {
+  align-items: center;
+  display: flex;
+  flex: 0 0 auto;
+  gap: 10px;
+  padding: 15px 116px 15px 23px;
+  position: relative;
+  width: 245px;
+  cursor: pointer; /* 클릭 가능하게 변경 */
+  transition: background-color 0.3s ease; /* 호버 시 배경색 변화 애니메이션 */
+}
+
+  .frame-4:hover {
+    background-color: #4994f12e; /* 호버 시 배경색 변경 */
+}
+
+.text-2 {
+  margin-top: -1.00px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.frame-419 {
+  align-items: center;
+  background-color: #4994f12e;
+  display: flex;
+  flex: 0 0 auto;
+  gap: 10px;
+  padding: 15px 116px 15px 23px;
+  position: relative;
+  width: 245px;
+  cursor: pointer; /* 클릭 가능하게 변경 */
+}
+
+.flex-col {
+  align-items: flex-end;
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  min-height: 490px;
+  width: 691px;
+}
+
+.view-3 {
+  align-items: flex-end;
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  position: relative;
+  width: 686px;
+}
+
+.x-1 {
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 21px;
+  position: relative;
+  width: 100%;
+}
+
+.frame-59 {
+  align-items: center;
+  display: flex;
+  flex: 0 0 auto;
+  gap: 10px;
+  position: relative;
+  width: 156.77px;
+}
+
+.text_label {
+  color: var(--black);
+  font-family: var(--font-family-pretendard_variable-semibold);
+  font-size: var(--font-size-xxl);
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-top: -1.00px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.line-39-stroke {
+  align-self: stretch;
+  height: 1.5px;
+  position: relative;
+  width: 100%;
+}
+
+.frame-566 {
+  align-items: flex-start;
+  display: inline-flex;
+  gap: 51px;
+  position: relative;
+}
+
+.frame-550 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: relative;
+  width: 114px;
+}
+
+.ellipse-17-1 {
+  align-self: stretch;
+  height: 114px;
+  position: relative;
+  width: 100%;
+  cursor: pointer; /* 클릭 가능하게 변경 */
+}
+
+.text-1-1 {
+  align-self: stretch;
+  letter-spacing: 0;
+  line-height: normal;
+  position: relative;
+  text-align: center;
+  cursor: pointer; /* 클릭 가능하게 변경 */
+}
+
+.frame-565 {
+  align-items: flex-end;
+  display: flex;
+  flex-direction: column;
+  gap: 29px;
+  position: relative;
+  width: 526px;
+}
+
+.frame-564 {
+  align-items: flex-start;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 13px;
+  position: relative;
+  width: 516px;
+}
+
+.frame-563 {
+  align-items: flex-start;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 12px;
+  position: relative;
+  width: 98px;
+}
+
+.text-2-1 {
+  color: var(--licorice);
+  font-family: var(--font-family-pretendard_variable-semibold);
+  font-size: var(--font-size-xl);
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-top: -1.00px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.text-3 {
+  color: #1b69ca;
+  font-family: var(--font-family-pretendard_variable-medium);
+  font-size: var(--font-size-m);
+  font-weight: 500;
+  margin-top: -1.00px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.frame-544 {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  gap: 10px;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+}
+
+.text-4 {
+  align-self: stretch;
+  flex: 1;
+  margin-top: -1.00px;
+  position: relative;
+}
+
+.frame-561 {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 14px;
+  position: relative;
+  width: 100%;
+}
+
+.frame-556 {
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  gap: 35px;
+  position: relative;
+  width: 100%;
+}
+
+.frame-54 {
+  align-items: center;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 10px;
+  justify-content: center;
+  padding: 10px;
+  position: relative;
+}
+
+.group-97 {
+  height: 91px;
+  position: relative;
+  width: 408px;
+}
+
+.overlap-group-1 {
+  height: 91px;
+  position: relative;
+}
+
+.rectangle-150 {
+  height: 89px;
+  top: 0;
+}
+
+.frame-551 {
+  align-items: flex-start;
+  display: flex;
+  gap: 10px;
+  height: 88px;
+  left: 2px;
+  padding: 10px;
+  position: absolute;
+  top: 10px;
+  width: 406px;
+  padding: 0 15px;  /* 입력 필드 안쪽 여백 설정 */
+}
+
+.frame-551 input {
+  border: none;  /* 기본 테두리 제거 */
+  width: 100%;  /* 입력 필드가 상자의 너비를 모두 차지 */
+  height: 100%;  /* 입력 필드가 상자의 높이를 모두 차지 */
+  padding: 0;  /* 텍스트가 상단에 위치하도록 패딩 제거 */
+  outline: none;  /* 입력 필드 선택 시 테두리 없음 */
+  font-size: 16px;  /* 입력 텍스트 크기 */
+  background-color: transparent;  /* 배경색 투명 */
+  color: black;  /* 텍스트 색상 */
+  box-sizing: border-box;  /* 패딩 포함 크기 계산 */
+  text-align: left;  /* 왼쪽 정렬 */
+  vertical-align: top;  /* 텍스트 상단 정렬 */
+}
+
+  .frame-551 input::placeholder {
+    color: #c6c6c6;
+    font-family: var(--font-family-pretendard_variable-regular);
+    font-size: var(--font-size-m);
+    font-weight: 400;
+    margin-top: -1.00px;
+    position: relative;
+    width: fit-content;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+  }
+
+.text-6 {
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  display: -webkit-box;
+  height: 68px;
+  margin-top: -1.00px;
+  overflow: hidden;
+  position: relative;
+  text-overflow: ellipsis;
+  width: 350px;
+}
+
+.frame-555 {
+  align-items: center;
+  display: inline-flex;
+  gap: 10px;
+  justify-content: center;
+  left: 359px;
+  padding: 10px;
+  position: absolute;
+  top: 52px;
+  cursor: pointer; /* 클릭 가능하게 변경 */
+  transition: background-color 0.3s ease, border-radius 0.3s ease; /* 호버 시 배경색과 모서리 변화 애니메이션 */
+  border-radius: 8px; /* 기본 모서리 둥글게 */
+}
+
+.frame-555:hover {
+  background-color: #4994f12e; /* 호버 시 배경색 변경 */
+  border-radius: 12px; /* 호버 시 모서리를 더 둥글게 변경 */
+}
+
+.frame-558 {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  gap: 66px;
+  position: relative;
+  width: 100%;
+}
+
+.group {
+  height: 41px;
+  position: relative;
+  width: 408px;
+}
+
+.overlap-group {
+  height: 41px;
+  position: relative;
+}
+
+.rectangle-15 {
+  height: 37px;
+  top: 2px;
+}
+
+.frame-552 {
+  align-items: center;
+  display: flex;
+  gap: 10px;
+  left: 2px;
+  padding: 10px 15px; /* 상단, 하단, 좌우 여백 설정 */
+  position: absolute;
+  top: 0;
+  width: 360px;
+  /* padding: 0 15px;  중복된 padding 제거 */
+}
+
+.frame-552 input {
+  border: none;  /* 기본 테두리 제거 */
+  width: 100%;  /* 입력 필드가 상자의 너비를 모두 차지 */
+  height: 100%;  /* 입력 필드가 상자의 높이를 모두 차지 */
+  padding: 0;  /* 텍스트가 상단에 위치하도록 패딩 제거 */
+  outline: none;  /* 입력 필드 선택 시 테두리 없음 */
+  font-size: 16px;  /* 입력 텍스트 크기 */
+  left: 0; /* 왼쪽에 간격을 없애기 위한 수정 */
+  background-color: transparent;  /* 배경색 투명 */
+  color: black;  /* 텍스트 색상 */
+  box-sizing: border-box;  /* 패딩 포함 크기 계산 */
+}
+
+.frame-552 input::placeholder {
+    color: #c6c6c6;
+    font-family: var(--font-family-pretendard_variable-regular);
+    font-size: var(--font-size-m);
+    font-weight: 400;
+    margin-top: -1.00px;
+    position: relative;
+    width: fit-content;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+}
+
+
+.text-9 {
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 0;
+  display: -webkit-box;
+  flex: 1;
+  height: 21px;
+  margin-top: -1.00px;
+  overflow: hidden;
+  position: relative;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.frame-557 {
+  align-items: center;
+  display: inline-flex;
+  gap: 10px;
+  justify-content: center;
+  left: 359px;
+  padding: 10px;
+  position: absolute;
+  top: 1px;
+  cursor: pointer; /* 클릭 가능하게 변경 */
+  transition: background-color 0.3s ease, border-radius 0.3s ease; /* 호버 시 배경색과 모서리 변화 애니메이션 */
+  border-radius: 8px; /* 기본 모서리 둥글게 */
+}
+
+.frame-557:hover {
+  background-color: #4994f12e; /* 호버 시 배경색 변경 */
+  border-radius: 12px; /* 호버 시 모서리를 더 둥글게 변경 */
+}
+
+.frame-5 {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  gap: 51px;
+  position: relative;
+  width: 100%;
+}
+
+.frame-55 {
+  align-items: center;
+  display: flex;
+  gap: 10px;
+  left: 2px;
+  padding: 10px;
+  position: absolute;
+  top: 0;
+  width: 367px;
+}
+
+.frame-55 input {
+  border: none;  /* 기본 테두리 제거 */
+  width: 100%;  /* 입력 필드가 상자의 너비를 모두 차지 */
+  height: 100%;  /* 입력 필드가 상자의 높이를 모두 차지 */
+  padding: 0;  /* 텍스트가 상단에 위치하도록 패딩 제거 */
+  outline: none;  /* 입력 필드 선택 시 테두리 없음 */
+  font-size: 16px;  /* 입력 텍스트 크기 */
+  background-color: transparent;  /* 배경색 투명 */
+  color: black;  /* 텍스트 색상 */
+  box-sizing: border-box;  /* 패딩 포함 크기 계산 */
+}
+
+.frame-55 input::placeholder {
+    color: #c6c6c6;
+    font-family: var(--font-family-pretendard_variable-regular);
+    font-size: var(--font-size-m);
+    font-weight: 400;
+    margin-top: -1.00px;
+    position: relative;
+    width: fit-content;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+}
+
+.asc1234 {
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 0;
+  display: -webkit-box;
+  flex: 1;
+  height: 21px;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-top: -1.00px;
+  overflow: hidden;
+  position: relative;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.asc1234navercom {
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 0;
+  display: -webkit-box;
+  flex: 1;
+  height: 21px;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-top: -1.00px;
+  overflow: hidden;
+  position: relative;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.frame-549 {
+  align-items: center;
+  display: inline-flex;
+  gap: 10px;
+  justify-content: center;
+  left: 196px;
+  position: absolute;
+  top: 270px;
+}
+
+.rectangle {
+  background-color: var(--concrete);
+  border-radius: 8px;
+  left: 0;
+  position: absolute;
+  width: 408px;
+}
+
+.text-5 {
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+:root {
+  --black: #000000;
+  --concrete: #f2f2f2;
+  --hunter-green: #161616;
+  --licorice: #141414;
+  --storm-dust: #646464;
+  --white: #ffffff;
+
+  --font-size-l: 20px;
+  --font-size-m: 18px;
+  --font-size-s: 16px;
+  --font-size-xl: 22px;
+  --font-size-xxl: 28px;
+
+  --font-family-pretendard_variable-light: "Pretendard Variable-Light", Helvetica;
+  --font-family-pretendard_variable-medium: "Pretendard Variable-Medium", Helvetica;
+  --font-family-pretendard_variable-regular: "Pretendard Variable-Regular", Helvetica;
+  --font-family-pretendard_variable-semibold: "Pretendard Variable-SemiBold", Helvetica;
+}
+.pretendardvariable-light-black-20px {
+  color: var(--black);
+  font-family: var(--font-family-pretendard_variable-light);
+  font-size: var(--font-size-l);
+  font-style: normal;
+  font-weight: 300;
+}
+
+.pretendardvariable-regular-normal-black-18px {
+  color: var(--black);
+  font-family: var(--font-family-pretendard_variable-regular);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.pretendardvariable-regular-normal-storm-dust-16px {
+  color: var(--storm-dust);
+  font-family: var(--font-family-pretendard_variable-regular);
+  font-size: var(--font-size-s);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.pretendardvariable-medium-licorice-18px {
+  color: var(--licorice);
+  font-family: var(--font-family-pretendard_variable-medium);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 500;
+}
+
+.pretendardvariable-regular-normal-hunter-green-18px {
+  color: var(--hunter-green);
+  font-family: var(--font-family-pretendard_variable-regular);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 400;
+}
+
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+/* The following line is used to measure usage of this code. You can remove it if you want. */
+@import url("https://px.animaapp.com/66d08b39d824b3c6e4739bbb.66d08b3ad824b3c6e4739bbe.OWeC8Te.hcp.png");
+
+@font-face {
+  font-family: "Pretendard Variable-Regular";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/PretendardVariable.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Pretendard Variable-SemiBold";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/PretendardVariable.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Pretendard Variable-Medium";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/PretendardVariable.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Pretendard Variable-Light";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/PretendardVariable.ttf") format("truetype");
+}
+
+
+.screen a {
+  display: contents;
+  text-decoration: none;
+}
+
+.container-center-horizontal {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  pointer-events: none;
+  width: 100%;
+}
+
+.container-center-horizontal > * {
+  flex-shrink: 0;
+  pointer-events: auto;
+}
+
+* {
+  box-sizing: border-box;
+}

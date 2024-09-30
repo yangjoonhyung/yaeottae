@@ -1,0 +1,406 @@
+/* screen - u4355u4457u4364u4453u4523u4363u4461u4366u4453u4540 */
+
+.u4355u4457u4364u4453u4523u4363u4461u4366u4453u4540 {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  min-height: 1080px;
+  min-width: 1920px;
+  overflow: hidden;
+  width: 100%;
+  transform: scale(0.9); /* 화면 크기에 맞춰 요소의 크기를 축소 */
+  transform-origin: top left; /* 축소할 때 기준점 설정 */
+}
+
+body {
+  overflow-x: hidden; /* 전체 페이지에서 좌우 스크롤 제거 */
+  overflow-y: hidden;
+}
+
+.view {
+  background-color: #ffffff;
+  display: flex;
+  height: 101px;
+  left: calc(50.00% - 960px);
+  position: relative; /* fixed를 relative로 변경 */
+  top: 0;
+  width: 1920px;
+  z-index: 1;
+  transform: none; /* scale의 영향을 받지 않도록 */
+}
+
+.layer_1 {
+  height: 51px;
+  margin-left: 144px;
+  margin-top: 27px;
+  width: 147px;
+}
+
+.frame-5 {
+  align-items: center;
+  display: inline-flex;
+  gap: 56px;
+  height: 64px;
+  margin-left: 49px;
+  margin-top: 18px;
+  position: relative;
+  width: 423px;
+}
+
+.frame {
+  align-items: center;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 10px;
+  height: 64px;
+  justify-content: center;
+  padding: 10px;
+  position: relative;
+}
+
+.text {
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.frame-1 {
+  align-items: flex-start;
+  display: inline-flex;
+  flex: 0 0 auto;
+  position: relative;
+}
+
+.frame-232 {
+  height: 39px;
+  margin-left: 371px;
+  margin-top: 36px;
+  position: relative;
+  width: 423px;
+}
+
+.view-1 {
+  display: flex;
+  height: 24px;
+  margin-left: 42px;
+  margin-top: 38px;
+  width: 128px;
+}
+
+.text-2 {
+  flex: 1;
+  white-space: nowrap;
+  width: 128px;
+}
+
+.group-116 {
+  align-items: flex-start;
+  display: flex;
+  height: 613px;
+  left: 148px;
+  min-width: 1307px;
+  position: relative; /* fixed에서 relative로 변경 */
+  top: 50px;
+  z-index: 3;
+}
+
+.overlap-group1 {
+  height: 613px;
+  position: relative;
+  width: 1307px;
+}
+
+.isolation_-mode {
+  height: 613px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 589px;
+}
+
+.frame-643 {
+  align-items: flex-end;
+  display: inline-flex;
+  gap: 68px;
+  left: 317px;
+  position: absolute;
+  top: 33px;
+}
+
+.frame-642 {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 61px;
+  position: relative;
+  width: 442px;
+}
+
+.frame-638 {
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 21px;
+  position: relative;
+  width: 100%;
+}
+
+.image {
+  height: 86px;
+  position: relative;
+  width: 209px;
+}
+
+.text-3 {
+  align-self: stretch;
+  color: #3179d3;
+  font-family: var(--font-family-sb_aggro-medium);
+  font-size: var(--font-size-xxl);
+  font-weight: 500;
+  height: 104px;
+  position: relative;
+}
+
+.frame-641 {
+  align-items: flex-start;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 48px;
+  position: relative;
+  width: 336px;
+}
+
+.frame-640 {
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 26px;
+  position: relative;
+  width: 100%;
+}
+
+.text-4 {
+  align-self: stretch;
+  color: var(--black);
+  font-family: var(--font-family-pretendard_variable-semibold);
+  font-size: var(--font-size-xl);
+  font-weight: 600;
+  margin-top: -1.00px;
+  position: relative;
+}
+
+.frame-639 {
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 11px;
+  position: relative;
+  width: 100%;
+}
+
+.kanfyang2002navercom {
+  align-self: stretch;
+  color: var(--black);
+  font-family: var(--font-family-pretendard_variable-regular);
+  font-size: var(--font-size-xl);
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-top: -1.00px;
+  position: relative;
+}
+
+.hhs834373gmailcom {
+  align-self: stretch;
+  color: var(--black);
+  font-family: var(--font-family-pretendard_variable-regular);
+  font-size: var(--font-size-xl);
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: normal;
+  position: relative;
+}
+
+.text-5 {
+  align-self: stretch;
+  color: #474747;
+  font-family: var(--font-family-pretendard-regular);
+  font-size: var(--font-size-l);
+  font-weight: 400;
+  position: relative;
+}
+
+.view-2 {
+  height: 474.92px;
+  position: relative;
+  width: 480px;
+}
+
+.overlap-group {
+  height: 475px;
+  position: relative;
+  width: 480px;
+}
+
+.view-3 {
+  background-image: url(../img/image-3@2x.png);
+  background-position: 50% 50%;
+  background-size: cover;
+  display: flex;
+  gap: 180.1px;
+  height: 475px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 480px;
+}
+
+.x {
+  height: 87.45px;
+  margin-left: 84.0px;
+  margin-top: 61.3px;
+  width: 75.04px;
+}
+
+.x-1 {
+  height: 59.98px;
+  margin-top: 122.6px;
+  width: 53.16px;
+}
+
+.x-2 {
+  height: 66px;
+  left: 86px;
+  position: absolute;
+  top: 218px;
+  width: 336px;
+}
+
+.stroke {
+  height: 81px;
+  left: 78px;
+  position: absolute;
+  top: 210px;
+  width: 351px;
+}
+
+.x-3 {
+  height: 75px;
+  left: 84px;
+  position: absolute;
+  top: 306px;
+  width: 325px;
+}
+
+.group-118 {
+  display: flex;
+  gap: 1064px;
+  height: 588px;
+  left: -149px;
+  position: absolute; /* 부모 요소를 기준으로 고정 */
+  top: 600px;
+  width: 2139px;
+  z-index: 2;
+}
+
+.union {
+  height: 588px;
+  width: 540px;
+}
+
+.group-117 {
+  background-image: url(../img/union-1.png);
+  background-size: 100% 100%;
+  display: flex;
+  height: 430px;
+  margin-top: 55px;
+  width: 535px;
+}
+
+.ellipse-33 {
+  background-color: #4994f1;
+  border-radius: 40px;
+  height: 80px;
+  margin-left: 22px;
+  margin-top: 97px;
+  width: 80px;
+}
+
+.text-1 {
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+:root {
+  --black: #000000;
+
+  --font-size-l: 24px;
+  --font-size-m: 20px;
+  --font-size-xl: 28px;
+  --font-size-xxl: 40px;
+
+  --font-family-pretendard-regular: "Pretendard-Regular", Helvetica;
+  --font-family-pretendard_variable-light: "Pretendard Variable-Light", Helvetica;
+  --font-family-pretendard_variable-regular: "Pretendard Variable-Regular", Helvetica;
+  --font-family-pretendard_variable-semibold: "Pretendard Variable-SemiBold", Helvetica;
+  --font-family-sb_aggro-medium: "SB Aggro-Medium", Helvetica;
+}
+.pretendardvariable-light-black-20px {
+  color: var(--black);
+  font-family: var(--font-family-pretendard_variable-light);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 300;
+}
+
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+/* The following line is used to measure usage of this code. You can remove it if you want. */
+@import url("https://px.animaapp.com/66d08b39d824b3c6e4739bbb.66d08b3ad824b3c6e4739bbe.OWeC8Te.hcp.png");
+
+@font-face {
+  font-family: "Pretendard Variable-Light";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/PretendardVariable.ttf") format("truetype");
+}
+@font-face {
+  font-family: "SB Aggro-Medium";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/SB 어그로 M.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Pretendard Variable-SemiBold";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/PretendardVariable.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Pretendard Variable-Regular";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/PretendardVariable.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Pretendard-Regular";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/Pretendard-Regular.woff") format("woff");
+}
+
+
+.screen a {
+  display: contents;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}

@@ -1,0 +1,1034 @@
+/* screen - u4358u4449u4538u4364u4469u4536u4357u4469u4361u4467u4368u4467 */
+
+.u4358u4449u4538u4364u4469u4536u4357u4469u4361u4467u4368u4467 {
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  width: 100%; /* 화면 너비에 맞추기 */
+  overflow-x: hidden; /* 좌우 스크롤 방지 */
+  overflow-y: auto; /* 세로 스크롤 가능 */
+  min-height: 100vh; /* 화면 높이에 맞추기 */
+  box-sizing: border-box; /* 패딩과 테두리 포함하여 크기 계산 */
+}
+
+.frame-522 {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 59px;
+  margin-top: 101px;
+  position: relative;
+  width: 100%; /* 화면 크기에 맞추기 */
+  height: auto; /* 자동 확장 */
+  min-height: 100vh; /* 최소 높이 설정 */
+  overflow-y: auto; /* 세로 스크롤 가능하게 */
+  z-index: 1;
+}
+
+.view-18 {
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 31px;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+}
+
+.view-19 {
+  background-color: var(--blueberry);
+  display: flex;
+  height: 115px;
+  position: relative;
+  width: 1920px;
+}
+
+.view-20 {
+  align-items: center;
+  display: inline-flex;
+  gap: 10px;
+  height: 58px;
+  margin-left: 461px;
+  margin-top: 28px;
+  padding: 10px;
+  position: relative;
+  width: 312px;
+}
+
+.text-1-2 {
+  color: var(--white);
+  font-family: var(--font-family-pretendard_variable-semibold);
+  font-size: var(--font-size-xxl);
+  font-weight: 400;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.span0 {
+  font-weight: 600;
+}
+
+.span1 {
+  font-family: var(--font-family-pretendard_variable-regular);
+}
+
+.frame-521 {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 71px;
+  position: relative;
+  width: 100%;
+  flex-direction: column;
+  height: auto; /* 높이를 자동으로 조정하여 확장 */
+  overflow-y: auto; /* 세로로 스크롤 가능하게 */
+  box-sizing: border-box; /* padding과 border 크기 포함 */
+}
+
+.view-21 {
+  background-color: #d9d9d9;
+  border-radius: 22px;
+  height: 284px;
+  position: relative;
+  width: 990px;
+}
+
+.view-22 {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  height: auto; /* 높이를 자동으로 조정하여 확장 */
+  overflow-y: auto; /* 세로로 스크롤 가능하게 */
+  box-sizing: border-box; /* padding과 border 크기 포함 */
+  gap: 23px;
+  position: relative;
+  width: 100%;
+}
+
+.view-23 {
+  align-items: flex-start;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 23px;
+  position: relative;
+  width: 990px;
+}
+
+.frame-520 {
+  align-items: center;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 24px;
+  position: relative;
+}
+
+.view {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+  height: 44px;
+  position: relative;
+  width: 172px;
+  cursor: pointer; /* 클릭 가능하게 변경 */
+}
+
+.frame-461 {
+    align-items: center;
+    background-color: var(--blueberry);
+    border: 1px solid var(--mercury);
+    border-radius: 11px;
+    display: flex;
+    gap: 26px;
+    height: 44px;
+    padding: 14px 26px;
+    position: relative;
+    width: 172px;
+    cursor: pointer;
+}
+
+/* 숨겨진 select 박스 */
+.select-hidden {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    font-size: 0; /* select의 기본 텍스트가 디자인을 깨지 않게 함 */
+    cursor: pointer;
+}
+
+/* 기본 select 화살표 제거 */
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+/* 화살표 이미지는 여전히 보이게 */
+.icbaseline-expand-more {
+    pointer-events: none; /* 아이콘이 클릭되지 않도록 설정 */
+}
+
+.text {
+  margin-bottom: -3.00px;
+  margin-top: -5.00px;
+  position: relative;
+  width: 83px;
+}
+
+.icbaseline-expand-more {
+  height: 24px;
+  margin-bottom: -4.00px;
+  margin-right: -13.00px;
+  margin-top: -4.00px;
+  position: relative;
+  width: 24px;
+}
+
+.view-24 {
+  align-items: flex-start;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+  width: 990px;
+}
+
+.view-25 {
+  align-items: flex-end;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  gap: 410px;
+  position: relative;
+  width: 100%;
+}
+
+.view-26 {
+  align-items: center;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 24px;
+  position: relative;
+}
+
+.checkbox {
+  display: none; /* 체크박스 숨기기 */
+}
+
+.view-1 {
+  align-items: center;
+  background-color: #ffffff; /* 기본 배경색 */
+  border: 1px solid var(--blueberry);
+  border-radius: 15px;
+  display: inline-flex;
+  gap: 10px;
+  justify-content: center;
+  padding: 10px 14px;
+  position: relative;
+  transition: background-color 0.3s ease, border-color 0.3s ease; /* 부드러운 색상 전환 */
+  cursor: pointer;
+}
+
+.checkbox:checked + label .view-1 {
+  background-color: var(--blueberry); /* 체크되었을 때 배경색 변경 */
+  color: white; /* 텍스트 색상 변경 */
+  border-color: white; /* 테두리 색상 변경 */
+}
+
+.checkbox:checked + label .view-1 .text-3-1 {
+  color: white !important; /* 텍스트 색상을 흰색으로 강제 변경 */
+}
+
+.text-3-1 {
+  letter-spacing: 0;
+  line-height: normal;
+  margin-top: -1.00px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.view-2 {
+  align-items: center;
+  background-color: var(--blueberry);
+  border-radius: 15px;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 10px;
+  justify-content: center;
+  padding: 10px 14px;
+  position: relative;
+}
+
+.text-4 {
+  margin-top: -1.00px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.text-5 {
+  margin-top: -1.00px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.text-6 {
+  margin-top: -1.00px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.view-27 {
+  align-items: center;
+  display: flex;
+  gap: 7px;
+  justify-content: flex-end;
+  margin-right: -10.00px;
+  padding: 0px 10px;
+  position: relative;
+  width: 144px;
+}
+
+.view-28 {
+  align-items: center;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 10px;
+  justify-content: center;
+  position: relative;
+}
+
+.text-7 {
+  margin-top: -1.00px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.view-29 {
+  align-items: center;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 10px;
+  justify-content: center;
+  position: relative;
+}
+
+.text-8 {
+  margin-top: -1.00px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.line-11 {
+  align-self: stretch;
+  height: 1px;
+  margin-bottom: -1.00px;
+  position: relative;
+  width: 100%;
+}
+
+.x {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 146px;
+  position: relative;
+  width: 100%;
+}
+
+.view-30 {
+  align-items: flex-start;
+  display: flex;
+  flex: 0 0 auto;
+  overflow-y: auto; /* 세로 스크롤 추가 */
+  flex-wrap: wrap;
+  gap: 10px 10px;
+  position: relative;
+  width: 1018px;
+}
+
+.view-3 {
+  align-items: center;
+  display: flex;
+  gap: 10px;
+  height: 662px;
+  padding: 34px 8px;
+  position: relative;
+  width: 500px;
+}
+
+.view-4 {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap; /* 줄 바꿈 가능하게 설정 */
+  gap: 10px;
+  left: 0;
+  padding: 10px;
+  position: absolute;
+  top: 0;
+}
+
+.rectangle-111 {
+  background-color: var(--white);
+  box-shadow: 7px 9px 9.7px -4px #00000026;
+  height: 642px;
+  position: relative;
+  width: 480px;
+}
+
+.view-5 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  height: 642px;
+  justify-content: center;
+  margin-bottom: -24.00px;
+  margin-top: -24.00px;
+  position: relative;
+  width: 482px;
+  transition: background-color 0.3s ease; /* 색상 전환을 부드럽게 */
+  cursor: pointer; /* 클릭 가능하게 설정 */
+}
+
+.view-5:hover {
+  background-color: #dcdcdc; /* hover 시 약간 어두운 색으로 변경 */
+}
+
+.view-6 {
+  align-items: flex-start;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 10px;
+  position: relative;
+  width: 438px;
+}
+
+.rectangle-13 {
+  align-self: stretch;
+  height: 292px;
+  position: relative;
+  width: 100%;
+}
+
+.view-7 {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  height: 277px;
+  position: relative;
+  width: 439.91px;
+}
+
+.x-1 {
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+}
+
+.x-2 {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  justify-content: space-between;
+  position: relative;
+  width: 100%;
+}
+
+.view-8 {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+  position: relative;
+  width: 139px;
+}
+
+.text_label {
+  color: var(--black);
+  font-family: var(--font-family-pretendard_variable-medium);
+  font-size: var(--font-size-xl);
+  font-weight: 500;
+}
+
+.image {
+  height: 32px;
+  position: relative;
+  width: 32px;
+}
+
+.x-3 {
+  align-items: center;
+  display: inline-flex;
+  gap: 3px;
+  left: 7px;
+  position: absolute;
+  top: 42px;
+}
+
+.view-9 {
+  align-items: center;
+  display: inline-flex;
+  flex: 0 0 auto;
+  position: relative;
+}
+
+.star-2 {
+  height: 33px;
+  position: relative;
+  width: 31.02px;
+}
+
+.view-10 {
+  align-items: center;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 10px;
+  justify-content: center;
+  margin-left: -11px;
+  padding: 10px;
+  position: relative;
+}
+
+.text-1 {
+  color: var(--black);
+  font-family: var(--font-family-pretendard_variable-medium);
+  font-size: var(--font-size-m);
+  font-weight: 500;
+  margin-top: -1.00px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.view-11 {
+  align-items: center;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 10px;
+  justify-content: center;
+  padding: 10px;
+  position: relative;
+}
+
+.text-10 {
+  margin-top: -1.00px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.view-12 {
+  align-items: center;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 10px;
+  justify-content: center;
+  margin-left: -16px;
+  padding: 10px;
+  position: relative;
+}
+
+.view-13 {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  height: 195px;
+  overflow: hidden;
+  position: relative;
+  width: 439.91px;
+}
+
+.view-14 {
+  align-items: flex-start;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  position: relative;
+  width: 415.5px;
+}
+
+.view-15 {
+  align-items: flex-start;
+  display: flex;
+  flex: 0 0 auto;
+  gap: 10px;
+  padding: 10px;
+  position: relative;
+  width: 415.5px;
+}
+
+.text-1-1 {
+  margin-right: -6.50px;
+  width: 402px;
+}
+
+.view-16 {
+  align-items: flex-start;
+  display: flex;
+  flex: 0 0 auto;
+  gap: 10px;
+  margin-top: -16px;
+  padding: 10px;
+  position: relative;
+  width: 415.5px;
+}
+
+.phone {
+  letter-spacing: 0;
+  line-height: normal;
+  margin-top: -1.00px;
+  position: relative;
+  width: 180px;
+}
+
+.view-17 {
+  align-items: center;
+  display: flex;
+  gap: 10px;
+  height: 129px;
+  justify-content: center;
+  margin-right: -0.09px;
+  padding: 10px;
+  position: relative;
+  width: 440px;
+}
+
+.flex-container-6 {
+  gap: 6px;
+  height: 125px;
+  width: 420px;
+}
+
+.text-2 {
+  align-self: stretch;
+  position: relative;
+}
+
+.x-4 {
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+}
+
+.x-5 {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  justify-content: space-between;
+  position: relative;
+  width: 100%;
+}
+
+.x-6 {
+  align-items: center;
+  display: inline-flex;
+  gap: 3px;
+  left: 7px;
+  position: absolute;
+  top: 42px;
+}
+
+.text-13 {
+  margin-top: -1.00px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.view-31 {
+  align-items: flex-start;
+  background-color: #f4f4f4;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  height: 256px;
+  padding: 47px 363px;
+  position: relative;
+  width: 1920px;
+}
+
+.frame-532 {
+  align-items: flex-start;
+  display: inline-flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 25px;
+  position: relative;
+}
+
+.frame-531 {
+  align-items: center;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 10px;
+  justify-content: center;
+  position: relative;
+}
+
+.flex-container-9382159 {
+  gap: 1px;
+  height: 59px;
+  width: 652px;
+}
+
+.span1-1 {
+  color: #7f7f7f;
+  font-family: var(--font-family-pretendard_variable-medium);
+  font-size: var(--font-size-s);
+  font-weight: 500;
+}
+
+.frame-29 {
+  align-items: center;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 42px;
+  position: relative;
+  padding-top: 20px; /* 프레임 위쪽에 여백 추가 */
+}
+
+.frame-533 {
+  align-items: center;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 10px;
+  justify-content: center;
+  position: relative;
+}
+
+.text-15 {
+  color: #2f2f2f;
+  font-family: var(--font-family-pretendard_variable-medium);
+  font-size: var(--font-size-m);
+  font-weight: 500;
+  margin-top: -1.00px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.frame-534 {
+  align-items: center;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 10px;
+  justify-content: center;
+  position: relative;
+}
+
+.text-16 {
+  margin-top: -1.00px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.frame-535 {
+  align-items: center;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 10px;
+  justify-content: center;
+  position: relative;
+}
+
+.text-17 {
+  margin-top: -1.00px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.frame-536 {
+  align-items: center;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 10px;
+  justify-content: center;
+  position: relative;
+}
+
+.text-18 {
+  margin-top: -1.00px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.frame-530 {
+  align-items: center;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 10px;
+  justify-content: center;
+  position: relative;
+}
+
+.copyright-ya-eotta {
+  letter-spacing: 0;
+  line-height: normal;
+  margin-top: -1.00px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.view-32 {
+  background-color: var(--white);
+  display: flex;
+  height: 101px;
+  left: calc(50.00% - 960px);
+  position: fixed;
+  top: 0;
+  width: 1920px;
+  z-index: 2;
+}
+
+.layer_1 {
+  height: 51px;
+  margin-left: 144px;
+  margin-top: 27px;
+  width: 147px;
+}
+
+.frame-5 {
+  align-items: center;
+  display: inline-flex;
+  gap: 56px;
+  height: 64px;
+  margin-left: 49px;
+  margin-top: 18px;
+  position: relative;
+  width: 423px;
+}
+
+.frame {
+  align-items: center;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 10px;
+  height: 64px;
+  justify-content: center;
+  padding: 10px;
+  position: relative;
+}
+
+.text-3 {
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.frame-1 {
+  align-items: flex-start;
+  display: inline-flex;
+  flex: 0 0 auto;
+  position: relative;
+}
+
+.frame-232 {
+  height: 39px;
+  margin-left: 371px;
+  margin-top: 36px;
+  position: relative;
+  width: 423px;
+}
+
+.view-33 {
+  display: flex;
+  height: 24px;
+  margin-left: 42px;
+  margin-top: 38px;
+  width: 128px;
+}
+
+.text-20 {
+  flex: 1;
+  white-space: nowrap;
+  width: 128px;
+}
+
+.flex-container {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+}
+
+.number-2 {
+  letter-spacing: 0;
+  line-height: normal;
+  margin-top: -1.00px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.text-9 {
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.text-1-3 {
+  letter-spacing: 0;
+  line-height: normal;
+  margin-top: -1.00px;
+  position: relative;
+}
+
+.text_label-2 {
+  letter-spacing: 0;
+  line-height: normal;
+  margin-top: -1.00px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+:root {
+  --black: #000000;
+  --blueberry: #4994f1;
+  --chicago: #5c5c5c;
+  --em7h15: #9b9b9b;
+  --fuscous-gray: #515151;
+  --mercury: #e7e7e7;
+  --white: #ffffff;
+
+  --font-size-l: 20px;
+  --font-size-m: 18px;
+  --font-size-s: 16px;
+  --font-size-xl: 26px;
+  --font-size-xxl: 32px;
+
+  --font-family-pretendard_variable-light: "Pretendard Variable-Light", Helvetica;
+  --font-family-pretendard_variable-medium: "Pretendard Variable-Medium", Helvetica;
+  --font-family-pretendard_variable-regular: "Pretendard Variable-Regular", Helvetica;
+  --font-family-pretendard_variable-semibold: "Pretendard Variable-SemiBold", Helvetica;
+}
+.pretendardvariable-regular-normal-black-18px {
+  color: var(--black);
+  font-family: var(--font-family-pretendard_variable-regular);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.pretendardvariable-regular-normal-white-20px {
+  color: var(--white);
+  font-family: var(--font-family-pretendard_variable-regular);
+  font-size: var(--font-size-l);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.pretendardvariable-regular-normal-black-20px {
+  color: var(--black);
+  font-family: var(--font-family-pretendard_variable-regular);
+  font-size: var(--font-size-l);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.pretendardvariable-light-black-20px {
+  color: var(--black);
+  font-family: var(--font-family-pretendard_variable-light);
+  font-size: var(--font-size-l);
+  font-style: normal;
+  font-weight: 300;
+}
+
+.pretendardvariable-regular-normal-fuscous-gray-18px {
+  color: var(--fuscous-gray);
+  font-family: var(--font-family-pretendard_variable-regular);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.pretendardvariable-regular-normal-star-dust-16px {
+  color: var(--em7h15);
+  font-family: var(--font-family-pretendard_variable-regular);
+  font-size: var(--font-size-s);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.pretendardvariable-regular-normal-white-16px {
+  font-family: var(--font-family-pretendard_variable-regular);
+  font-size: var(--font-size-s);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.pretendardvariable-medium-chicago-18px {
+  color: var(--chicago);
+  font-family: var(--font-family-pretendard_variable-medium);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 500;
+}
+
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+/* The following line is used to measure usage of this code. You can remove it if you want. */
+@import url("https://px.animaapp.com/66d08b39d824b3c6e4739bbb.66d08b3ad824b3c6e4739bbe.OWeC8Te.hcp.png");
+
+@font-face {
+  font-family: "Pretendard Variable-SemiBold";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/PretendardVariable.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Pretendard Variable-Medium";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/PretendardVariable.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Pretendard Variable-Light";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/PretendardVariable.ttf") format("truetype");
+}
+
+
+.screen a {
+  display: contents;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+

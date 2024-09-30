@@ -1,0 +1,985 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+/* The following line is used to measure usage of this code. You can remove it if you want. */
+@import url("https://px.animaapp.com/66d08b39d824b3c6e4739bbb.66d08b3ad824b3c6e4739bbe.OWeC8Te.hcp.png");
+
+@font-face {
+  font-family: "Pretendard Variable-Light";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/PretendardVariable.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Pretendard Variable-SemiBold";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/PretendardVariable.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Pretendard Variable-Medium";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/PretendardVariable.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Pretendard Variable-Regular";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/PretendardVariable.ttf") format("truetype");
+}
+
+
+.screen a {
+  display: contents;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --black: #000000;
+  --chicago: #5c5c5c;
+  --concrete: #f2f2f2;
+  --fuscous-gray: #565656;
+  --fuscous-gray-2: #505050;
+  --gwzas9: #9b9b9b;
+  --hawkes-blue: #d3e5ff;
+  --heavy-metal: #2c2c2c;
+  --mercury: #e7e7e7;
+  --pink-swan: #b8b8b8;
+  --white: #ffffff;
+
+  --font-size-l: 16px;
+  --font-size-m: 14px;
+  --font-size-xl: 18px;
+  --font-size-xxl: 20px;
+  --font-size-xxxl: 22px;
+  --font-size-xxxxl: 28px;
+
+  --font-family-pretendard_variable-light: "Pretendard Variable-Light", Helvetica;
+  --font-family-pretendard_variable-medium: "Pretendard Variable-Medium", Helvetica;
+  --font-family-pretendard_variable-regular: "Pretendard Variable-Regular", Helvetica;
+  --font-family-pretendard_variable-semibold: "Pretendard Variable-SemiBold", Helvetica;
+}
+.pretendardvariable-medium-heavy-metal-14px {
+  color: var(--heavy-metal);
+  font-family: var(--font-family-pretendard_variable-medium);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 500;
+}
+
+.pretendardvariable-medium-black-22px {
+  color: var(--black);
+  font-family: var(--font-family-pretendard_variable-medium);
+  font-size: var(--font-size-xxxl);
+  font-style: normal;
+  font-weight: 500;
+}
+
+.pretendardvariable-light-black-20px {
+  color: var(--black);
+  font-family: var(--font-family-pretendard_variable-light);
+  font-size: var(--font-size-xxl);
+  font-style: normal;
+  font-weight: 300;
+}
+
+.pretendardvariable-regular-normal-black-20px {
+  color: var(--black);
+  font-family: var(--font-family-pretendard_variable-regular);
+  font-size: var(--font-size-xxl);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.pretendardvariable-regular-normal-star-dust-16px {
+  color: var(--gwzas9);
+  font-family: var(--font-family-pretendard_variable-regular);
+  font-size: var(--font-size-l);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.pretendardvariable-medium-fuscous-gray-18px {
+  color: var(--fuscous-gray);
+  font-family: var(--font-family-pretendard_variable-medium);
+  font-size: var(--font-size-xl);
+  font-style: normal;
+  font-weight: 500;
+}
+
+.pretendardvariable-medium-fuscous-gray-18px-2 {
+  color: var(--fuscous-gray-2);
+  font-family: var(--font-family-pretendard_variable-medium);
+  font-size: var(--font-size-xl);
+  font-style: normal;
+  font-weight: 500;
+}
+
+.pretendardvariable-regular-normal-white-16px {
+  font-family: var(--font-family-pretendard_variable-regular);
+  font-size: var(--font-size-l);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.pretendardvariable-medium-chicago-18px {
+  color: var(--chicago);
+  font-family: var(--font-family-pretendard_variable-medium);
+  font-size: var(--font-size-xl);
+  font-style: normal;
+  font-weight: 500;
+}
+
+.pretendardvariable-medium-heavy-metal-18px {
+  color: var(--heavy-metal);
+  font-family: var(--font-family-pretendard_variable-medium);
+  font-size: var(--font-size-xl);
+  font-style: normal;
+  font-weight: 500;
+}
+
+/* screen - u4370u4460u4363u4463u4523u4352u4449u4363u4469u45362 */
+
+.u4370u4460u4363u4463u4523u4352u4449u4363u4469u45362 {
+  align-items: flex-start;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  gap: 96px;
+  height: 100%; /* 고정된 높이를 100%로 변경 */
+  width: 100%;  /* 고정된 너비를 100%로 변경 */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* 화면의 중앙에 고정 */
+  overflow-y: auto; /* 세로 스크롤 활성화 */
+  overflow-x: hidden; /* 가로 스크롤 제거 */
+}
+
+.view-7 {
+  background-color: var(--white);
+  height: 101px;
+  position: relative;
+  max-width: 100%; /* 화면 크기에 맞춰서 너비 조정 */
+  margin: 0 auto; /* 가운데 정렬 */
+}
+
+.flex-row {
+  align-items: center;
+  display: flex;
+  height: 64px;
+  justify-content: space-between; /* 양쪽 끝에 이미지와 로그인/회원가입을 두고 중앙에 메뉴를 위치 */
+  width: 100%;
+  position: relative;
+  top: 18px;
+}
+
+.layer_1 {
+  height: 51px;
+  margin-top: 5.0px;
+  width: 147px;
+}
+
+.frame-5 {
+  align-items: center;
+  display: inline-flex;
+  gap: 56px;
+  margin-left: 49px;
+  position: relative;
+}
+
+.frame {
+  align-items: center;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 10px;
+  height: 64px;
+  justify-content: center;
+  padding: 10px;
+  position: relative;
+}
+
+.text-1 {
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.frame-1 {
+  align-items: flex-start;
+  display: inline-flex;
+  flex: 0 0 auto;
+  position: relative;
+}
+
+.frame-232 {
+  height: 39px;
+  margin-left: 371px;
+  margin-top: 11.0px;
+  position: relative;
+  width: 423px;
+}
+
+.view-8 {
+  display: flex;
+  height: 24px;
+  margin-left: 42px;
+  width: 128px;
+}
+
+.text-2 {
+  flex: 1;
+  white-space: nowrap;
+  width: 128px;
+}
+
+.view-9 {
+  align-items: center;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 173px;
+  margin-bottom: -697.00px;
+  position: relative;
+  width: 100%; /* 너비를 화면에 맞게 설정 */
+  max-width: 1920px; /* 최대 너비는 1920px로 제한 */
+  margin: ; /* 가운데 정렬 */
+}
+
+.x {
+  align-items: center;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 216px;
+  position: relative;
+  width: 735px;
+}
+
+.view-10 {
+  align-items: center;
+  display: inline-flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 26px;
+  margin-left: -33.50px;
+  margin-right: -33.50px;
+  position: relative;
+}
+
+.view-11 {
+  align-items: center;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 3px;
+  position: relative;
+  width: 537px;
+}
+
+.view {
+  align-items: center;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 10px;
+  padding: 10px;
+  position: relative;
+}
+
+.text_label {
+  color: var(--black);
+  font-family: var(--font-family-pretendard_variable-semibold);
+  font-size: var(--font-size-xxxxl);
+  font-weight: 600;
+  margin-top: -1.00px;
+}
+
+.view-12 {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 29px;
+  height: 505px;
+  position: relative;
+  width: 802px;
+}
+
+.view-1 {
+  align-items: flex-end;
+  display: flex;
+  flex: 0 0 auto;
+  gap: 16px;
+  position: relative;
+  width: 761.5px;
+  align-items: center; /* 자식 요소들을 수직 방ㄹ향으로 중앙 정렬 */
+  width: 100%; /* 부모의 전체 너비 사용 */
+}
+
+.view-13 {
+  align-items: flex-end;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 63px;
+  position: relative;
+}
+
+.frame-28 {
+  align-items: center;
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+  position: relative;
+  width: 97px;
+}
+
+.text_label-4 {
+  margin-top: -1.00px;
+}
+
+.frame-506-1 {
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-color: var(--pink-swan);
+  height: 41px;
+  position: relative;
+  width: 470px;
+}
+
+.frame-506-1 input {
+  border: none;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  outline: none;
+  font-size: 16px;
+  background-color: transparent; /* 입력 필드 배경 투명 */
+  color: inherit; /* 상속된 색상 적용 */
+}
+
+.view-14 {
+  align-items: center;
+  background-color: var(--hawkes-blue);
+  border-radius: 11px;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 10px;
+  justify-content: center;
+  padding: 10px;
+  position: relative;
+  border: none;
+  cursor: pointer; /* 버튼처럼 보이게 마우스 포인터 변경 */
+}
+
+.view-14:hover {
+  background-color: #3578e5;/* 호버 시 색상 변경 */
+}
+
+.text-3 {
+  margin-top: -1.00px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.view-2 {
+  align-items: flex-end;
+  display: flex;
+  flex: 0 0 auto;
+  justify-content: space-between;
+  position: relative;
+  width: 631.5px;
+}
+
+.text-4 {
+  margin-top: -1.00px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.frame-506 {
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-color: var(--pink-swan);
+  height: 46px;
+  position: relative;
+  width: 470px;
+}
+
+.frame-506 input {
+  border: none;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  outline: none;
+  font-size: 16px;
+  background-color: transparent; /* 입력 필드 배경 투명 */
+  color: inherit; /* 상속된 색상 적용 */
+}
+
+.text_label-5 {
+  margin-right: -43.00px;
+  margin-top: -1.00px;
+}
+
+.text_label-6 {
+  margin-top: -1.00px;
+}
+
+.view-15 {
+  align-items: center;
+  display: flex;
+  gap: 61px;
+  height: 46px;
+  position: relative;
+  width: 631.5px;
+}
+
+.text_label-7 {
+  margin-top: -1.00px;
+}
+
+.view-3 {
+  align-items: flex-end;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 68px;
+  position: relative;
+}
+
+.text_label-8 {
+  margin-top: -1.00px;
+}
+
+.view-4 {
+  align-items: center;
+  background-color: var(--hawkes-blue);
+  border-radius: 11px;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 10px;
+  justify-content: center;
+  margin-right: -7.50px;
+  padding: 10px;
+  position: relative;
+  border: none; /* 기본 버튼 스타일 제거 */
+  cursor: pointer; /* 버튼처럼 보이게 마우스 포인터 변경 */
+}
+
+.view-4:hover {
+  background-color: #3578e5; /* 호버 시 색상 변경 */
+}
+
+.text-5 {
+  margin-top: -1.00px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.text_label-9 {
+  margin-top: -1.00px;
+}
+
+.text-6 {
+  margin-top: -1.00px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.view-16 {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 79px;
+  width: 100%;
+}
+
+.view-17 {
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 8px;
+  position: relative;
+  width: 100%;
+}
+
+.frame-306 {
+  align-items: center;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 64px;
+  position: relative;
+}
+
+.frame-30 {
+  align-items: center;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 11px;
+  position: relative;
+}
+
+.view-5 {
+  align-items: center;
+  background-color: var(--white); /* 기본적으로 큰 원은 흰색 */
+  border-radius: 17px;
+  border: 2px solid #ccc; /* 처음 상태에서 회색 테두리 */
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 10px;
+  height: 34px;
+  padding: 10px;
+  position: relative;
+  cursor: pointer; /* 클릭 가능하도록 설정 */
+  transition: background-color 0.3s ease, border 0.3s ease; /* 색상과 테두리 전환 효과 */
+}
+
+.ellipse-19 {
+  background-color: var(--white); /* 가운데 작은 원은 항상 흰색 */
+  border-radius: 50%; /* 완전한 원 형태 */
+  height: 14px;
+  width: 14px;
+  position: relative;
+  transition: background-color 0.3s ease; /* 색상 전환 효과 */
+}
+
+/* 기본 체크박스 숨기기 */
+.custom-checkbox {
+  display: none;
+}
+
+/* 체크박스가 체크된 경우 */
+.custom-checkbox:checked + .ellipse-19 {
+  background-color: var(--white); /* 작은 원은 여전히 흰색 */
+}
+
+.custom-checkbox:checked ~ .view-5 {
+  background-color: var(--hawkes-blue); /* 큰 원은 하늘색 */
+  border-color: var(--hawkes-blue); /* 테두리를 하늘색으로 변경 */
+}
+.frame-301 {
+  align-items: center;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 10px;
+  justify-content: center;
+  padding: 10px;
+  position: relative;
+}
+
+.text-7 {
+  margin-top: -1.00px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.text-8 {
+  margin-top: -1.00px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.frame-307 {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  gap: 64px;
+  position: relative;
+  width: 100%;
+}
+
+.sns {
+  letter-spacing: 0;
+  line-height: normal;
+  margin-top: -1.00px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.text-9 {
+  margin-top: -1.00px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.view-18 {
+  align-items: center;
+  background-color: var(--hawkes-blue);
+  border-radius: 64px;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 10px;
+  justify-content: center;
+  padding: 10px 69px;
+  position: relative;
+  border: none; /* 기본 버튼 스타일 제거 */
+  cursor: pointer; /* 버튼처럼 보이게 마우스 포인터 변경 */
+}
+
+.view-18:hover {
+  background-color: #3578e5; /* 호버 시 색상 변경 */
+}
+
+.text-10 {
+  margin-top: -1.00px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.view-19 {
+  align-items: flex-start;
+  align-self: stretch;
+  background-color: #f4f4f4;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  height: 256px;
+  padding: 47px 363px;
+  position: relative;
+  width: 100%;
+}
+
+.frame-2 {
+  align-items: center;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 10px;
+  justify-content: center;
+  position: relative;
+}
+
+.flex-container-7611480 {
+  align-items: flex-start;
+  display: inline-flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+.text {
+  align-self: stretch;
+  position: relative;
+}
+
+.span1 {
+  color: #7f7f7f;
+  font-family: var(--font-family-pretendard_variable-medium);
+  font-size: var(--font-size-l);
+  font-weight: 500;
+}
+
+.frame-29 {
+  align-items: center;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 42px;
+  position: relative;
+}
+
+.text-11 {
+  color: #2f2f2f;
+  font-family: var(--font-family-pretendard_variable-medium);
+  font-size: var(--font-size-xl);
+  font-weight: 500;
+  margin-top: -1.00px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.text-12 {
+  margin-top: -1.00px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.text-13 {
+  margin-top: -1.00px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.text-14 {
+  margin-top: -1.00px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.copyright-ya-eotta {
+  letter-spacing: 0;
+  line-height: normal;
+  margin-top: -1.00px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.view-20 {
+  align-items: center;
+  display: inline-flex;
+  gap: 10px;
+  justify-content: center;
+  left: 850px;
+  padding: 6px 10px;
+  position: absolute;
+  top: 699px;
+}
+
+.text-15 {
+  margin-top: -1.00px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.view-21 {
+  margin-top: 5px;  /* 입력 필드와 문구 사이의 간격 */
+  text-align: center;  /* 텍스트를 중앙에 정렬 */
+  width: 100%;  /* 부모 너비를 기준으로 중앙 정렬 */
+  color: red;  /* 경고 문구 색상 */
+  font-size: 14px;  /* 경고 문구 크기 */
+}
+
+.text-16 {
+  margin-top: -1.00px;
+  position: relative;
+  white-space: normal; /* 텍스트가 여러 줄일 경우 줄바꿈 가능 */
+  width: 100%; /* 부모 요소의 전체 너비 사용 */
+  text-align: center; /* 텍스트를 중앙에 정렬 */
+}
+
+.view-22 {
+  align-items: center;
+  display: flex; /* 자식 요소들을 중앙에 정렬하기 위해 flex 사용 */
+  justify-content: center; /* 자식 요소를 중앙에 배치 */
+  padding: 6px 10px;
+  position: relative; /* absolute 제거로 자연스러운 배치 */
+  width: 100%; /* 부모 요소의 전체 너비 사용 */
+  margin: 0 auto; /* 중앙 정렬 */
+  top: auto; /* top 값 제거 */
+}
+
+
+.text-17 {
+  margin-top: -1.00px;
+  position: relative;
+  white-space: nowrap; /* 텍스트 줄바꿈 가능 */
+  width: 100%; /* 부모 요소의 전체 너비 사용 */
+  text-align: center; /* 텍스트를 중앙 정렬 */
+}
+
+.view-23 {
+  align-items: center;
+  display: flex; /* 자식 요소들을 중앙에 정렬하기 위해 flex 사용 */
+  justify-content: center; /* 자식 요소를 중앙에 배치 */
+  padding: 6px 10px;
+  position: relative; /* absolute 제거로 자연스러운 배치 */
+  width: 100%; /* 부모 요소의 전체 너비 사용 */
+  margin: 0 auto; /* 중앙 정렬 */
+  top: auto; /* top 값 제거 */
+}
+
+.text-18 {
+  margin-top: -1.00px;
+  position: relative;
+  white-space: nowrap; /* 텍스트 줄바꿈 가능 */
+  width: 100%; /* 부모 요소의 전체 너비 사용 */
+  text-align: center; /* 텍스트를 중앙 정렬 */
+}
+
+.frame-462 {
+  display: flex;
+  align-items: center; /* 숫자와 아이콘을 수직 중앙 정렬 */
+  justify-content: space-between; /* 숫자와 아이콘 사이를 가로로 정렬 */
+  gap: 5px; /* 각 숫자와 아이콘 사이의 간격 */
+  width: 163px; /* 고정 너비 */
+  position: relative; /* absolute 제거 */
+  top: auto; /* top 값 제거 */
+  left: auto; /* left 값 제거 */
+}
+
+.frame-461 {
+  align-items: center;
+  align-self: stretch;
+  background-color: var(--concrete);
+  border: 1px solid;
+  border-color: var(--mercury);
+  border-radius: 11px;
+  display: flex;
+  flex: 0 0 auto;
+  justify-content: space-between;
+  padding: 14px 26px;
+  position: relative;
+  width: 163px;
+}
+
+.select-hidden {
+    appearance: none; /* 기본 스타일 제거 */
+    background-color: transparent; /* 배경색 투명 */
+    border: none; /* 테두리 제거 */
+    width: 100%; /* 너비를 100%로 설정 */
+    height: 100%; /* 높이를 100%로 설정 */
+    position: absolute; /* 위치를 절대적으로 설정 */
+    top: 0; /* 상단에 맞추기 */
+    left: 0; /* 좌측에 맞추기 */
+    opacity: 0; /* 완전히 투명하게 */
+    cursor: pointer; /* 커서를 포인터로 변경 */
+}
+
+.number {
+  white-space: nowrap;
+}
+
+.icbaseline-expand-more {
+  height: 24px;
+  position: relative;
+  width: 24px;
+}
+
+.view-6::-webkit-scrollbar {
+  display: none;
+  width: 0;
+}
+
+.view-6 {
+  align-items: flex-start;
+  background-color: var(--white);
+  border: 1px solid;
+  border-color: var(--pink-swan);
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  height: 275px;
+  overflow: hidden;
+  overflow-y: scroll;
+  position: relative;
+  width: 162px;
+}
+
+.frame-3 {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  gap: 7.5px;
+  height: 33px;
+  justify-content: flex-end;
+  position: relative;
+  width: 100%;
+}
+
+.number-1 {
+  margin-top: -1.00px;
+}
+
+.line-44 {
+  background-image: url(../img/line-44-8@2x.png);
+  background-position: 50% 50%;
+  background-size: cover;
+  height: 1px;
+  margin-bottom: -1.00px;
+  position: relative;
+  width: 162px;
+}
+
+.frame-358 {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  gap: 7.5px;
+  height: 33px;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+}
+
+.frame-462-1 {
+  left: 97; /* 위치를 조정하여 부모 컨테이너 안에 보이도록 함 */
+}
+
+.number-2 {
+  white-space: nowrap;
+}
+
+.number-3 {
+  margin-top: -1.00px;
+}
+
+.frame-462-2 {
+  left: 901px;
+}
+
+.number-4 {
+  white-space: nowrap;
+}
+
+.number-5 {
+  margin-top: -1.00px;
+}
+
+.frame-462-3 {
+  display: flex;
+  align-items: center; /* 숫자와 아이콘을 수직 중앙 정렬 */
+  justify-content: space-between; /* 숫자와 아이콘 사이를 가로로 정렬 */
+  gap: 5px; /* 각 숫자와 아이콘 사이의 간격 */
+  width: 163px; /* 고정 너비 */
+  margin-left: -45px;
+}
+
+.number-6 {
+  letter-spacing: 0;
+  line-height: normal;
+  position: relative;
+  width: fit-content;
+}
+
+.text-19 {
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.text_label-10 {
+  letter-spacing: 0;
+  line-height: normal;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.x01-90 {
+  letter-spacing: 0;
+  line-height: normal;
+  margin-top: -1.00px;
+  position: relative;
+  width: fit-content;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  overflow: hidden; /* 화면 밖 요소가 보이지 않게 함 */
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

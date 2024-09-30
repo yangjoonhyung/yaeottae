@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8" />
+    <!--<meta name=description content="This site was generated with Anima. www.animaapp.com"/>-->
+    <!-- <link rel="shortcut icon" type=image/png href="https://animaproject.s3.amazonaws.com/home/favicon.png" /> -->
+    <meta name="viewport" content="width=1920, maximum-scale=1.0" />
+    <link th:href="@{/css/reviewSave.css}"
+          href="../css/reviewSave.css" rel="stylesheet">
+    <meta name="og:type" content="website" />
+    <meta name="twitter:card" content="photo" />
+</head>
+<body style="margin: 0; background: #ffffff">
+<input type="hidden" id="anPageName" name="page" value="u4357u4469u4359u4466u4364u4449u4520u4361u4453u4540" />
+<div class="u4357u4469u4359u4466u4364u4449u4520u4361u4453u4540 screen">
+    <div class="view-1">
+        <img class="layer_1" src="/img/layer-1@2x.png" alt="Layer_1" />
+        <div class="frame-5">
+            <div class="frame" th:onclick="|location.href='@{/}'|"><div class="text text-4 pretendardvariable-light-black-20px">홈</div></div>
+            <div class="frame" th:onclick="|location.href='@{/restaurant/restaurants}'|"><div class="text text-4 pretendardvariable-light-black-20px">식당</div></div>
+            <div class="frame-1">
+                <div class="frame"><div class="text text-4 pretendardvariable-light-black-20px">카페</div></div>
+            </div>
+            <div class="frame-1" th:onclick="|location.href='@{/myPage}'|">
+                <div class="frame"><div class="text text-4 pretendardvariable-light-black-20px">마이페이지</div></div>
+            </div>
+        </div>
+        <img class="frame-232" src="/img/frame-232@2x.png" alt="Frame 232" th:onclick="|location.href='@{/search}'|"/>
+        <div class="view-2" th:onclick="|location.href='@{/login}'|">
+            <div class="text-11 text-4 pretendardvariable-light-black-20px">로그인/회원가입</div>
+        </div>
+    </div>
+    <div class="frame-573">
+        <form th:action method="post">
+            <input type="hidden" id="reviewPoint" name="reviewPoint" value="0" />
+        <div class="frame-572">
+            <div class="view-3">
+                <div class="flex-col">
+                    <button class="view-4">
+                        <div class="text-1-1">목록보기</div>
+                    </button>
+                    <div class="view-container">
+                        <div class="view-5"><div class="text_label">리뷰 작성</div></div>
+                        <div class="view-6">
+                            <div class="view-7">
+                                <div class="view-item"><div class="text-2 text-4">평점</div></div>
+                                <div class="view-item"><div class="text-3 text-4">5점</div></div>
+                            </div>
+                            <div class="view-8">
+                                <img class="star" src="/img/star-2@2x.png" alt="Star 2" data-checked="false" />
+                                <img class="star" src="/img/star-2@2x.png" alt="Star 10" data-checked="false" />
+                                <img class="star" src="/img/star-2@2x.png" alt="Star 12"  data-checked="false" />
+                                <img class="star" src="/img/star-11@2x.png" alt="Star 11" data-checked="false" />
+                                <img class="star" src="/img/star-2@2x.png" alt="Star 13" data-checked="false" />
+                            </div>
+                        </div>
+                        <!-- <div class="view">
+                            <div class="text-1 text-4"></div>
+                        </div> -->
+                        <button type="submit" class="view">
+                            <div class="text-1 text-4">등록하기</div>
+                        </button>
+                    </div>
+                    <img class="line-39-stroke" src="/img/line-39.png" alt="Line 39 (Stroke)" />
+                </div>
+            </div>
+            <div class="view-9">
+                <div class="overlap-group">
+                    <div class="frame-516">
+                        <input type="text" id="reviewName" name="reviewName" class="input-text" placeholder="제목을 작성해 주세요." />
+                    </div>
+                    <div class="view-10">
+                        <div class="text-7 text-4"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="frame-575">
+                <div class="frame-576">
+                    <img class="mdipencil" src="/img/mdi-pencil@2x.png" alt="mdi:pencil" />
+                    <textarea class="input2" id="reviewDetail" name="reviewDetail" placeholder="리뷰 내용을 작성해 주세요. 주제와 관련성 없는 글은 삼가해주세요."></textarea>
+                </div>
+                <div class="view-11">
+                    <p class="text-9 text-4">.</p>
+                </div>
+            </div>
+        </div>
+        </form>
+    </div>
+</div>
+<script>
+    document.querySelectorAll('.view-8 .star').forEach(function(star, index, stars) {
+        // 처음에는 모든 별이 빈 별로 시작하도록 설정
+        star.src = "/img/unchecked-star.png"; // 빈 별 이미지 경로
+
+        star.addEventListener('click', function() {
+            let reviewPoint = 0; // 기본 0점으로 시작
+
+            // 클릭한 별까지 모두 채움 (왼쪽부터 클릭한 별까지 빈 별을 채워진 별로 변경)
+            for (let i = 0; i <= index; i++) {
+                stars[i].classList.add('checked');
+                stars[i].setAttribute('data-checked', 'true');
+                // 별이 클릭되면 채워진 별 이미지로 변경
+                stars[i].src="../img/star-2@2x.png"; // 채워진 별 이미지 경로
+            }
+
+            // 클릭한 별 이후부터는 빈 별로 표시 (오른쪽 별은 채워지지 않음)
+            for (let i = index + 1; i < stars.length; i++) {
+                stars[i].classList.remove('checked');
+                stars[i].setAttribute('data-checked', 'false');
+                // 별이 해제되면 빈 별 이미지로 변경
+                stars[i].src = "/img/unchecked-star.png"; // 빈 별 이미지 경로
+            }
+
+            // 평점은 클릭한 별의 인덱스 + 1, 0번째 별부터 1점으로 시작
+            reviewPoint = index + 1;
+
+            // 숨겨진 input 필드에 평점 값을 설정
+            document.getElementById('reviewPoint').value = reviewPoint;
+        });
+    });
+</script>
+</body>
+</html>

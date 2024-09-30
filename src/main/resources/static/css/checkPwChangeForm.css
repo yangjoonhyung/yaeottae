@@ -1,0 +1,583 @@
+/* screen - u4359u4469u4358u4469u4527u4359u4453u4523u4370u4457-u4359u4455u4523u4352u4455u4540 */
+
+.u4359u4469u4358u4469u4527u4359u4453u4523u4370u4457-u4359u4455u4523u4352u4455u4540 {
+  align-items: center;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  gap: 162px;
+  height: 1080px;
+  position: relative;
+}
+
+.view-3 {
+  background-color: var(--white);
+  height: 101px;
+  position: relative;
+  width: 1920px;
+}
+
+.flex-row {
+  align-items: center;
+  display: flex;
+  height: 64px;
+  left: 144px;
+  min-width: 1583px;
+  position: relative;
+  top: 18px;
+}
+
+.layer_1 {
+  height: 51px;
+  margin-top: 5.0px;
+  width: 147px;
+}
+
+.frame-5 {
+  align-items: center;
+  display: inline-flex;
+  gap: 56px;
+  margin-left: 49px;
+  position: relative;
+}
+
+.frame {
+  align-items: center;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 10px;
+  height: 64px;
+  justify-content: center;
+  padding: 10px;
+  position: relative;
+}
+
+.text {
+  letter-spacing: 0;
+  line-height: normal;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.frame-1 {
+  align-items: flex-start;
+  display: inline-flex;
+  flex: 0 0 auto;
+  position: relative;
+}
+
+.frame-232 {
+  height: 39px;
+  margin-left: 371px;
+  margin-top: 11.0px;
+  position: relative;
+  width: 423px;
+}
+
+.view-4 {
+  display: flex;
+  height: 24px;
+  margin-left: 42px;
+  width: 128px;
+}
+
+.text-2 {
+  flex: 1;
+  width: 128px;
+}
+
+.view-5 {
+  align-items: center;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 38px;
+  position: relative;
+  width: 996px;
+}
+
+.view-6 {
+  align-items: center;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 10px;
+  justify-content: center;
+  padding: 10px;
+  position: relative;
+}
+
+.text_label {
+  color: var(--black);
+  font-family: var(--font-family-pretendard_variable-semibold);
+  font-size: var(--font-size-xl);
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-top: -1.00px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.view-7 {
+  height: 58px;
+  position: relative;
+  width: 990px;
+}
+
+.line-26 {
+  height: 2px;
+  left: 0;
+  position: absolute;
+  top: -2px;
+  width: 990px;
+}
+
+.view-container {
+  align-items: flex-start;
+  display: flex;
+  height: 58px;
+  left: 0;
+  min-width: 990px;
+  position: absolute;
+  top: 0;
+}
+
+.view-8 {
+  align-items: center;
+  background-color: #e4e4e4;
+  border: 1px solid;
+  border-color: #d7d7d7;
+  display: flex;
+  gap: 10px;
+  height: 58px;
+  justify-content: center;
+  padding: 10px;
+  position: relative;
+  width: 495px;
+  cursor: pointer; /* 클릭 가능하게 변경 */
+  transition: background-color 0.3s ease; /* 호버 시 배경색 변화 애니메이션 */
+}
+
+  .view-8:hover {
+    background-color: #cccccc; /* 호버 시 배경색 변경 */
+}
+
+  .view-8:active {
+    background-color: #b0b0b0; /* 클릭 시 배경색 변경 */
+}
+
+.text-3 {
+  color: #7b7b7b;
+  font-family: var(--font-family-pretendard_variable-medium);
+  font-size: var(--font-size-l);
+  font-weight: 500;
+  position: relative;
+  width: fit-content;
+}
+
+.view-9 {
+  align-items: center;
+  display: flex;
+  gap: 10px;
+  height: 58px;
+  justify-content: center;
+  padding: 10px;
+  position: relative;
+  width: 495px;
+}
+
+.text_label-1 {
+  color: #1267cf;
+}
+
+.view-10 {
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 207px;
+  padding: 11px 27px;
+  position: relative;
+  width: 100%;
+}
+
+.view-11 {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 996px;
+}
+
+.view-12 {
+  background-color: #f6f6f6;
+  height: 207px;
+  position: relative;
+  width: 279px;
+}
+
+.view-13 {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 69px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 996px;
+}
+
+.line-27 {
+  align-self: stretch;
+  height: 1px;
+  margin-top: -1.00px;
+  object-fit: cover;
+  position: relative;
+  width: 100%;
+}
+
+.line-2 {
+  align-self: stretch;
+  height: 1px;
+  object-fit: cover;
+  position: relative;
+  width: 100%;
+}
+
+.view-14 {
+  align-items: flex-start;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 22px;
+  position: relative;
+  width: 798px;
+}
+
+.view {
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  gap: 229px;
+  position: relative;
+  width: 100%;
+}
+
+.view-1 {
+  align-items: center;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 10px;
+  justify-content: center;
+  padding: 10px 0px;
+  position: relative;
+}
+
+.text-1 {
+  margin-top: -1.00px;
+  position: relative;
+  width: fit-content;
+}
+
+.frame-508 {
+  border: 1px solid var(--cloud);  /* 테두리 색상 */
+  border-radius: 11px;  /* 모서리 둥글게 */
+  height: 47px;  /* 상자의 높이 */
+  width: 511px;  /* 상자의 너비 */
+  position: relative;  /* 내부 요소 위치를 절대적으로 설정하기 위한 상대 위치 */
+  display: flex;  /* 플렉스 레이아웃 */
+  align-items: center;  /* 세로 중앙 정렬 */
+  background-color: white;  /* 배경색 설정 */
+  box-sizing: border-box;  /* 패딩을 포함한 크기 계산 */
+  z-index: 1;  /* z-index를 추가하여 다른 요소와의 겹침 방지 */
+}
+
+.frame-508 input {
+  position: absolute;  /* input 요소를 상자 전체에 덮기 위한 절대 위치 설정 */
+  top: 0;
+  left: 0;
+  width: 100%;  /* 상자의 전체 너비를 덮음 */
+  height: 100%;  /* 상자의 전체 높이를 덮음 */
+  padding: 0 15px;  /* 좌우 padding 설정 */
+  border: none;  /* 테두리 제거 */
+  outline: none;  /* 입력 필드 선택 시 테두리 없음 */
+  font-size: 16px;  /* 텍스트 크기 */
+  background-color: transparent;  /* 배경 투명 */
+  color: black;  /* 텍스트 색상 */
+  box-sizing: border-box;  /* 패딩을 포함한 크기 계산 */
+  z-index: 2;  /* input 요소가 다른 모든 요소 위에 오도록 z-index를 설정 */
+}
+
+.frame-508 input::placeholder {
+   color: #c6c6c6;
+   font-family: var(--font-family-pretendard_variable-regular);
+   font-size: var(--font-size-m);
+   font-weight: 400;
+   margin-top: -1.00px;
+   position: relative;
+   width: fit-content;
+   letter-spacing: 0;
+   line-height: normal;
+   white-space: nowrap;
+ }
+
+.view-15 {
+  align-items: center;
+  display: flex;
+  gap: 10px;
+  height: 44px;
+  left: 287px;
+  padding: 10px;
+  position: absolute;
+  top: 2px;
+  width: 243px;
+}
+
+.view-16 {
+  align-items: center;
+  background-color: #d3e5ff;
+  border-radius: 11px;
+  display: inline-flex;
+  gap: 10px;
+  justify-content: center;
+  left: 825px;
+  padding: 10px;
+  position: absolute;
+  top: 3px;
+  cursor: pointer; /* 클릭 가능하게 변경 */
+  border: none; /* 기본 버튼 테두리 제거 */
+}
+
+.view-16:focus {
+  outline: none; /* 클릭 시 생기는 아웃라인 제거 */
+}
+
+.view-16:hover {
+  background-color: #3578e5; /* hover 시 배경색 변경 (선택사항) */
+}
+
+.text-6 {
+  color: #505050;
+  font-family: var(--font-family-pretendard_variable-medium);
+  font-size: var(--font-size-s);
+  font-weight: 500;
+  margin-top: -1.00px;
+  position: relative;
+  width: fit-content;
+}
+
+.frame-508-1 {
+  width: 511px;
+}
+
+.view-2 {
+  align-items: center;
+  display: flex;
+  gap: 10px;
+  height: 44px;
+  margin-top: 2px;
+  padding: 10px;
+  position: relative;
+  width: 10px;
+}
+
+.view-17 {
+  align-items: flex-start;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 210px;
+  position: relative;
+}
+
+.frame-508-2 {
+  width: 285px;
+}
+
+.view-18 {
+  align-items: center;
+  display: inline-flex;
+  gap: 10px;
+  justify-content: center;
+  left: 582px;
+  padding: 6px 10px;
+  position: absolute;
+  top: 7px;
+}
+
+.text-9 {
+  color: #565656;
+  font-family: var(--font-family-pretendard_variable-medium);
+  font-size: var(--font-size-s);
+  font-weight: 500;
+  margin-top: -1.00px;
+  position: relative;
+  width: fit-content;
+}
+
+.view-19 {
+  align-items: center;
+  background-color: #4994f1;
+  border-radius: 4px;
+  display: flex;
+  flex: 0 0 auto;
+  gap: 10px;
+  justify-content: center;
+  padding: 17px 224px;
+  position: relative;
+  width: 401px;
+  cursor: pointer; /* 클릭 가능한 느낌을 주기 위해 포인터로 변경 */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* 부드러운 배경색 및 변환 애니메이션 */
+}
+
+.view-19:hover {
+  background-color: #3578e5; /* 호버 시 배경색 변경 */
+  transition: background-color 0.3s ease; /* 부드러운 전환 효과 */
+}
+
+.text_label-2 {
+  color: var(--white);
+  margin-left: -71.50px;
+  margin-right: -71.50px;
+  margin-top: -1.00px;
+}
+
+.frame-508-3 {
+  border: 1px solid var(--cloud);  /* 테두리 색상 */
+  border-radius: 11px;  /* 모서리 둥글게 */
+  display: flex;
+  height: 47px;
+  overflow: hidden;
+  position: relative;
+  align-items: center;  /* 세로 가운데 정렬 */
+  padding: 0 15px;  /* 좌우 padding 설정 */
+  box-sizing: border-box;  /* 패딩을 포함한 크기 계산 */
+}
+
+.frame-508-3 input {
+  border: none;  /* 기본 테두리 제거 */
+  width: 290px;  /* 입력 필드가 상자의 너비를 모두 차지 */
+  height: 47px;  /* 입력 필드가 상자의 높이를 모두 차지 */
+  padding: 0;  /* padding을 없애서 입력 필드가 상자에 딱 맞도록 설정 */
+  outline: none;  /* 입력 필드 선택 시 테두리 없음 */
+  font-size: 16px;  /* 텍스트 크기 설정 */
+  background-color: transparent;  /* 배경색 투명 */
+  color: black;  /* 텍스트 색상 */
+  box-sizing: border-box;  /* padding을 포함한 크기 계산 */
+}
+
+.frame-508-3 input::placeholder {
+   color: #c6c6c6;
+   font-family: var(--font-family-pretendard_variable-regular);
+   font-size: var(--font-size-m);
+   font-weight: 400;
+   margin-top: -1.00px;
+   position: relative;
+   width: fit-content;
+   letter-spacing: 0;
+   line-height: normal;
+   white-space: nowrap;
+ }
+
+.text-4 {
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.text_label-3 {
+  font-family: var(--font-family-pretendard_variable-medium);
+  font-size: var(--font-size-l);
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: normal;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+/* The following line is used to measure usage of this code. You can remove it if you want. */
+@import url("https://px.animaapp.com/66d08b39d824b3c6e4739bbb.66d08b3ad824b3c6e4739bbe.OWeC8Te.hcp.png");
+
+@font-face {
+  font-family: "Pretendard Variable-Light";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/PretendardVariable.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Pretendard Variable-SemiBold";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/PretendardVariable.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Pretendard Variable-Medium";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/PretendardVariable.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Pretendard Variable-Regular";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/PretendardVariable.ttf") format("truetype");
+}
+
+
+.screen a {
+  display: contents;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --black: #000000;
+  --cloud: #c5c5c5;
+  --cloud-2: #c6c6c6;
+  --heavy-metal: #2c2c2c;
+  --white: #ffffff;
+
+  --font-size-l: 22px;
+  --font-size-m: 20px;
+  --font-size-s: 18px;
+  --font-size-xl: 28px;
+
+  --font-family-pretendard_variable-light: "Pretendard Variable-Light", Helvetica;
+  --font-family-pretendard_variable-medium: "Pretendard Variable-Medium", Helvetica;
+  --font-family-pretendard_variable-regular: "Pretendard Variable-Regular", Helvetica;
+  --font-family-pretendard_variable-semibold: "Pretendard Variable-SemiBold", Helvetica;
+}
+.pretendardvariable-light-black-20px {
+  color: var(--black);
+  font-family: var(--font-family-pretendard_variable-light);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 300;
+}
+
+.pretendardvariable-medium-heavy-metal-22px {
+  color: var(--heavy-metal);
+  font-family: var(--font-family-pretendard_variable-medium);
+  font-size: var(--font-size-l);
+  font-style: normal;
+  font-weight: 500;
+}
+
+.pretendardvariable-regular-normal-cloud-20px {
+  color: var(--cloud-2);
+  font-family: var(--font-family-pretendard_variable-regular);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 400;
+}

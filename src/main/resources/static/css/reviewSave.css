@@ -1,0 +1,547 @@
+/* screen - u4357u4469u4359u4466u4364u4449u4520u4361u4453u4540 */
+
+.u4357u4469u4359u4466u4364u4449u4520u4361u4453u4540 {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  min-height: 1080px;
+  min-width: 1920px;
+  width: 100%;
+}
+
+body {
+  overflow-x: hidden; /* 좌우 스크롤 방지 */
+}
+
+.view-1 {
+  background-color: #ffffff;
+  display: flex;
+  height: 101px;
+  left: calc(50.00% - 960px);
+  position: fixed;
+  top: 0;
+  width: 1920px;
+  z-index: 2;
+}
+
+.layer_1 {
+  height: 51px;
+  margin-left: 144px;
+  margin-top: 27px;
+  width: 147px;
+}
+
+.frame-5 {
+  align-items: center;
+  display: inline-flex;
+  gap: 56px;
+  height: 64px;
+  margin-left: 49px;
+  margin-top: 18px;
+  position: relative;
+  width: 423px;
+}
+
+.frame {
+  align-items: center;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 10px;
+  height: 64px;
+  justify-content: center;
+  padding: 10px;
+  position: relative;
+}
+
+.text {
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.frame-1 {
+  align-items: flex-start;
+  display: inline-flex;
+  flex: 0 0 auto;
+  position: relative;
+}
+
+.frame-232 {
+  height: 39px;
+  margin-left: 371px;
+  margin-top: 36px;
+  position: relative;
+  width: 423px;
+}
+
+.view-2 {
+  display: flex;
+  height: 24px;
+  margin-left: 42px;
+  margin-top: 38px;
+  width: 128px;
+}
+
+.text-11 {
+  flex: 1;
+  white-space: nowrap;
+  width: 128px;
+}
+
+.frame-573 {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  left: 310px;
+  padding: 10px;
+  position: relative;
+  top: 156px;
+  width: 1018px;
+  z-index: 1;
+}
+
+.frame-572 {
+  align-items: flex-end;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 23px;
+  position: relative;
+  width: 100%;
+}
+
+.view-3 {
+  height: 117px;
+  position: relative;
+  width: 998px;
+}
+
+.flex-col {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  min-height: 117px;
+}
+
+.view-4 {
+  align-items: center;
+  background-color: #ffffff;
+  display: inline-flex;
+  gap: 10px;
+  justify-content: center;
+  padding: 10px;
+  position: relative;
+  cursor: pointer; /* 클릭 가능한 손가락 커서 */
+  border: none; /* 테두리 제거 */
+}
+
+.text-1-1 {
+  color: var(--v382gh);
+  font-family: var(--font-family-pretendard_variable-regular);
+  font-size: var(--font-size-s);
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-top: -1.00px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.view-container {
+  align-items: flex-end;
+  display: flex;
+  height: 53px;
+  margin-top: 1px;
+  min-width: 998px;
+}
+
+.view-5 {
+  align-items: center;
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+  position: relative;
+  width: 157px;
+}
+
+.text_label {
+  color: var(--black);
+  font-family: var(--font-family-pretendard_variable-semibold);
+  font-size: var(--font-size-l);
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-top: -1.00px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.view-6 {
+  align-items: center;
+  display: inline-flex;
+  gap: 10px;
+  justify-content: flex-end;
+  margin-left: 307px;
+  position: relative;
+}
+
+.view-7 {
+  align-items: center;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 5px;
+  position: relative;
+}
+
+.view-item {
+  align-items: center;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 10px;
+  justify-content: center;
+  position: relative;
+}
+
+.text-2 {
+  color: var(--black);
+  font-family: var(--font-family-pretendard-regular);
+  font-size: var(--font-size-m);
+  font-weight: 400;
+  margin-top: -1.00px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.text-3 {
+  color: var(--black);
+  font-family: var(--font-family-pretendard_variable-medium);
+  font-size: var(--font-size-m);
+  font-weight: 500;
+  margin-top: -1.00px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.view-8 {
+  align-items: center;
+  display: inline-flex;
+  flex: 0 0 auto;
+  justify-content: flex-end;
+  position: relative;
+}
+
+.star {
+  height: 28.48px;
+  position: relative;
+  width: 29.74px;
+  cursor: pointer;
+  transition: transform 0.3s ease; /* 부드러운 전환 효과 */
+  filter: none; /* 처음부터 원래 별 색상으로 설정 */
+}
+
+.star.checked {
+  transform: scale(1.2); /* 클릭 시 크기를 약간 키움 */
+  filter: brightness(0) invert(1); /* 체크된 후 흰색으로 변경 */
+  border: 2px solid black; /* 흰색 별일 때 검은색 테두리 추가 */
+  border-radius: 50%; /* 테두리 둥글게 설정 */
+}
+
+.star-11 {
+  height: 28.26px;
+  position: relative;
+  width: 29.04px;
+}
+
+.view {
+  align-items: center;
+  background-color: #d3e5ff;
+  border-radius: 6px;
+  display: inline-flex;
+  gap: 10px;
+  justify-content: center;
+  margin-left: 21px;
+  padding: 10px;
+  position: relative;
+  cursor: pointer; /* 클릭 가능한 손가락 커서 */
+  border: none; /* 테두리 제거 */
+}
+
+.view:hover {
+  background-color: #a3c9ff; /* hover 시 배경색 변경 */
+}
+
+.vector {
+  height: 19px;
+  position: relative;
+  width: 23px;
+}
+
+.text-1 {
+  color: #1267cf;
+  font-family: var(--font-family-pretendard_variable-regular);
+  font-size: var(--font-size-m);
+  font-weight: 400;
+  margin-top: -1.00px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.line-39-stroke {
+  align-self: flex-end;
+  height: 2px;
+  margin-top: 20px;
+  width: 990px;
+}
+
+.view-9 {
+  height: 61px;
+  position: relative;
+  width: 988px;
+}
+
+.overlap-group {
+  border-radius: 11px;
+  height: 61px;
+  position: relative;
+}
+
+.frame-516 {
+  align-items: center;
+  background-color: #f1f1f1;
+  border-radius: 11px;
+  display: flex;
+  gap: 10px;
+  height: 61px;
+  left: 0;
+  overflow: hidden;
+  padding: 10px 17px;
+  position: absolute;
+  top: 0;
+  width: 988px;
+  box-sizing: border-box; /* 패딩 포함 크기 계산 */
+}
+
+.input-text {
+  border: none; /* 기본 테두리 제거 */
+  width: 100%; /* 입력 필드가 상자의 너비를 모두 차지 */
+  padding: 0; /* 여백 제거 */
+  outline: none; /* 선택 시 외곽선 제거 */
+  font-size: var(--font-size-m); /* 텍스트 크기 */
+  font-family: var(--font-family-pretendard_variable-regular); /* 폰트 적용 */
+  font-weight: 400; /* 폰트 굵기 */
+  color: var(--black); /* 텍스트 색상 */
+  background-color: transparent; /* 투명 배경 */
+  text-align: left; /* 왼쪽 정렬 */
+}
+
+.input-text::placeholder {
+  color: #6f6f6f; /* placeholder 텍스트 색상 */
+  font-size: var(--font-size-m); /* placeholder 텍스트 크기 */
+  font-family: var(--font-family-pretendard_variable-regular); /* placeholder 폰트 */
+  font-weight: 400; /* placeholder 폰트 굵기 */
+}
+
+.text-6 {
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  color: var(--black);
+  display: -webkit-box;
+  flex: 1;
+  font-family: var(--font-family-pretendard_variable-regular);
+  font-size: var(--font-size-m);
+  font-weight: 400;
+  height: 24px;
+  overflow: hidden;
+  position: relative;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.view-10 {
+  align-items: center;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  left: 20px;
+  padding: 10px;
+  position: absolute;
+  top: 8px;
+  width: 191px;
+}
+
+.text-7 {
+  color: #6f6f6f;
+  font-family: var(--font-family-pretendard_variable-regular);
+  font-size: var(--font-size-m);
+  font-weight: 400;
+  margin-left: -0.19px;
+  margin-right: -0.19px;
+  margin-top: -1.00px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.frame-575 {
+  align-items: flex-start;
+  border: 1px solid;
+  border-color: #d4d4d4;
+  border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 525px;
+  padding: 14px 17px;
+  position: relative;
+  width: 988px;
+}
+
+.frame-576 {
+  align-items: flex-start;
+  display: flex;
+  gap: 10px;
+  height: 492px; /* 고정 높이 설정 */
+  width: 954px; /* 고정 너비 설정 */
+  position: relative;
+  box-sizing: border-box; /* 패딩 포함 크기 계산 */
+  background-color: transparent; /* 투명 배경 */
+  padding: 10px; /* padding 추가 */
+}
+
+.input2 {
+  border: none !important; /* 테두리 제거 */
+  width: 100% !important; /* 부모 요소의 너비를 모두 차지 */
+  height: 100% !important; /* 부모 요소의 높이를 모두 차지 */
+  padding: 0 !important; /* 추가 패딩 제거 */
+  outline: none !important; /* 선택 시 테두리 없음 */
+  font-size: 16px !important; /* 텍스트 크기 */
+  font-family: 'Pretendard Variable', sans-serif !important; /* 폰트 설정 */
+  background-color: transparent !important; /* 배경 투명하게 설정 */
+  box-sizing: border-box !important; /* 패딩 포함 크기 계산 */
+  z-index: 10 !important;  /* 높은 z-index 설정 */
+  position: relative !important;
+  resize: none; /* 크기 조절 핸들 제거 */
+}
+
+.input2::placeholder {
+  color: #6f6f6f !important; /* placeholder 텍스트 색상 */
+  font-size: 16px !important; /* placeholder 텍스트 크기 */
+  font-family: 'Pretendard Variable', sans-serif !important; /* placeholder 폰트 */
+}
+
+.text-8 {
+  color: var(--black);
+  font-family: var(--font-family-pretendard_variable-regular);
+  font-size: var(--font-size-m);
+  font-weight: 400;
+  height: 492px;
+  margin-top: -1.00px;
+  position: relative;
+  width: 954px;
+}
+
+.view-11 {
+  align-items: center;
+  display: inline-flex;
+  gap: 6px;
+  left: 24px;
+  position: absolute;
+  top: 14px;
+}
+
+.mdipencil {
+  height: 21px;
+  position: relative;
+  width: 21px;
+}
+
+.text-9 {
+  color: #6f6f6f;
+  font-family: var(--font-family-pretendard_variable-regular);
+  font-size: var(--font-size-m);
+  font-weight: 400;
+  height: 22px;
+  margin-top: -1.00px;
+  position: relative;
+  white-space: nowrap;
+  width: 579px;
+}
+
+.text-4 {
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+:root {
+  --black: #000000;
+  --v382gh: #6c6c6c;
+
+  --font-size-l: 28px;
+  --font-size-m: 20px;
+  --font-size-s: 18px;
+
+  --font-family-pretendard-regular: "Pretendard-Regular", Helvetica;
+  --font-family-pretendard_variable-light: "Pretendard Variable-Light", Helvetica;
+  --font-family-pretendard_variable-medium: "Pretendard Variable-Medium", Helvetica;
+  --font-family-pretendard_variable-regular: "Pretendard Variable-Regular", Helvetica;
+  --font-family-pretendard_variable-semibold: "Pretendard Variable-SemiBold", Helvetica;
+}
+.pretendardvariable-light-black-20px {
+  color: var(--black);
+  font-family: var(--font-family-pretendard_variable-light);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 300;
+}
+
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+/* The following line is used to measure usage of this code. You can remove it if you want. */
+@import url("https://px.animaapp.com/66d08b39d824b3c6e4739bbb.66d08b3ad824b3c6e4739bbe.OWeC8Te.hcp.png");
+
+@font-face {
+  font-family: "Pretendard Variable-Regular";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/PretendardVariable.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Pretendard Variable-SemiBold";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/PretendardVariable.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Pretendard-Regular";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/Pretendard-Regular.woff") format("woff");
+}
+@font-face {
+  font-family: "Pretendard Variable-Medium";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/PretendardVariable.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Pretendard Variable-Light";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/PretendardVariable.ttf") format("truetype");
+}
+
+
+.screen a {
+  display: contents;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}

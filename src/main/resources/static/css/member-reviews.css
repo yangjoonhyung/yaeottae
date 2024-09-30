@@ -1,0 +1,963 @@
+/* screen - u4358u4449u4363u4469u4369u4454u4363u4469u4364u4469u4361u4449u4540u4355u4450u4352u4449-u4354u4450u4352u4449-u4362u4467u4523-u4352u4467u4527-u4359u4457u4352u4469 */
+
+.u4358u4449u4363u4469u4369u4454u4363u4469u4364u4469u4361u4449u4540u4355u4450u4352u4449-u4354u4450u4352u4449-u4362u4467u4523-u4352u4467u4527-u4359u4457u4352u4469 {
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  min-height: 2683px;
+  min-width: 1920px;
+  width: 100%;
+}
+
+body {
+  overflow-x: hidden; /* 전체 페이지에서 좌우 스크롤 제거 */
+}
+
+.view-15 {
+  background-color: var(--white);
+  display: flex;
+  height: 101px;
+  left: calc(50.00% - 960px);
+  position: fixed;
+  top: 0;
+  width: 1920px;
+  z-index: 4;
+}
+
+.layer_1 {
+  height: 51px;
+  margin-left: 144px;
+  margin-top: 27px;
+  width: 147px;
+}
+
+.frame-5 {
+  align-items: center;
+  display: inline-flex;
+  gap: 56px;
+  height: 64px;
+  margin-left: 49px;
+  margin-top: 18px;
+  position: relative;
+  width: 423px;
+}
+
+.frame {
+  align-items: center;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 10px;
+  height: 64px;
+  justify-content: center;
+  padding: 10px;
+  position: relative;
+}
+
+.text {
+  letter-spacing: 0;
+  line-height: normal;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.frame-1 {
+  align-items: flex-start;
+  display: inline-flex;
+  flex: 0 0 auto;
+  position: relative;
+}
+
+.frame-232 {
+  height: 39px;
+  margin-left: 371px;
+  margin-top: 36px;
+  position: relative;
+  width: 423px;
+}
+
+.view-16 {
+  display: flex;
+  height: 24px;
+  margin-left: 42px;
+  margin-top: 38px;
+  width: 128px;
+}
+
+.text-25 {
+  flex: 1;
+  white-space: nowrap;
+  width: 128px;
+}
+
+.group-92 {
+  align-items: center;
+  background-color: #4994f1;
+  display: flex;
+  gap: 25px;
+  height: 209px;
+  justify-content: flex-end;
+  margin-top: 101px; /* 상단 마진 유지 */
+  margin-left: 385px; /* 좌측 마진을 395px로 설정 */
+  min-width: 990px;
+  padding: 19px 24px;
+  z-index: 2;
+  width: calc(100% - 395px); /* 화면 너비에서 좌측 마진을 제외한 너비 */
+  max-width: 990px; /* 최대 너비를 990px로 제한 */
+}
+
+.ellipse-17 {
+  height: 121px;
+  object-fit: cover;
+  width: 121px;
+}
+
+.frame-container {
+  align-self: flex-end;
+  height: 123px;
+  position: relative;
+  width: 789px;
+}
+
+.frame-502 {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 619px;
+}
+
+.frame-428 {
+  align-items: center;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 8px;
+  position: relative;
+}
+
+.frame-42 {
+  align-items: center;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 10px;
+  justify-content: center;
+  position: relative;
+}
+
+.text-1-1 {
+  color: var(--white);
+  font-family: var(--font-family-pretendard_variable-semibold);
+  font-size: var(--font-size-xxxl);
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-top: -1.00px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.text-2-1 {
+  color: var(--white);
+  font-family: var(--font-family-pretendard_variable-light);
+  font-size: var(--font-size-xxxl);
+  font-weight: 300;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-top: -1.00px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.frame-425 {
+  height: 33px;
+  left: 169px;
+  position: absolute;
+  top: 0;
+  width: 1px;
+}
+
+.frame-497 {
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  gap: 10px;
+  height: 73px;
+  padding: 10px 0px;
+  position: relative;
+  width: 100%;
+}
+
+.text-3 {
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  color: var(--white);
+  display: -webkit-box;
+  font-family: var(--font-family-pretendard_variable-medium);
+  font-size: var(--font-size-xl);
+  font-weight: 500;
+  height: 63px;
+  margin-bottom: -9.00px;
+  margin-top: -1.00px;
+  overflow: hidden;
+  position: relative;
+  text-overflow: ellipsis;
+  width: 609px;
+}
+
+.frame-501 {
+  align-items: center;
+  display: inline-flex;
+  gap: 8px;
+  left: 618px;
+  position: absolute;
+  top: 82px;
+}
+
+.frame-500 {
+  align-items: center;
+  display: flex;
+  height: 41px;
+  justify-content: flex-end;
+  position: relative;
+  width: 96px;
+}
+
+.frame-498 {
+  align-items: center;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 10px;
+  height: 41px;
+  justify-content: flex-end;
+  padding: 10px;
+  position: relative;
+}
+
+.number {
+  color: var(--white);
+  font-family: var(--font-family-pretendard_variable-semibold);
+  font-size: var(--font-size-m);
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-top: -1.00px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.frame-499 {
+  align-items: center;
+  display: flex;
+  gap: 10px;
+  height: 41px;
+  justify-content: center;
+  margin-left: -14px;
+  padding: 10px;
+  position: relative;
+  width: 67px;
+}
+
+.text-4 {
+  color: var(--white);
+  font-family: var(--font-family-pretendard_variable-medium);
+  font-size: var(--font-size-m);
+  font-weight: 500;
+  height: 21px;
+  margin-top: -1.00px;
+  position: relative;
+  white-space: nowrap;
+  width: 47px;
+}
+
+.view-17 {
+  align-items: center;
+  background-color: var(--white);
+  border-radius: 10px;
+  display: flex;
+  gap: 10px;
+  height: 36px;
+  justify-content: center;
+  padding: 10px 14px;
+  position: relative;
+  width: 67px;
+  cursor: pointer; /* 클릭 가능하게 변경 */
+  transition: background-color 0.3s ease; /* 호버 시 배경색 변화 애니메이션 */
+}
+
+  .view-17:hover {
+    background-color: #f0f0f0; /* 호버 시 배경색 변경 */
+}
+
+.text-5 {
+  color: #1267cf;
+  font-family: var(--font-family-pretendard_variable-medium);
+  font-size: var(--font-size-m);
+  font-weight: 500;
+  margin-bottom: -1.50px;
+  margin-left: -4.00px;
+  margin-right: -4.00px;
+  margin-top: -3.50px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.x {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 21px;
+  height: 55.5px;
+  margin-left: 385px;
+  margin-top: 43px;
+  position: relative;
+  width: 990px;
+  z-index: 1;
+}
+
+.frame-59 {
+  align-items: center;
+  display: flex;
+  flex: 0 0 auto;
+  gap: 10px;
+  position: relative;
+  width: 156.77px;
+}
+
+.text_label {
+  color: var(--black);
+  font-family: var(--font-family-pretendard_variable-semibold);
+  font-size: var(--font-size-xxxl);
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-top: -1.00px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.line-39-stroke {
+  align-self: stretch;
+  height: 1.5px;
+  position: relative;
+  width: 100%;
+}
+
+.view-18 {
+  align-items: flex-start;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px 20px;
+  height: 2113px;
+  margin-left: 370px;
+  margin-top: 29.5px;
+  position: relative;
+  width: 1020px;
+  z-index: 3;
+}
+
+.view {
+  align-items: center;
+  display: flex;
+  gap: 10px;
+  height: 662px;
+  padding: 34px 8px;
+  position: relative;
+  width: 500px;
+}
+
+.view-1 {
+  align-items: center;
+  display: inline-flex;
+  gap: 10px;
+  left: 0;
+  padding: 10px;
+  position: absolute;
+  top: 0;
+}
+
+.rectangle-111 {
+  background-color: var(--white);
+  box-shadow: 7px 9px 9.7px -4px #00000026;
+  height: 642px;
+  position: relative;
+  width: 480px;
+}
+
+.view-2 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  height: 642px;
+  justify-content: center;
+  margin-bottom: -24.00px;
+  margin-top: -24.00px;
+  position: relative;
+  width: 482px;
+  transition: background-color 0.3s ease; /* 색상 전환을 부드럽게 */
+  cursor: pointer; /* 클릭 가능하게 설정 */
+}
+
+.view-2:hover {
+  background-color: #dcdcdc; /* hover 시 약간 어두운 색으로 변경 */
+}
+
+.view-3 {
+  align-items: flex-start;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 10px;
+  position: relative;
+  width: 438px;
+}
+
+.rectangle-13 {
+  align-self: stretch;
+  height: 292px;
+  position: relative;
+  width: 100%;
+}
+
+.view-4 {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  height: 277px;
+  position: relative;
+  width: 439.91px;
+}
+
+.x-1 {
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+}
+
+.x-2 {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  justify-content: space-between;
+  position: relative;
+  width: 100%;
+}
+
+.view-5 {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+  position: relative;
+  width: 139px;
+}
+
+.view-19 {
+  background-image: url(../img/---@2x.png);
+  background-size: 100% 100%;
+  height: 32px;
+  position: relative;
+  width: 32px;
+}
+
+.x-3 {
+  align-items: center;
+  display: inline-flex;
+  gap: 3px;
+  left: 7px;
+  position: absolute;
+  top: 42px;
+}
+
+.view-6 {
+  align-items: center;
+  display: inline-flex;
+  flex: 0 0 auto;
+  position: relative;
+}
+
+.star-2 {
+  height: 33px;
+  position: relative;
+  width: 31.02px;
+}
+
+.view-7 {
+  align-items: center;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 10px;
+  justify-content: center;
+  margin-left: -11px;
+  padding: 10px;
+  position: relative;
+}
+
+.text-6 {
+  margin-top: -1.00px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.view-8 {
+  align-items: center;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 10px;
+  justify-content: center;
+  padding: 10px;
+  position: relative;
+}
+
+.text-7 {
+  margin-top: -1.00px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.view-9 {
+  align-items: center;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 10px;
+  justify-content: center;
+  margin-left: -16px;
+  padding: 10px;
+  position: relative;
+}
+
+.view-10 {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  height: 195px;
+  overflow: hidden;
+  position: relative;
+  width: 439.91px;
+}
+
+.view-11 {
+  align-items: flex-start;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  position: relative;
+  width: 415.5px;
+}
+
+.view-12 {
+  align-items: flex-start;
+  display: flex;
+  flex: 0 0 auto;
+  gap: 10px;
+  padding: 10px;
+  position: relative;
+  width: 415.5px;
+}
+
+.text-1 {
+  margin-right: -6.50px;
+  margin-top: -1.00px;
+  position: relative;
+  width: 402px;
+}
+
+.view-13 {
+  align-items: flex-start;
+  display: flex;
+  flex: 0 0 auto;
+  gap: 10px;
+  margin-top: -16px;
+  padding: 10px;
+  position: relative;
+  width: 415.5px;
+}
+
+.phone {
+  letter-spacing: 0;
+  line-height: normal;
+  margin-top: -1.00px;
+  position: relative;
+  width: 131px;
+}
+
+.view-14 {
+  align-items: center;
+  display: flex;
+  gap: 10px;
+  height: 129px;
+  justify-content: center;
+  margin-right: -0.09px;
+  padding: 10px;
+  position: relative;
+  width: 440px;
+}
+
+.flex-container-8612 {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  height: 125px;
+  width: 420px;
+}
+
+.text-2 {
+  align-self: stretch;
+  position: relative;
+}
+
+.x-4 {
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+}
+
+.x-5 {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  justify-content: space-between;
+  position: relative;
+  width: 100%;
+}
+
+.image {
+  height: 32px;
+  position: relative;
+  width: 32px;
+}
+
+.x-6 {
+  align-items: center;
+  display: inline-flex;
+  gap: 3px;
+  left: 7px;
+  position: absolute;
+  top: 42px;
+}
+
+.text-9 {
+  margin-top: -1.00px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.text-10 {
+  margin-top: -1.00px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.x-7 {
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+}
+
+.x-8 {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  justify-content: space-between;
+  position: relative;
+  width: 100%;
+}
+
+.x-9 {
+  align-items: center;
+  display: inline-flex;
+  gap: 3px;
+  left: 7px;
+  position: absolute;
+  top: 42px;
+}
+
+.text-12 {
+  margin-top: -1.00px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.text-13 {
+  margin-top: -1.00px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.x-10 {
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+}
+
+.x-11 {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  justify-content: space-between;
+  position: relative;
+  width: 100%;
+}
+
+.x-12 {
+  align-items: center;
+  display: inline-flex;
+  gap: 3px;
+  left: 7px;
+  position: absolute;
+  top: 42px;
+}
+
+.text-15 {
+  margin-top: -1.00px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.text-16 {
+  margin-top: -1.00px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.x-13 {
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+}
+
+.x-14 {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  justify-content: space-between;
+  position: relative;
+  width: 100%;
+}
+
+.x-15 {
+  align-items: center;
+  display: inline-flex;
+  gap: 3px;
+  left: 7px;
+  position: absolute;
+  top: 42px;
+}
+
+.text-18 {
+  margin-top: -1.00px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.text-19 {
+  margin-top: -1.00px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.x-16 {
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+}
+
+.x-17 {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  justify-content: space-between;
+  position: relative;
+  width: 100%;
+}
+
+.x-18 {
+  align-items: center;
+  display: inline-flex;
+  gap: 3px;
+  left: 7px;
+  position: absolute;
+  top: 42px;
+}
+
+.text-21 {
+  margin-top: -1.00px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.text-22 {
+  margin-top: -1.00px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.number-7 {
+  letter-spacing: 0;
+  line-height: normal;
+  margin-top: -1.00px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.text-8 {
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.text_label-7 {
+  letter-spacing: 0;
+  line-height: normal;
+  margin-top: -1.00px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+:root {
+  --black: #000000;
+  --fuscous-gray: #515151;
+  --white: #ffffff;
+
+  --font-size-l: 20px;
+  --font-size-m: 18px;
+  --font-size-xl: 24px;
+  --font-size-xxl: 26px;
+  --font-size-xxxl: 28px;
+
+  --font-family-pretendard_variable-light: "Pretendard Variable-Light", Helvetica;
+  --font-family-pretendard_variable-medium: "Pretendard Variable-Medium", Helvetica;
+  --font-family-pretendard_variable-regular: "Pretendard Variable-Regular", Helvetica;
+  --font-family-pretendard_variable-semibold: "Pretendard Variable-SemiBold", Helvetica;
+}
+.pretendardvariable-regular-normal-black-18px {
+  color: var(--black);
+  font-family: var(--font-family-pretendard_variable-regular);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.pretendardvariable-regular-normal-fuscous-gray-18px {
+  color: var(--fuscous-gray);
+  font-family: var(--font-family-pretendard_variable-regular);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.pretendardvariable-medium-black-26px {
+  color: var(--black);
+  font-family: var(--font-family-pretendard_variable-medium);
+  font-size: var(--font-size-xxl);
+  font-style: normal;
+  font-weight: 500;
+}
+
+.pretendardvariable-medium-black-18px {
+  color: var(--black);
+  font-family: var(--font-family-pretendard_variable-medium);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 500;
+}
+
+.pretendardvariable-light-black-20px {
+  color: var(--black);
+  font-family: var(--font-family-pretendard_variable-light);
+  font-size: var(--font-size-l);
+  font-style: normal;
+  font-weight: 300;
+}
+
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+/* The following line is used to measure usage of this code. You can remove it if you want. */
+@import url("https://px.animaapp.com/66d08b39d824b3c6e4739bbb.66d08b3ad824b3c6e4739bbe.OWeC8Te.hcp.png");
+
+@font-face {
+  font-family: "Pretendard Variable-SemiBold";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/PretendardVariable.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Pretendard Variable-Light";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/PretendardVariable.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Pretendard Variable-Medium";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/PretendardVariable.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Pretendard Variable-Regular";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/PretendardVariable.ttf") format("truetype");
+}
+
+
+.screen a {
+  display: contents;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}

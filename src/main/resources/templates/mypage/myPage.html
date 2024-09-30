@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8" />
+    <!--<meta name=description content="This site was generated with Anima. www.animaapp.com"/>-->
+    <!-- <link rel="shortcut icon" type=image/png href="https://animaproject.s3.amazonaws.com/home/favicon.png" /> -->
+    <meta name="viewport" content="width=1920, maximum-scale=1.0" />
+    <link th:href="@{/css/mypage.css}"
+          href="../css/mapage.css" rel="stylesheet">
+    <meta name="og:type" content="website" />
+    <meta name="twitter:card" content="photo" />
+</head>
+<body style="margin: 0; background: #ffffff">
+<input
+        type="hidden"
+        id="anPageName"
+        name="page"
+        value="u4358u4449u4363u4469u4369u4454u4363u4469u4364u4469-u4354u4450-u4364u4453u4540u4359u4457-u4359u4455u4523u4352u4455u4540"
+/>
+<div class="container-center-horizontal">
+    <div
+            class="u4358u4449u4363u4469u4369u4454u4363u4469u4364u4469-u4354u4450-u4364u4453u4540u4359u4457-u4359u4455u4523u4352u4455u4540 screen"
+    >
+        <div class="view">
+            <img class="layer_1" src="img/layer-1@2x.png" alt="Layer_1" />
+            <div class="frame-5-1">
+                <div class="frame" th:onclick="|location.href='@{/}'|"><div class="text pretendardvariable-light-black-20px">홈</div></div>
+                <div class="frame" th:onclick="|location.href='@{/restaurant/restaurants}'|"><div class="text pretendardvariable-light-black-20px">식당</div></div>
+                <div class="frame-1">
+                    <div class="frame"><div class="text pretendardvariable-light-black-20px">카페</div></div>
+                </div>
+                <div class="frame-1" th:onclick="|location.href='@{/myPage}'|">
+                    <div class="frame"><div class="text pretendardvariable-light-black-20px">마이페이지</div></div>
+                </div>
+            </div>
+            <img class="frame-232" src="img/frame-232@2x.png" alt="Frame 232" th:onclick="|location.href='@{/search}'|"/>
+            <div class="view-1" th:onclick="|location.href='@{/login}'|">
+                <div class="text-19 text-5 pretendardvariable-light-black-20px">로그인/회원가입</div>
+            </div>
+        </div>
+        <div class="view-2">
+            <div class="overlap-group1">
+                <img class="ellipse-17" src="img/ellipse-17@2x.png" alt="Ellipse 17" />
+                <img class="frame-567" src="img/frame-567@2x.png" alt="Frame 567" />
+            </div>
+            <div class="frame-428">
+                <div class="frame-2"><div class="text-1 text-5">반가워요,</div></div>
+                <div class="frame-2"><div class="text-16 text-5" th:text="${member.memberId}">서영</div></div>
+                <div class="frame-2"><div class="text-1 text-5">님!</div></div>
+            </div>
+        </div>
+        <div class="flex-row">
+            <div class="x">
+                <article class="frame-4">
+                    <div class="text-2 text-5 pretendardvariable-regular-normal-black-18px" th:onclick="|location.href='@{/myPage/my-reviews}'|">내가 쓴 글</div>
+                </article>
+                <article class="frame-419">
+                    <div class="text-2 text-5 pretendardvariable-regular-normal-black-18px" th:onclick="|location.href='@{/myPage}'|">내 정보 변경</div>
+                </article>
+                <article class="frame-4">
+                    <div class="text-2 text-5 pretendardvariable-regular-normal-black-18px">문의내역</div>
+                </article>
+            </div>
+            <div class="flex-col">
+                <div class="view-3">
+                    <div class="x-1">
+                        <div class="frame-59"><div class="text_label">내 정보 변경</div></div>
+                        <img class="line-39-stroke" src="img/line-39--stroke-.png" alt="Line 39 (Stroke)" />
+                    </div>
+                </div>
+                <div class="frame-566">
+                    <div class="frame-550">
+                        <img class="ellipse-17-1" src="img/ellipse-17@2x.png" alt="Ellipse 17" />
+                        <div class="text-1-1 pretendardvariable-regular-normal-storm-dust-16px">프로필 변경</div>
+                    </div>
+                    <div class="frame-565">
+                        <div class="frame-564">
+                            <div class="frame-563">
+                                <div class="frame-2"><div class="text-2-1">내 성향</div></div>
+                                <div class="frame-2"><div class="text-3 text-5" th:text="${member.memberTendency.name}">차가운 맵부심</div></div>
+                            </div>
+                            <div class="frame-544">
+                                <p class="text-4 text-5 pretendardvariable-regular-normal-black-18px" th:text="${member.memberTendency.explain}">
+                                    차분하지만 매운 것에 자부심을 가지고 있습니다.<br />활발한 서비스와의 조화 속에서 철저함과
+                                    느슨함을 오갑니다.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="frame-561">
+                            <div class="frame-556">
+                                <div class="frame-54">
+                                    <div class="text-2 text-5 pretendardvariable-medium-licorice-18px">한줄소개</div>
+                                </div>
+                                <div class="group-97">
+                                    <div class="overlap-group-1">
+                                        <div class="rectangle-150 rectangle"></div>
+                                        <div class="frame-551">
+                                            <div class="text-6 text-5 pretendardvariable-regular-normal-hunter-green-18px" th:text="${member.memberIntroduce}">
+                                            </div>
+                                        </div>
+                                        <div class="frame-555">
+                                            <div class="text-2 text-5 pretendardvariable-regular-normal-storm-dust-16px" th:onclick="|location.href='@{/myPage/change-introduce}'|">변경</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="frame-558">
+                                <div class="frame-54">
+                                    <div class="text-2 text-5 pretendardvariable-medium-licorice-18px">이름</div>
+                                </div>
+                                <div class="group">
+                                    <div class="overlap-group">
+                                        <div class="rectangle-15 rectangle"></div>
+                                        <div class="frame-552">
+                                            <div class="text-9 text-5 pretendardvariable-regular-normal-hunter-green-18px" th:text="${member.memberName}"></div>
+                                        </div>
+                                        <div class="frame-557">
+                                            <div class="text-2 text-5 pretendardvariable-regular-normal-storm-dust-16px" th:onclick="|location.href='@{/myPage/change-name}'|">변경</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="frame-5">
+                                <div class="frame-54">
+                                    <div class="text-2 text-5 pretendardvariable-medium-licorice-18px">아이디</div>
+                                </div>
+                                <div class="group">
+                                    <div class="overlap-group">
+                                        <div class="rectangle-15 rectangle"></div>
+                                        <div class="frame-55">
+                                            <div class="asc1234 pretendardvariable-regular-normal-hunter-green-18px" th:text="${member.memberId}"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="frame-5">
+                                <div class="frame-54">
+                                    <div class="text-2 text-5 pretendardvariable-medium-licorice-18px">이메일</div>
+                                </div>
+                                <div class="group">
+                                    <div class="overlap-group">
+                                        <div class="rectangle-15 rectangle"></div>
+                                        <div class="frame-55">
+                                            <div class="asc1234navercom pretendardvariable-regular-normal-hunter-green-18px" th:text="${member.email}">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="frame-549">
+                                <div class="text-2 text-5 pretendardvariable-regular-normal-storm-dust-16px">
+                                    아이디와 이메일은 변경이 불가능합니다.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
