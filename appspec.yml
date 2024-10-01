@@ -12,6 +12,10 @@ permissions:
     group: ubuntu
 
 hooks:
+  BeforeInstall:
+    - location: scripts/install_dependencies.sh
+      timeout: 300
+      runas: ubuntu
   ApplicationStart:
     - location: deploy.sh
       timeout: 60
