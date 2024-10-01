@@ -64,5 +64,5 @@ jobs:
         --application-name my_yaeottae \
         --deployment-group-name my_yaeottae_group \
         --file-exists-behavior OVERWRITE \
-        --s3-location bucket=yaeottaebucket,bundleType=zip,key=sebadog.zip \ 
+        --s3-location bucket=yaeottaebucket,bundleType=zip,key=sebadog.zip \
         --region ap-northeast-2
