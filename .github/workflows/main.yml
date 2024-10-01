@@ -1,0 +1,30 @@
+name: Sebadog-book server CI/CD
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v3
+
+    - name: Use Oracle JDK 22
+      run: |
+        echo "Using Oracle JDK 22"
+        java -version  # Oracle JDK 22가 설치되어 있음을 확인
+
+        
+    - name: Grant execute permission for gradlew
+      run: chmod +x gradlew
+    
+    - name: Build with Gradle
+      # run: ./gradlew clean build
+      run: ./gradlew clean build -x test # 테스트 Skip
+출처: https://kang-james.tistory.com/entry/CICD-Github-Action-AWS로-Java-자동-빌드배포하기 [내 꿈을 JAVA:티스토리]
