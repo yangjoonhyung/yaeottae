@@ -24,7 +24,6 @@ jobs:
     - name: Verify Java version
       run: java -version  # Java 22가 설정되었는지 확인
 
-        
     - name: Grant execute permission for gradlew
       run: chmod +x gradlew
     
@@ -39,6 +38,14 @@ jobs:
     # Jar 파일 복사
     - name: Copy Jar
       run: cp ./build/libs/*.jar ./deploy
+
+    # appspec.yml 파일 복사
+    - name: Copy appspec.yml
+      run: cp appspec.yml ./deploy
+
+    # script files 복사
+    - name: Copy script
+      run: cp ./scripts/*.sh ./deploy
 
     - name: Make zip file
       run: zip -r ./sebadog.zip ./deploy
