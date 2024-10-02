@@ -25,7 +25,7 @@ public class MainController {
     private final ReviewRepository reviewRepository;
 
     //@GetMapping("/")
-    public String mainLogin(HttpServletRequest request, Model model) {
+    /*public String mainLogin(HttpServletRequest request, Model model) {
 
         // 세션을 받아서 세션이 존재하는지 확인
         HttpSession session = request.getSession(false);
@@ -42,7 +42,7 @@ public class MainController {
         Member findMember = memberRepository.findByMemberId(memberId);
         model.addAttribute("member", findMember);
         return "loginMain";
-    }
+    }*/
 
     @GetMapping("/")
     public String mainLogin2(@SessionAttribute(name = SessionConst.SESSION_ID, required = false) String loginSession, Model model) {
