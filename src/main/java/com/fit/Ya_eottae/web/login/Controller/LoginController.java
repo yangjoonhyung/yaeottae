@@ -39,12 +39,12 @@ public class LoginController {
         Member loginMember = loginService.loginCheck(loginDto.getMemberId(), loginDto.getPassword());
 
         if (bindingResult.hasErrors()) {
-            return "/login/loginForm";
+            return "login/loginForm";
         }
 
         if (loginMember == null) {
             bindingResult.reject("loginCheck");
-            return "/login/loginForm";
+            return "login/loginForm";
         }
 
         HttpSession session = request.getSession();
@@ -64,12 +64,12 @@ public class LoginController {
         Member findMember = memberRepository.findId(idFIndDto.getMemberName(), idFIndDto.getEmail());
 
         if (bindingResult.hasErrors()) {
-            return "/login/idFindForm";
+            return "login/idFindForm";
         }
 
         if (findMember == null) {
             bindingResult.reject("idFindCheck");
-            return "/login/idFindForm";
+            return "login/idFindForm";
         }
 
         model.addAttribute("findId", findMember);

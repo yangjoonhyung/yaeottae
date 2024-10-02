@@ -83,7 +83,7 @@ public class ReviewController {
     public String reviewUpdateForm(@PathVariable long reviewId, Model model) {
         Review findReview = reviewRepository.findById(reviewId).get();
         model.addAttribute("review", findReview);
-        return "/review/update-review";
+        return "review/update-review";
     }
 
     @PostMapping("/{reviewId}/review-update")

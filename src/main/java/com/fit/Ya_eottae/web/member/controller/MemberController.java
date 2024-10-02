@@ -99,7 +99,7 @@ public class MemberController {
         model.addAttribute("member", new MemberJoinDto());
 
 
-        return "/members/joinForm";
+        return "members/joinForm";
     }
 
     @PostMapping("/join")
@@ -131,7 +131,7 @@ public class MemberController {
 
         if (bindingResult.hasErrors()) {
             log.error("BindingResult errors: {}", bindingResult.getAllErrors());
-            return "/members/joinForm";
+            return "members/joinForm";
         }
 
         Member joinMember = new Member(
