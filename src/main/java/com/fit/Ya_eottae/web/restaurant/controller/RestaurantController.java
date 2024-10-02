@@ -284,6 +284,8 @@ public class RestaurantController {
 
         model.addAttribute("reviewCount", reviewCount);
         model.addAttribute("reviewPoint", reviewService.avgOneReviewPoint(contentId));
+        model.addAttribute("restaurantList", restaurantList);
+
 
         if (areaCode != null) {
             String json = restaurantService.callApiArea(addr1, addr2, areaCode, contentId, contentTypeId,
@@ -293,10 +295,8 @@ public class RestaurantController {
             Restaurants areaRestaurant = restaurantService.parsingJsonRestaurants(json);
             List<Restaurant> areaRestaurantList = areaRestaurant.getRestaurants();
             model.addAttribute("restaurantList", areaRestaurantList);
-
         }
 
-        model.addAttribute("restaurantList", restaurantList);
         return "restaurant/restaurants";
     }
 
@@ -317,7 +317,7 @@ public class RestaurantController {
             Model model
     ) {
         // 외부 API 호출
-        String jsonResponse = restaurantService.callApiArea(
+        String jsonResponse = restaurantService.callApi(
                 addr1, addr2, areaCode, contentId, contentTypeId,
                 firstImage, firstImage2, mapX, mapY, tel, title,
                 serviceKey, callBackUrl, type

@@ -128,7 +128,7 @@ public class RestaurantService {
                 "&contentTypeId=39" +
 //                "&arr1=" + arr1 +
 //                "&arr2=" + arr2 +
-//                "&areaCode=" + areaCode +
+                "&areaCode=" + areaCode +
 //                "contentid=" + contentId +
 //                "&contenttypeid=" + contentTypeId +
 //                "&firstImage=" + firstImage +
