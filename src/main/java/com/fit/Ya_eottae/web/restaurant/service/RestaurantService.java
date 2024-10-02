@@ -38,8 +38,8 @@ public class RestaurantService {
     }
 
     private InputStream getNetworkConnection(HttpURLConnection urlConnection) throws IOException {
-        urlConnection.setConnectTimeout(7000);
-        urlConnection.setReadTimeout(7000);
+        urlConnection.setConnectTimeout(100000);
+        urlConnection.setReadTimeout(100000);
         urlConnection.setRequestMethod("GET");
         urlConnection.setDoInput(true);
 
@@ -76,7 +76,7 @@ public class RestaurantService {
         String urlStr = callBackUrl +
                 "?serviceKey=" + serviceKey +
                 "&_type=" + dataType +
-                "&numOfRows=10000" +
+                "&numOfRows=5000" +
                 "&arrange=C" +
                 "&contentTypeId=39" +
 //                "&arr1=" + arr1 +
