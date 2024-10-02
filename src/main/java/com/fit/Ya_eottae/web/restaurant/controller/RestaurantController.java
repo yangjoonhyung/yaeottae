@@ -268,7 +268,7 @@ public class RestaurantController {
             Model model
     ) {
         // 외부 API 호출
-        String jsonResponse = restaurantService.callApiArea(
+        String jsonResponse = restaurantService.callApi(
                 addr1, addr2, areaCode, contentId, contentTypeId,
                 firstImage, firstImage2, mapX, mapY, tel, title,
                 serviceKey, callBackUrl, type
