@@ -3,6 +3,7 @@ package com.fit.Ya_eottae.repository.trustpointrepository;
 import com.fit.Ya_eottae.domain.trustpoint.TrustPoint;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.NoResultException;
+import jakarta.persistence.Query;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
