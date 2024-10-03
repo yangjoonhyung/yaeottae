@@ -85,7 +85,7 @@ public class ReviewService {
     public Boolean isOkToCheckTrustPoint(long reviewId, String memberId) {
         TrustPoint memberTrustPoint = trustPointRepository.findByMemberId(memberId, reviewId);
 
-        if (memberTrustPoint.getPlusTrustPoint() >= 1) {
+        if (memberTrustPoint.getPlusTrustPoint() >= 1 && memberTrustPoint.getMemberId().equals(memberId)) {
             return false;
         } else {
             return true;
@@ -95,7 +95,7 @@ public class ReviewService {
     public Boolean isOkToCheckNoTrustPoint(long reviewId, String memberId) {
         TrustPoint memberTrustPoint = trustPointRepository.findByMemberId(memberId, reviewId);
 
-        if (memberTrustPoint.getMinusTrustPoint() >= 1) {
+        if (memberTrustPoint.getMinusTrustPoint() >= 1 && memberTrustPoint.getMemberId().equals(memberId)) {
             return false;
         } else {
             return true;
