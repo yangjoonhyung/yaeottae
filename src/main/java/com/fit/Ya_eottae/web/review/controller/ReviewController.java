@@ -53,7 +53,7 @@ public class ReviewController {
         String reviewTrustScore = reviewService.calculateBayesianAverage(review, allReview);
         review.setTrustScore(reviewTrustScore);
 
-
+        model.addAttribute("memberId", memberId);
 
         if (review.getMember().getMemberId().equals(memberId)) {
             return "review/my-review";
