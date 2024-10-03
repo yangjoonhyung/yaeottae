@@ -78,12 +78,7 @@ public class ReviewController {
 
         saveReview.setMember(findMember);
 
-        Review saveDbReview = reviewRepository.save(saveReview);
-        TrustPoint trustPoint = new TrustPoint();
-        trustPoint.setReviewId(saveDbReview.getReviewId());
-        trustPoint.setMemberId(memberId);
-        trustPointRepository.save(trustPoint);
-
+        reviewRepository.save(saveReview);
         return "redirect:/restaurant/{restaurantId}";
     }
 
@@ -105,6 +100,14 @@ public class ReviewController {
         HttpSession session = request.getSession();
         String memberId = (String) session.getAttribute(SessionConst.SESSION_ID);
 
+        TrustPoint findMemberTrustPoint = trustPointRepository.findByMemberId(memberId, reviewId);
+
+        if (findMemberTrustPoint == null) {
+            TrustPoint trustPoint = new TrustPoint();
+            trustPoint.setReviewId(reviewId);
+            trustPoint.setMemberId(memberId);
+            trustPointRepository.save(trustPoint);
+        }
 
         if (!reviewService.isOkToCheckTrustPoint(reviewId, memberId)) {
             redirectAttributes.addFlashAttribute("errorMessage", "리뷰당 한번만 누르실 수 있습니다.");
@@ -119,9 +122,17 @@ public class ReviewController {
 
     @PostMapping("/{reviewId}/minus")
     public String plusNoTrustPoint(@PathVariable long reviewId, HttpServletRequest request, RedirectAttributes redirectAttributes) {
-
         HttpSession session = request.getSession();
         String  memberId = (String) session.getAttribute(SessionConst.SESSION_ID);
+
+        TrustPoint findMemberTrustPoint = trustPointRepository.findByMemberId(memberId, reviewId);
+
+        if (findMemberTrustPoint == null) {
+            TrustPoint trustPoint = new TrustPoint();
+            trustPoint.setReviewId(reviewId);
+            trustPoint.setMemberId(memberId);
+            trustPointRepository.save(trustPoint);
+        }
 
         if (!reviewService.isOkToCheckNoTrustPoint(reviewId, memberId)) {
             redirectAttributes.addFlashAttribute("errorMessage", "리뷰당 한번만 누르실 수 있습니다.");
