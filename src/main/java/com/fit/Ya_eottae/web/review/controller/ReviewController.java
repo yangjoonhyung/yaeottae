@@ -148,7 +148,7 @@ public class ReviewController {
     @PostMapping("/{reviewId}/delete")
     public String deleteReview(@PathVariable long reviewId) {
         reviewRepository.deleteReview(reviewId);
-        return "redirect:/";
+        return "redirect:/myPage";
     }
 
     @PostMapping("/{reviewId}/comment-save")
