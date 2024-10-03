@@ -49,15 +49,15 @@ public class JpaReviewRepository implements ReviewRepository {
         return Optional.ofNullable(findReview);
     }
 
-        @Override
-        public List<Review> findBymemberId(String memberId) {
-            String jpql = "select r from Review r Where r.member.memberId = :memberId";
-            TypedQuery<Review> query = em.createQuery(jpql, Review.class)
-                    .setParameter("memberId", memberId);
+    @Override
+    public List<Review> findBymemberId(String memberId) {
+        String jpql = "select r from Review r Where r.member.memberId = :memberId order by r.reviewId desc";
+        TypedQuery<Review> query = em.createQuery(jpql, Review.class)
+                .setParameter("memberId", memberId);
 
-            List<Review> reviewList = query.getResultList();
-            return reviewList;
-        }
+        List<Review> reviewList = query.getResultList();
+        return reviewList;
+    }
 
     @Override
     public void plusTrustPoint(long reviewId) {

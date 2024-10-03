@@ -1,7 +1,9 @@
 package com.fit.Ya_eottae.web.review.service;
 
 import com.fit.Ya_eottae.domain.review.Review;
+import com.fit.Ya_eottae.domain.trustpoint.TrustPoint;
 import com.fit.Ya_eottae.repository.reviewrepository.ReviewRepository;
+import com.fit.Ya_eottae.repository.trustpointrepository.TrustPointRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
@@ -12,6 +14,7 @@ import java.util.List;
 public class ReviewService {
 
     private final ReviewRepository reviewRepository;
+    private final TrustPointRepository trustPointRepository;
 
     public String calculateBayesianAverage(Review review, List<Review> allReviews) {
         // 좋아요와 싫어요 수
@@ -77,5 +80,25 @@ public class ReviewService {
         float avg = (float) sum / reviewSize;
         avg = Math.round(avg * 10) / 10.0f;
         return avg;
+    }
+
+    public Boolean isOkToCheckTrustPoint(long reviewId, String memberId) {
+        TrustPoint memberTrustPoint = trustPointRepository.findByMemberId(memberId, reviewId);
+
+        if (memberTrustPoint.getPlusTrustPoint() >= 1) {
+            return false;
+        } else {
+            return true;
+        }
+    }
+
+    public Boolean isOkToCheckNoTrustPoint(long reviewId, String memberId) {
+        TrustPoint memberTrustPoint = trustPointRepository.findByMemberId(memberId, reviewId);
+
+        if (memberTrustPoint.getMinusTrustPoint() >= 1) {
+            return false;
+        } else {
+            return true;
+        }
     }
 }

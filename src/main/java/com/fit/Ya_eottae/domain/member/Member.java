@@ -31,7 +31,7 @@ public class Member {
     }
 
     public Member(String memberId, String memberName, String password, String email, int year, int month, int date,
-                  boolean termOfUse, boolean marketingReception, boolean personalInformation) {
+                  boolean termOfUse, boolean personalInformation) {
         this.memberId = memberId;
         this.memberName = memberName;
         this.password = password;
@@ -41,7 +41,7 @@ public class Member {
         this.memberTendency = MemberTendency.NOTEST;
         this.memberIntroduce = "-";
         this.termOfUse = termOfUse;
-        this.marketingReception = marketingReception;
+        this.marketingReception = false;
         this.personalInformation = personalInformation;
     }
 

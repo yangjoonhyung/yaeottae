@@ -143,10 +143,12 @@ public class MemberController {
                 memberJoinForm.getMonth(),
                 memberJoinForm.getDate(),
                 memberJoinForm.getTermOfUse(),
-                memberJoinForm.getMarketingReception(),
                 memberJoinForm.getPersonalInformation()
         );
-        log.info("joinMember={}", joinMember);
+
+        if (memberJoinForm.getMarketingReception() != null) {
+            joinMember.setMarketingReception(memberJoinForm.getMarketingReception());
+        }
         memberRepository.join(joinMember);
 
         return "redirect:/login";

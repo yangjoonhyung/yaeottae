@@ -222,10 +222,17 @@
     function postTrustPoint(element) {
         const reviewId = element.getAttribute('data-review-id');
         const action = element.getAttribute('data-action');
+        const errorMessage = [[${errorMessage}]];
 
         $.post(`/review/${reviewId}/${action}`)
             .done(function(response) {
-                window.location.href = `/review/${reviewId}`; // 성공 후 리뷰 페이지로 리다이렉션
+                if (errorMessage) {
+                    // 서버에서 받은 오류 메시지가 있을 경우 alert로 표시
+                    alert(errorMessage);
+                } else {
+                    // 성공 시 리뷰 페이지로 리다이렉션
+                    window.location.href = `/review/${reviewId}`;
+                }
             })
             .fail(function(error) {
                 console.error('오류:', error.statusText);

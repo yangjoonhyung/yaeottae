@@ -5,9 +5,11 @@ import com.fit.Ya_eottae.domain.comment.Comment;
 import com.fit.Ya_eottae.domain.member.Member;
 import com.fit.Ya_eottae.domain.review.Review;
 import com.fit.Ya_eottae.domain.review.ReviewUpdateDto;
+import com.fit.Ya_eottae.domain.trustpoint.TrustPoint;
 import com.fit.Ya_eottae.repository.commentrepository.CommentRepository;
 import com.fit.Ya_eottae.repository.memberrepository.MemberRepository;
 import com.fit.Ya_eottae.repository.reviewrepository.ReviewRepository;
+import com.fit.Ya_eottae.repository.trustpointrepository.TrustPointRepository;
 import com.fit.Ya_eottae.web.review.service.ReviewService;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpSession;
@@ -30,6 +32,7 @@ public class ReviewController {
     private final ReviewRepository reviewRepository;
     private final CommentRepository commentRepository;
     private final ReviewService reviewService;
+    private final TrustPointRepository trustPointRepository;
 
     @GetMapping("/{reviewId}")
     public String review(@PathVariable long reviewId, Model model, HttpServletRequest request) {
@@ -75,7 +78,12 @@ public class ReviewController {
 
         saveReview.setMember(findMember);
 
-        reviewRepository.save(saveReview);
+        Review saveDbReview = reviewRepository.save(saveReview);
+        TrustPoint trustPoint = new TrustPoint();
+        trustPoint.setReviewId(saveDbReview.getReviewId());
+        trustPoint.setMemberId(memberId);
+        trustPointRepository.save(trustPoint);
+
         return "redirect:/restaurant/{restaurantId}";
     }
 
@@ -93,15 +101,35 @@ public class ReviewController {
     }
 
     @PostMapping("/{reviewId}/plus")
-    public String plusTrustPoint(@PathVariable long reviewId) {
-        log.info("Plus={}", reviewId);
+    public String plusTrustPoint(@PathVariable long reviewId, HttpServletRequest request, RedirectAttributes redirectAttributes) {
+        HttpSession session = request.getSession();
+        String memberId = (String) session.getAttribute(SessionConst.SESSION_ID);
+
+
+        if (!reviewService.isOkToCheckTrustPoint(reviewId, memberId)) {
+            redirectAttributes.addFlashAttribute("errorMessage", "리뷰당 한번만 누르실 수 있습니다.");
+            return "redirect:/review/{reviewId}";
+        }
+
+        TrustPoint memberTrustPoint = trustPointRepository.findByMemberId(memberId, reviewId);
+        memberTrustPoint.setPlusTrustPoint(1);
         reviewRepository.plusTrustPoint(reviewId);
         return "redirect:/review/{reviewId}";
     }
 
     @PostMapping("/{reviewId}/minus")
-    public String plusNoTrustPoint(@PathVariable long reviewId) {
-        log.info("Minus={}", reviewId);
+    public String plusNoTrustPoint(@PathVariable long reviewId, HttpServletRequest request, RedirectAttributes redirectAttributes) {
+
+        HttpSession session = request.getSession();
+        String  memberId = (String) session.getAttribute(SessionConst.SESSION_ID);
+
+        if (!reviewService.isOkToCheckNoTrustPoint(reviewId, memberId)) {
+            redirectAttributes.addFlashAttribute("errorMessage", "리뷰당 한번만 누르실 수 있습니다.");
+            return "redirect:/review/{reviewId}";
+        }
+
+        TrustPoint memberTrustPoint = trustPointRepository.findByMemberId(memberId, reviewId);
+        memberTrustPoint.setMinusTrustPoint(1);
         reviewRepository.plusNoTrustPoint(reviewId);
         return "redirect:/review/{reviewId}";
     }
