@@ -277,6 +277,7 @@ public class RestaurantController {
         Restaurants restaurants = restaurantService.parsingJsonRestaurants(jsonResponse);
         List<Restaurant> restaurantList = restaurants.getRestaurants();
 
+
         List<Review> reviewList = reviewRepository.findByRestaurantId(contentId);
         int reviewCount = reviewList.size();
 

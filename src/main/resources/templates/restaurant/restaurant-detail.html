@@ -81,7 +81,39 @@
                     </div>
                     <div class="overlap-group1 overlap">
                     </div>
-                    <div class="rectangle-26"></div>
+                    <div id="map" style="width:397px; height:401px; position: relative;"></div>
+
+                    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=93a439de8600fa9c1111ade747d002de"></script>
+                    <script th:inline="javascript">
+
+                        var mapX = /*[[${mapX}]]*/ '33.450701';
+                        var mapY = /*[[${mapY}]]*/ '126.570667';
+
+                        window.onload = function() {
+
+                            var mapXNumeric = parseFloat(mapX);
+                            var mapYNumeric = parseFloat(mapY);
+
+                            var container = document.getElementById('map');
+
+                            var options = {
+                                center: new kakao.maps.LatLng(mapYNumeric, mapXNumeric),
+                                level: 3
+                            };
+
+                            var map = new kakao.maps.Map(container, options);
+
+                            var markerPosition  = new kakao.maps.LatLng(mapYNumeric, mapXNumeric);
+
+                            // 마커를 생성합니다
+                            var marker = new kakao.maps.Marker({
+                                position: markerPosition
+                            });
+
+                            // 마커가 지도 위에 표시되도록 설정합니다
+                            marker.setMap(map);
+                        };
+                    </script>
                 </div>
             </div>
         </div>

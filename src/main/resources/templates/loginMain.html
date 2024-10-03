@@ -174,7 +174,7 @@
                         <div class="overlap-group-1"
                              style="cursor: ${bestReview != null ? 'pointer' : 'default'};"
                              th:data-review-id="${bestReview != null ? bestReview.reviewId : ''}"
-                             onclick="goToReview(this.dataset.reviewId)">
+                             th:onclick="goToReview(this.dataset.reviewId)">
                             <img class="rectangle" src="img/Asset_1-100.jpg" alt="Rectangle 5" />
                             <div class="group">
                                 <div class="frame-457">
@@ -193,7 +193,7 @@
                         <div class="overlap-group1-1"
                              style="cursor: ${secondBestReview != null ? 'pointer' : 'default'};"
                              th:data-review-id="${secondBestReview != null ? secondBestReview.reviewId : ''}"
-                             onclick="goToReview(this.dataset.reviewId)">
+                             th:onclick="goToReview(this.dataset.reviewId)">
                             <img class="rectangle" src="img/Asset_3-100.jpg" alt="Rectangle 4" />
                             <div class="group">
                                 <div class="frame-457">
@@ -300,9 +300,11 @@
     </div>
 </div>
 
-<script>
+<script th:inline="javascript">
     function goToReview(reviewId) {
-        window.location.href = /*[[@{/review/{reviewId}(reviewId=${reviewId})}]]*/ '';
+        if (reviewId) {
+            window.location.href = '/review/' + reviewId;
+        }
     }
 </script>
 
