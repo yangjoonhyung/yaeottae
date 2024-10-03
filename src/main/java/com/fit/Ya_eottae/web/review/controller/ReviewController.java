@@ -48,12 +48,9 @@ public class ReviewController {
 
         String memberId = (String) session.getAttribute(SessionConst.SESSION_ID);
 
-
         List<Review> allReview = reviewRepository.findAllReview();
         String reviewTrustScore = reviewService.calculateBayesianAverage(review, allReview);
         review.setTrustScore(reviewTrustScore);
-
-
 
         if (review.getMember().getMemberId().equals(memberId)) {
             return "review/my-review";
