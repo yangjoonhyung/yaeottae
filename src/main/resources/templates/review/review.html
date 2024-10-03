@@ -222,7 +222,7 @@
     function postTrustPoint(element) {
         const reviewId = element.getAttribute('data-review-id');
         const action = element.getAttribute('data-action');
-        const errorMessage = [[${errorMessage}]];
+        const errorMessage = '';
 
         $.post(`/review/${reviewId}/${action}`)
             .done(function(response) {
