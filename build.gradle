@@ -33,6 +33,10 @@ dependencies {
 	// MySql 의존성 추가
 	implementation 'mysql:mysql-connector-java:8.0.32'
 	// 끝
+	// webflux
+	implementation 'org.springframework.boot:spring-boot-starter-webflux'
+	implementation 'io.netty:netty-resolver-dns-native-macos:4.1.86.Final' // 사용 중인 Netty 버전에 맞는 최신 버전 선택
+	//
 	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
 	implementation 'org.springframework.boot:spring-boot-starter-validation'
 	implementation 'org.springframework.boot:spring-boot-starter-web'

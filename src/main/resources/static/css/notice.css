@@ -1,0 +1,228 @@
+/* screen - u4352u4457u4540u4364u4469u4361u4449u4370u4449u4540 */
+
+.u4352u4457u4540u4364u4469u4361u4449u4370u4449u4540 {
+  background-color: #ffffff;
+  display: flex;
+  min-height: 1080px;
+  min-width: 1920px;
+  width: 100%;
+}
+
+body {
+  overflow-x: hidden; /* 전체 페이지에서 좌우 스크롤 제거 */
+}
+
+.view-1 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+  height: 136px;
+  margin-left: 360px;
+  margin-top: 166px;
+  position: relative;
+  width: 1000px;
+  z-index: 1;
+}
+
+.x {
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  flex-wrap: wrap;
+  gap: 17px 235px;
+  position: relative;
+  width: 100%;
+}
+
+.frame-637 {
+  align-items: flex-start;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  flex-grow: 1;
+  gap: 15px;
+  position: relative;
+}
+
+.view {
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  gap: 10px;
+  padding: 10px;
+  position: relative;
+  width: 850px;
+}
+
+.view-15 {
+  height: 347px;
+  position: fixed;
+  width: 435px;
+  margin-top: 475px;
+  left: 1300px;
+}
+.text-15 {
+  color: #337FDD;
+  font-size: 20px;
+  margin-bottom: -15px;
+}
+
+.text-1 {
+  color: var(--black);
+  flex: 1;
+  font-family: var(--font-family-pretendard_variable-medium);
+  font-size: 24px;
+  font-weight: 500;
+  margin-top: -1.00px;
+  position: relative;
+}
+
+.line-29-stroke {
+  height: 1px;
+  position: relative;
+  width: 1000px;
+}
+
+.text-2 {
+  color: var(--black);
+  flex: 1;
+  font-family: var(--font-family-pretendard_variable-regular);
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: -1.00px;
+  position: relative;
+}
+
+.view-2 {
+  background-color: #ffffff;
+  display: flex;
+  height: 101px;
+  left: calc(50.00% - 960px);
+  position: fixed;
+  top: 0;
+  width: 1920px;
+  z-index: 2;
+}
+
+.layer_1 {
+  height: 51px;
+  margin-left: 144px;
+  margin-top: 27px;
+  width: 147px;
+}
+
+.frame-5 {
+  align-items: center;
+  display: inline-flex;
+  gap: 56px;
+  height: 64px;
+  margin-left: 49px;
+  margin-top: 18px;
+  position: relative;
+  width: 423px;
+}
+
+.frame {
+  align-items: center;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 10px;
+  height: 64px;
+  justify-content: center;
+  padding: 10px;
+  position: relative;
+}
+
+.text {
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.frame-1 {
+  align-items: flex-start;
+  display: inline-flex;
+  flex: 0 0 auto;
+  position: relative;
+}
+
+.frame-232 {
+  height: 39px;
+  margin-left: 371px;
+  margin-top: 36px;
+  position: relative;
+  width: 423px;
+}
+
+.view-3 {
+  display: flex;
+  height: 24px;
+  margin-left: 42px;
+  margin-top: 38px;
+  width: 128px;
+}
+
+.text-4 {
+  flex: 1;
+  white-space: nowrap;
+  width: 128px;
+}
+
+.text-3 {
+  letter-spacing: 0;
+  line-height: 1.5;
+}
+
+:root {
+  --black: #000000;
+
+  --font-size-l: 28px;
+  --font-size-m: 20px;
+
+  --font-family-pretendard_variable-light: "Pretendard Variable-Light", Helvetica;
+  --font-family-pretendard_variable-medium: "Pretendard Variable-Medium", Helvetica;
+  --font-family-pretendard_variable-regular: "Pretendard Variable-Regular", Helvetica;
+}
+.pretendardvariable-light-black-20px {
+  color: var(--black);
+  font-family: var(--font-family-pretendard_variable-light);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 300;
+}
+
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+/* The following line is used to measure usage of this code. You can remove it if you want. */
+@import url("https://px.animaapp.com/66d08b39d824b3c6e4739bbb.66d08b3ad824b3c6e4739bbe.OWeC8Te.hcp.png");
+
+@font-face {
+  font-family: "Pretendard Variable-Medium";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/PretendardVariable.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Pretendard Variable-Regular";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/PretendardVariable.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Pretendard Variable-Light";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/PretendardVariable.ttf") format("truetype");
+}
+
+
+.screen a {
+  display: contents;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}

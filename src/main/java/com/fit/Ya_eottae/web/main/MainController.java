@@ -115,4 +115,24 @@ public class MainController {
 
         return "redirect:/restaurant/search";
     }
+
+    @GetMapping("/notice/request-challenge-for-ceo")
+    public String requestChallengeForCeo() {
+        return "main/requestChallengeForCeo";
+    }
+
+    @GetMapping("/notice/request-challenge-for-user")
+    public String requestChallengeForcUser() {
+        return "main/requestChallengeForUser";
+    }
+
+    @GetMapping("/noice/review-save-read")
+    public String reviewSaveRead() {
+        return "main/reviewSaveRead";
+    }
+
+    @GetMapping("/notice/intro-site")
+    public String introSite() {
+        return "main/introSite";
+    }
 }
