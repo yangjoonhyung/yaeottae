@@ -40,6 +40,7 @@ public class JpaReviewRepository implements ReviewRepository {
         findReview.setReviewName(reviewUpdateDto.getUpdateReviewName());
         findReview.setReviewDetail(reviewUpdateDto.getUpdateReview());
         findReview.setReviewPoint(reviewUpdateDto.getUpdateReviewPoint());
+        findReview.setIsAdvertisement(reviewUpdateDto.getIsAdvertisement());
         return findReview;
     }
 
