@@ -251,24 +251,19 @@
     }
 
 
-function deleteReview(reviewId) {
-    console.log("deleteReview called with:", reviewId);  // 추가
+    function deleteReview(reviewId) {
+    console.log("deleteReview called with:", reviewId);
     if (confirm("정말로 이 리뷰를 삭제하시겠습니까?")) {
-        let csrfToken = $('meta[name="_csrf"]').attr('content');  // CSRF 토큰 가져오기
-        let csrfHeader = $('meta[name="_csrf_header"]').attr('content');  // CSRF 헤더 이름 가져오기
-
         $.ajax({
             url: `/review/${reviewId}/delete`,
             type: 'POST',
-            beforeSend: function(xhr) {
-                xhr.setRequestHeader(csrfHeader, csrfToken);  // CSRF 토큰 추가
-            },
+            contentType: 'application/json',
             success: function(response) {
-                console.log("Delete successful");  // 추가
+                console.log("Delete successful");
                 window.location.href = `/myPage`;
             },
-            error: function(error) {
-                console.error('오류:', error.statusText);
+            error: function(xhr, status, error) {
+                console.error('오류:', error);
             }
         });
     }
