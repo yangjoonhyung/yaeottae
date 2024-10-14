@@ -252,23 +252,18 @@
 
 
     function deleteReview(reviewId) {
-    console.log("deleteReview called with:", reviewId);
-    if (confirm("정말로 이 리뷰를 삭제하시겠습니까?")) {
-        $.ajax({
-            url: `/review/${reviewId}/delete`,
-            type: 'POST',
-            contentType: 'application/json',
-            success: function(response) {
-                console.log("Delete successful");
-                window.location.href = `/myPage`;
-            },
-            error: function(xhr, status, error) {
-                console.error('오류:', error);
-            }
-        });
+        console.log("deleteReview called with:", reviewId);  // 추가
+        if (confirm("정말로 이 리뷰를 삭제하시겠습니까?")) {
+            $.post(`/review/${reviewId}/delete`)
+                .done(function(response) {
+                    console.log("Delete successful");  // 추가
+                    window.location.href = `/myPage`;
+                })
+                .fail(function(error) {
+                    console.error('오류:', error.statusText);
+                });
+        }
     }
-}
-
 </script>
 </body>
 </html>
