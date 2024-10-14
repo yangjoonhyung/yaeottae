@@ -132,7 +132,7 @@ public class ReviewController {
                 updateParam.getUpdateReviewPoint(), formattedPrediction);
 
         reviewRepository.updateReview(reviewId, updateDto);
-        return "redirect:/restaurant/{restaurantId}";
+        return "redirect:/review/{reviewId}";
     }
 
     @PostMapping("/{reviewId}/plus")
