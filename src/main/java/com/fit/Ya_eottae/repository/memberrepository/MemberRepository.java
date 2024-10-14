@@ -1,6 +1,7 @@
 package com.fit.Ya_eottae.repository.memberrepository;
 
 import com.fit.Ya_eottae.domain.member.Member;
+import com.fit.Ya_eottae.domain.member.MemberTendency;
 
 import java.util.List;
 import java.util.Optional;
@@ -16,5 +17,6 @@ public interface MemberRepository {
     public List<Member> findBymemberName(String memberName);
     public Member updateName(Member member, String updateName);
     public Member updateIntroduction(Member member, String updateIntro);
+    void setTendency(Member member, MemberTendency memberTendency);
 
 }

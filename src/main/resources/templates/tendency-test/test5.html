@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8" />
+    <!--<meta name=description content="This site was generated with Anima. www.animaapp.com"/>-->
+    <!-- <link rel="shortcut icon" type=image/png href="https://animaproject.s3.amazonaws.com/home/favicon.png" /> -->
+    <meta name="viewport" content="width=1920, maximum-scale=1.0" />
+    <link th:href="@{/css/Type5.css}"
+          href="../css/Type5.css" rel="stylesheet">
+    <meta name="og:type" content="website" />
+    <meta name="twitter:card" content="photo" />
+    <script>
+        // 라디오 버튼이 클릭되면 폼을 자동으로 제출하는 함수
+        function submitForm() {
+          document.getElementById("tendencyTestForm").submit();
+        }
+    </script>
+</head>
+<body style="margin: 0; background: #ffffff">
+<input type="hidden" id="anPageName" name="page" value="u4361u4453u4540u4370u4451u4540u4364u4457u4361u44493" />
+<div class="u4361u4453u4540u4370u4451u4540u4364u4457u4361u44493 screen">
+    <div class="view">
+        <img class="layer_1" src="/img/layer-1@2x.png" alt="Layer_1" />
+        <div class="frame-5">
+            <div class="frame" th:onclick="|location.href='@{/}'|"><div class="text text-2 pretendardvariable-light-black-20px">홈</div></div>
+            <div class="frame" th:onclick="|location.href='@{/restaurant/restaurants}'|"><div class="text text-2 pretendardvariable-light-black-20px">식당</div></div>
+            <div class="frame-1">
+                <div class="frame" th:onclick="|location.href='@{/tendency-test/1}'|"><div class="text text-2 pretendardvariable-light-black-20px">성향</div></div>
+            </div>
+            <div class="frame-1">
+                <div class="frame"  th:onclick="|location.href='@{/myPage}'|"><div class="text text-2 pretendardvariable-light-black-20px">마이페이지</div></div>
+            </div>
+        </div>
+        <img class="frame-232" src="/img/frame-232@2x.png" alt="Frame 232" />
+        <div class="view-1" th:onclick="|location.href='@{/login}'|"><div class="text-3 text-2 pretendardvariable-light-black-20px">로그인/회원가입</div></div>
+    </div>
+    <div class="frame-255"><h1 class="text-1 text-2">취향 테스트</h1></div>
+    <div class="group-73">
+        <div class="frame-256">
+            <div class="text_label-1 text_label-2">심각..</div>
+        </div>
+    </div>
+    <form id="tendencyTestForm" th:action="@{/tendency-test/5}" method="post">
+    <div class="frame-254">
+        <div class="q-15">Q 5/5</div>
+    </div>
+    <div class="frame-253">
+        <p class="x">식당 방문 전 사전 조사가 철저한 편인가요?</p>
+    </div>
+    <div class="view-2">
+        <input type="radio" id="option1" name="answer5" value="PAGE5_QUESTION_1" class="radio-input" onclick="submitForm()">
+        <label for="option1" class="text_label text_label-2">아뇨, 그냥 마음에 들면 갑니다.</label>
+    </div>
+    <div class="view-3">
+        <input type="radio" id="option2" name="answer5" value="PAGE5_QUESTION_2" class="radio-input" onclick="submitForm()">
+        <label for="option2" class="text_label text_label-2">네, 저는 다 조사해보고 가요.</label>
+    </div>
+    </form>
+</div>
+</body>
+</html>

@@ -1,0 +1,328 @@
+/* screen - u4361u4453u4540u4370u4451u4540u4364u4457u4361u44493 */
+
+.u4361u4453u4540u4370u4451u4540u4364u4457u4361u44493 {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  min-height: 1080px;
+  min-width: 1920px;
+  width: 100%;
+  transform: scale(0.9); /* 화면 크기에 맞춰 요소의 크기를 축소 */
+  transform-origin: top left; /* 축소할 때 기준점 설정 */
+}
+
+body {
+  overflow-x: hidden; /* 전체 페이지에서 좌우 스크롤 제거 */
+}
+
+.view {
+  background-color: #ffffff;
+  display: flex;
+  height: 101px;
+  left: calc(50.00% - 960px);
+  position: fixed;
+  top: 0;
+  width: 1920px;
+  z-index: 7;
+}
+
+.layer_1 {
+  height: 51px;
+  margin-left: 144px;
+  margin-top: 27px;
+  width: 147px;
+}
+
+.frame-5 {
+  align-items: center;
+  display: inline-flex;
+  gap: 56px;
+  height: 64px;
+  margin-left: 49px;
+  margin-top: 18px;
+  position: relative;
+  width: 423px;
+}
+
+.frame {
+  align-items: center;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 10px;
+  height: 64px;
+  justify-content: center;
+  padding: 10px;
+  position: relative;
+}
+
+.text {
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.frame-1 {
+  align-items: flex-start;
+  display: inline-flex;
+  flex: 0 0 auto;
+  position: relative;
+}
+
+.frame-232 {
+  height: 39px;
+  margin-left: 371px;
+  margin-top: 36px;
+  position: relative;
+  width: 423px;
+}
+
+.view-1 {
+  display: flex;
+  height: 24px;
+  margin-left: 42px;
+  margin-top: 38px;
+  width: 128px;
+}
+
+.text-3 {
+  flex: 1;
+  white-space: nowrap;
+  width: 128px;
+}
+
+.frame-255 {
+  align-items: center;
+  display: inline-flex;
+  gap: 10px;
+  justify-content: center;
+  left: calc(50.00% - 81px);
+  padding: 10px;
+  position: fixed;
+  top: 168px;
+  z-index: 3;
+}
+
+.text-1 {
+  color: var(--black);
+  font-family: var(--font-family-sb_aggro-medium);
+  font-size: var(--font-size-l);
+  font-weight: 500;
+  margin-top: -1.00px;
+  position: relative;
+  width: fit-content;
+}
+
+.group-73 {
+  background-image: url(../img/rectangle-135-2.png);
+  background-position: 50% 50%;
+  background-size: cover;
+  display: flex;
+  height: 274px;
+  justify-content: center;
+  left: calc(50.00% - 257px);
+  position: fixed;
+  top: 249px;
+  width: 514px;
+  z-index: 4;
+}
+
+.frame-256 {
+  align-items: center;
+  display: inline-flex;
+  gap: 10px;
+  height: 44px;
+  justify-content: center;
+  margin-left: -244px;
+  margin-top: 113px;
+  padding: 10px;
+  position: relative;
+  width: 70px;
+}
+
+.text_label-1 {
+  font-family: var(--font-family-sb_aggro-medium);
+  font-size: var(--font-size-xs);
+  margin-top: -1.00px;
+  white-space: nowrap;
+}
+
+.frame-254 {
+  align-items: center;
+  display: inline-flex;
+  gap: 10px;
+  justify-content: center;
+  left: calc(50.00% - 45px);
+  position: fixed;
+  top: 553px;
+  z-index: 6;
+}
+
+.q-15 {
+  color: #4994f1;
+  font-family: var(--font-family-sb_aggro-medium);
+  font-size: var(--font-size-l);
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-top: -1.00px;
+  position: relative;
+  width: fit-content;
+}
+
+.frame-253 {
+  align-items: center;
+  display: inline-flex;
+  gap: 10px;
+  justify-content: center;
+  left: calc(50.00% - 257px);
+  padding: 10px;
+  position: fixed;
+  top: 593px;
+  z-index: 5;
+}
+
+.x {
+  color: var(--black);
+  font-family: var(--font-family-sb_aggro-medium);
+  font-size: var(--font-size-l);
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-top: -1.00px;
+  position: relative;
+  width: fit-content;
+}
+
+.view-2 {
+  align-items: center;
+  border: 1px solid;
+  border-color: var(--black);
+  border-radius: 6px;
+  display: flex;
+  gap: 10px;
+  height: 105px;
+  justify-content: center;
+  left: calc(50.00% - 275px);
+  position: fixed;
+  top: 668px;
+  width: 573px;
+  z-index: 1;
+}
+
+.radio-input {
+  display: none; /* 기본 라디오 버튼 숨김 */
+}
+
+.radio-input + label {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  background-color: #ffffff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.radio-input:checked + label {
+  background-color: #d3e5ff; /* 선택 시 배경색 변경 */
+}
+
+.radio-input + label:active {
+  background-color: #a3c9ff; /* 클릭 시 배경색 변화 */
+}
+
+.radio-input + label:focus {
+  outline: none; /* 포커스 시 테두리 제거 */
+}
+
+.text_label {
+  font-family: var(--font-family-pretendard_variable-medium);
+  font-size: var(--font-size-m);
+}
+
+.view-3 {
+  align-items: center;
+  border: 1px solid;
+  border-color: var(--black);
+  border-radius: 6px;
+  display: flex;
+  gap: 10px;
+  height: 105px;
+  justify-content: center;
+  left: calc(50.00% - 275px);
+  position: fixed;
+  top: 794px;
+  width: 573px;
+  z-index: 2;
+}
+
+.text-2 {
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.text_label-2 {
+  color: var(--black);
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: normal;
+  position: relative;
+  width: fit-content;
+}
+
+
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+/* The following line is used to measure usage of this code. You can remove it if you want. */
+@import url("https://px.animaapp.com/66d08b39d824b3c6e4739bbb.66d08b3ad824b3c6e4739bbe.OWeC8Te.hcp.png");
+
+@font-face {
+  font-family: "Pretendard Variable-Medium";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/PretendardVariable.ttf") format("truetype");
+}
+@font-face {
+  font-family: "SB Aggro-Medium";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/SB 어그로 M.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Pretendard Variable-Light";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/PretendardVariable.ttf") format("truetype");
+}
+
+
+.screen a {
+  display: contents;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --black: #000000;
+
+  --font-size-l: 28px;
+  --font-size-m: 24px;
+  --font-size-s: 20px;
+
+  --font-family-pretendard_variable-light: "Pretendard Variable-Light", Helvetica;
+  --font-family-pretendard_variable-medium: "Pretendard Variable-Medium", Helvetica;
+  --font-family-sb_aggro-medium: "SB Aggro-Medium", Helvetica;
+}
+.pretendardvariable-light-black-20px {
+  color: var(--black);
+  font-family: var(--font-family-pretendard_variable-light);
+  font-size: var(--font-size-s);
+  font-style: normal;
+  font-weight: 300;
+}

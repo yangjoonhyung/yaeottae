@@ -13,7 +13,7 @@ public class WebConfig implements WebMvcConfigurer {
     public void addInterceptors(InterceptorRegistry registry) {
         registry.addInterceptor(new IsLoginInterceptor())
                 .order(1)
-                .addPathPatterns("/review/**", "/myPage/**", "/tendency-test") // 이곳에 적히는 URL은 로그인 사용자만 접근할 수 있음.
+                .addPathPatterns("/review/**", "/myPage/**", "/tendency-test/**") // 이곳에 적히는 URL은 로그인 사용자만 접근할 수 있음.
                 .excludePathPatterns("/review/{reviewId}", "/review/{reviewId}/see-review");
 
         registry.addInterceptor(new PwChangeInterceptor())

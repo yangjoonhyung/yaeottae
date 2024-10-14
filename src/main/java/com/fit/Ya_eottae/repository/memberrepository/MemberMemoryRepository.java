@@ -1,6 +1,7 @@
 package com.fit.Ya_eottae.repository.memberrepository;
 
 import com.fit.Ya_eottae.domain.member.Member;
+import com.fit.Ya_eottae.domain.member.MemberTendency;
 import org.springframework.stereotype.Repository;
 
 import java.util.ArrayList;
@@ -58,6 +59,11 @@ public class MemberMemoryRepository implements MemberRepository {
     public Member updateIntroduction(Member member, String updateIntro) {
         member.setMemberIntroduce(updateIntro);
         return member;
+    }
+
+    @Override
+    public void setTendency(Member member, MemberTendency memberTendency) {
+
     }
 
     @Override

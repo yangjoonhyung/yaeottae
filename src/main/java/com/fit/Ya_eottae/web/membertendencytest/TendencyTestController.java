@@ -8,6 +8,7 @@ import com.fit.Ya_eottae.web.membertendencytest.question.*;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpSession;
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
@@ -17,6 +18,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 
+@Slf4j
 @Controller
 @RequiredArgsConstructor
 public class TendencyTestController {
@@ -53,39 +55,49 @@ public class TendencyTestController {
     // 1번
     @GetMapping("/tendency-test/1")
     public String tendencyTestQuestion1() {
-        return "/tendency-test/test1";
+        return "tendency-test/test1";
     }
 
-    @PostMapping("tendency-test/1")
+    @PostMapping("/tendency-test/1")
     public String tendencyTestAnswer1(@ModelAttribute MemberTendencyTest memberTendencyTest, BindingResult bindingResult,
-                                      @RequestParam TendencyQuestion1 answer1) {
+                                      @RequestParam TendencyQuestion1 answer1, HttpServletRequest request) {
         memberTendencyTest.setAnswer1(answer1);
 
         if (answer1 == null) {
             bindingResult.reject("mustCheck");
-            return "test/test1";
+            return "tendency-test/test1";
         }
 
-        return "test/test2";
+        HttpSession session = request.getSession();
+        session.setAttribute("memberTendencyTest", memberTendencyTest);
+
+        log.info("answer1={}", memberTendencyTest.getAnswer1());
+
+        return "tendency-test/test2";
     }
 
     // 2번
     @GetMapping("/tendency-test/2")
     public String tendencyTestQuestion2() {
-        return "/tendency-test/test2";
+        return "tendency-test/test2";
     }
 
-    @PostMapping("tendency-test/2")
+    @PostMapping("/tendency-test/2")
     public String tendencyTestAnswer2(@ModelAttribute MemberTendencyTest memberTendencyTest, BindingResult bindingResult,
-                                      @RequestParam TendencyQuestion2 answer2) {
-        memberTendencyTest.setAnswer2(answer2);
+                                      @RequestParam TendencyQuestion2 answer2, HttpServletRequest request) {
+
+        HttpSession session = request.getSession();
+        MemberTendencyTest sessionTest = (MemberTendencyTest) session.getAttribute("memberTendencyTest");
+        sessionTest.setAnswer2(answer2);
 
         if (answer2 == null) {
             bindingResult.reject("mustCheck");
-            return "test/test2";
+            return "tendency-test/test2";
         }
 
-        return "test/test3";
+        log.info("answer2={}", sessionTest.getAnswer2());
+
+        return "tendency-test/test3";
     }
 
     // 3번
@@ -94,17 +106,22 @@ public class TendencyTestController {
         return "/tendency-test/test3";
     }
 
-    @PostMapping("tendency-test/3")
+    @PostMapping("/tendency-test/3")
     public String tendencyTestAnswer3(@ModelAttribute MemberTendencyTest memberTendencyTest, BindingResult bindingResult,
-                                      @RequestParam TendencyQuestion3 answer3) {
-        memberTendencyTest.setAnswer3(answer3);
+                                      @RequestParam TendencyQuestion3 answer3, HttpServletRequest request) {
+
+        HttpSession session = request.getSession();
+        MemberTendencyTest sessionTest = (MemberTendencyTest) session.getAttribute("memberTendencyTest");
+        sessionTest.setAnswer3(answer3);
 
         if (answer3 == null) {
             bindingResult.reject("mustCheck");
-            return "test/test3";
+            return "tendency-test/test3";
         }
 
-        return "test/test4";
+        log.info("answer3={}", memberTendencyTest.getAnswer3());
+
+        return "tendency-test/test4";
     }
 
     // 4번
@@ -113,17 +130,21 @@ public class TendencyTestController {
         return "/tendency-test/test4";
     }
 
-    @PostMapping("tendency-test/4")
+    @PostMapping("/tendency-test/4")
     public String tendencyTestAnswer4(@ModelAttribute MemberTendencyTest memberTendencyTest, BindingResult bindingResult,
-                                      @RequestParam TendencyQuestion4 answer4) {
-        memberTendencyTest.setAnswer4(answer4);
+                                      @RequestParam TendencyQuestion4 answer4, HttpServletRequest request) {
+        HttpSession session = request.getSession();
+        MemberTendencyTest sessionTest = (MemberTendencyTest) session.getAttribute("memberTendencyTest");
+        sessionTest.setAnswer4(answer4);
 
         if (answer4 == null) {
             bindingResult.reject("mustCheck");
-            return "test/test4";
+            return "tendency-test/test4";
         }
 
-        return "test/test5";
+        log.info("answer4={}", memberTendencyTest.getAnswer4());
+
+        return "tendency-test/test5";
     }
 
     // 5번
@@ -132,27 +153,33 @@ public class TendencyTestController {
         return "/tendency-test/test5";
     }
 
-    @PostMapping("tendency-test/5")
+    @PostMapping("/tendency-test/5")
     public String tendencyTestAnswer5(@ModelAttribute MemberTendencyTest memberTendencyTest, BindingResult bindingResult,
                                       @RequestParam TendencyQuestion5 answer5, HttpServletRequest request, Model model) {
-        memberTendencyTest.setAnswer5(answer5);
+
+        HttpSession session = request.getSession();
+        MemberTendencyTest sessionTest = (MemberTendencyTest) session.getAttribute("memberTendencyTest");
+        sessionTest.setAnswer5(answer5);
 
         if (answer5 == null) {
             bindingResult.reject("mustCheck");
-            return "test/test5";
+            return "tendency-test/test5";
         }
 
-        MemberTendency memberTendency = memberTendencyTestService.checkTendency(memberTendencyTest.getAnswer1(), memberTendencyTest.getAnswer2(),
-                memberTendencyTest.getAnswer3(), memberTendencyTest.getAnswer4(), memberTendencyTest.getAnswer5());
+        log.info("answer5={}", memberTendencyTest.getAnswer5());
 
-        HttpSession session = request.getSession(false);
+        MemberTendency memberTendency = memberTendencyTestService.checkTendency(sessionTest.getAnswer1(), sessionTest.getAnswer2(),
+                sessionTest.getAnswer3(), sessionTest.getAnswer4(), sessionTest.getAnswer5());
+
         String findMemberId = (String) session.getAttribute(SessionConst.SESSION_ID);
 
         Member findMember = memberRepository.findByMemberId(findMemberId);
-        findMember.setMemberTendency(memberTendency);
+
+        memberRepository.setTendency(findMember, memberTendency);
 
         model.addAttribute("memberTendency", memberTendency);
-        return "test/result";
+        log.info("멤버 타임={}", memberTendency);
+        return "redirect:/";
     }
 
     // 결과 보기
@@ -163,3 +190,4 @@ public class TendencyTestController {
 
     }
 }
+

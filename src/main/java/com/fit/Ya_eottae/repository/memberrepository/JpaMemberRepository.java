@@ -1,6 +1,7 @@
 package com.fit.Ya_eottae.repository.memberrepository;
 
 import com.fit.Ya_eottae.domain.member.Member;
+import com.fit.Ya_eottae.domain.member.MemberTendency;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.NoResultException;
 import jakarta.persistence.TypedQuery;
@@ -99,5 +100,11 @@ public class JpaMemberRepository implements MemberRepository {
         Member findMember = em.find(Member.class, member.getMemberId());
         findMember.setMemberIntroduce(updateIntro);
         return findMember;
+    }
+
+    @Override
+    public void setTendency(Member member, MemberTendency memberTendency) {
+        Member findMember = em.find(Member.class, member.getMemberId());
+        findMember.setMemberTendency(memberTendency);
     }
 }
