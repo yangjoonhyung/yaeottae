@@ -71,7 +71,7 @@
                 <div class="frame-566">
                     <div class="frame-550">
                         <img class="ellipse-17-1" src="img/ellipse-17@2x.png" alt="Ellipse 17" />
-                        <div class="text-1-1 pretendardvariable-regular-normal-storm-dust-16px">프로필 변경</div>
+                        <div class="text-1-1 pretendardvariable-regular-normal-storm-dust-16px" th:onclick="logout()">로그아웃</div>
                     </div>
                     <div class="frame-565">
                         <div class="frame-564">
@@ -159,5 +159,18 @@
         </div>
     </div>
 </div>
+<script>
+    function logout() {
+        // jQuery의 $.post로 로그아웃 요청 전송
+        $.post('/logout')
+            .done(function(response) {
+                // 로그아웃 후 홈으로 리다이렉션
+                window.location.href = '/';
+            })
+            .fail(function(error) {
+                console.error('로그아웃 실패:', error.statusText);
+            });
+    }
+</script>
 </body>
 </html>

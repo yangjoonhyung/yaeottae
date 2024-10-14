@@ -13,4 +13,12 @@ public class ReviewUpdateDto {
     private String updateReview;
     @NotBlank
     private int updateReviewPoint;
+    private String isAdvertisement;
+
+    public ReviewUpdateDto(String updateReviewName, String updateReview, int updateReviewPoint, String isAdvertisement) {
+        this.updateReviewName = updateReviewName;
+        this.updateReview = updateReview;
+        this.updateReviewPoint = updateReviewPoint;
+        this.isAdvertisement = isAdvertisement;
+    }
 }

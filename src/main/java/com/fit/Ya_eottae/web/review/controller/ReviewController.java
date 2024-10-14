@@ -76,7 +76,7 @@ public class ReviewController {
         HttpSession session = request.getSession(false);
         String memberId = (String) session.getAttribute(SessionConst.SESSION_ID);
         Member findMember = memberRepository.findByMemberId(memberId);
-// PredictionService를 이용하여 FastAPI로부터 예측 결과 받기
+        // PredictionService를 이용하여 FastAPI로부터 예측 결과 받기
         Mono<AiModel> aiPredictionMono = predictionService.getPrediction(review.getReviewDetail());
 
         // Mono를 블로킹 방식으로 동기 처리하여 결과 받기 (필요시 비동기 처리도 가능)
@@ -111,7 +111,27 @@ public class ReviewController {
 
     @PostMapping("/{reviewId}/review-update")
     public String reviewUpdate(@PathVariable long reviewId, @ModelAttribute("updateReview") ReviewUpdateDto updateParam) {
-        reviewRepository.updateReview(reviewId, updateParam);
+        // PredictionService를 이용하여 FastAPI로부터 예측 결과 받기
+        Mono<AiModel> aiPredictionMono = predictionService.getPrediction(updateParam.getUpdateReview());
+
+        // Mono를 블로킹 방식으로 동기 처리하여 결과 받기 (필요시 비동기 처리도 가능)
+        AiModel aiPrediction = aiPredictionMono.block();
+
+        // 예측 값을 String에서 float로 변환 (퍼센트 기호 제거 후 변환)
+        String predictionStr = aiPrediction.getPrediction().replace("%", ""); // '%' 기호 제거
+        float predictionFloat = Float.parseFloat(predictionStr);
+
+        // 소수점 첫째 자리까지만 표현 (예: 3.1)
+        float roundedPrediction = Math.round(predictionFloat * 10) / 10.0f;
+
+        // 다시 String으로 변환
+        String formattedPrediction = String.format("%.2f", roundedPrediction);
+        formattedPrediction = formattedPrediction + "%";
+
+        ReviewUpdateDto updateDto = new ReviewUpdateDto(updateParam.getUpdateReviewName(), updateParam.getUpdateReview(),
+                updateParam.getUpdateReviewPoint(), formattedPrediction);
+
+        reviewRepository.updateReview(reviewId, updateDto);
         return "redirect:/review/{reviewId}";
     }
 
