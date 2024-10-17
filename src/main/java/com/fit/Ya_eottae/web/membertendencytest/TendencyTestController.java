@@ -179,15 +179,21 @@ public class TendencyTestController {
 
         model.addAttribute("memberTendency", memberTendency);
         log.info("멤버 타임={}", memberTendency);
-        return "redirect:/";
+        return "redirect:/tendency-test/result";
     }
 
     // 결과 보기
     @GetMapping("/tendency-test/result")
-    public String tendencyResult(HttpServletRequest request) {
+    public String tendencyResult(HttpServletRequest request, Model model) {
 
-        return "redirect:/";
+        HttpSession session = request.getSession();
+        String memberId = (String) session.getAttribute(SessionConst.SESSION_ID);
 
+        Member findMember = memberRepository.findByMemberId(memberId);
+        MemberTendency memberTendency = findMember.getMemberTendency();
+
+        model.addAttribute("memberTendency", memberTendency);
+        return "tendency-test/result";
     }
 }
 

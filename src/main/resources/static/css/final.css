@@ -1,0 +1,526 @@
+/* screen - u4361u4453u4540u4370u4451u4540u4364u4457u4361u44492 */
+
+.u4361u4453u4540u4370u4451u4540u4364u4457u4361u44492 {
+  background-color: #ffffff;
+  display: flex;
+  min-height: 2596px;
+  min-width: 1920px;
+  width: 100%;
+}
+
+.frame-646 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 163px;
+  height: 2428px;
+  margin-left: 370px;
+  margin-top: 168px;
+  position: relative;
+  width: 991px;
+  z-index: 1;
+}
+
+.frame-645 {
+  align-items: center;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 40px;
+  position: relative;
+  width: 786px;
+}
+
+.frame-255 {
+  align-items: center;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 10px;
+  justify-content: center;
+  padding: 10px;
+  position: relative;
+}
+
+body {
+  overflow-x: hidden; /* 전체 페이지에서 좌우 스크롤 제거 */
+}
+
+.text_label {
+  color: var(--black);
+  font-family: var(--font-family-sb_aggro-medium);
+  font-size: var(--font-size-xxxl);
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: normal;
+  width: fit-content;
+}
+
+.frame-644 {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 66px;
+  position: relative;
+  width: 100%;
+}
+
+.group-74 {
+  background-image: url(../img/);
+  background-position: 50% 50%;
+  background-size: cover;
+  height: 419px;
+  position: relative;
+  width: 786px;
+}
+
+.frame-603 {
+  align-items: center;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 27px;
+  position: relative;
+  width: 650px;
+}
+
+.frame-582 {
+  align-items: center;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 13px;
+  position: relative;
+}
+
+.frame-5 {
+  align-items: center;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 10px;
+  justify-content: center;
+  position: relative;
+}
+
+.text {
+  color: var(--black);
+  font-family: var(--font-family-sb_aggro-light);
+  font-size: var(--font-size-xxl);
+  font-weight: 300;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-top: -1.00px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.text-2-1 {
+  color: #4994f1;
+  font-family: var(--font-family-sb_aggro-medium);
+  font-size: var(--font-size-xxl);
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-top: -1.00px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.frame-602 {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 10px;
+  position: relative;
+  width: 100%;
+}
+
+.frame-588 {
+  align-items: center;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 9px;
+  position: relative;
+}
+
+.text-4 {
+  color: var(--black);
+  font-family: var(--font-family-pretendard_variable-semibold);
+  font-size: var(--font-size-xl);
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-top: -1.00px;
+  position: relative;
+  width: fit-content;
+}
+
+.text-5 {
+  color: var(--black);
+  font-family: var(--font-family-pretendard_variable-medium);
+  font-size: var(--font-size-xl);
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-top: -1.00px;
+  position: relative;
+  width: fit-content;
+}
+
+.frame-601 {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  gap: 10px;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+}
+
+.text-6 {
+  color: var(--black);
+  font-family: var(--font-family-pretendard_variable-regular);
+  font-size: var(--font-size-xl);
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-top: -1.00px;
+  position: relative;
+  text-align: center;
+  width: fit-content;
+}
+
+.frame-610 {
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  gap: 38px;
+  height: 1531px;
+  position: relative;
+  width: 100%;
+}
+
+.text-7 {
+  color: var(--black);
+  font-family: var(--font-family-pretendard_variable-semibold);
+  font-size: var(--font-size-xl);
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-top: -1.00px;
+  position: relative;
+  text-align: center;
+  width: fit-content;
+}
+
+.frame-599 {
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  flex-wrap: wrap;
+  gap: 0px 35px;
+  position: relative;
+  width: 100%;
+}
+
+.frame-598 {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 31px;
+  position: relative;
+  width: 307px;
+}
+
+.rectangle-154 {
+  align-self: stretch;
+  background-color: var(--alto);
+  border-radius: 32px;
+  height: 176px;
+  position: relative;
+  width: 100%;
+}
+
+.frame-597 {
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 15px;
+  position: relative;
+  width: 100%;
+}
+
+.frame-593 {
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  gap: 10px;
+  height: 29px;
+  position: relative;
+  width: 100%;
+}
+
+.text-1 {
+  flex: 1;
+  height: 29px;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-top: -1.00px;
+  position: relative;
+}
+
+.frame-596 {
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 3px;
+  position: relative;
+  width: 100%;
+}
+
+.frame-594 {
+  align-items: flex-start;
+  display: flex;
+  gap: 10px;
+  height: 29px;
+  position: relative;
+  width: 288px;
+}
+
+.frame-595 {
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  gap: 10px;
+  height: 160px;
+  position: relative;
+  width: 100%;
+}
+
+.text-2 {
+  align-self: stretch;
+  flex: 1;
+  letter-spacing: 0;
+  line-height: 28px;
+  margin-top: -1.00px;
+  position: relative;
+  text-align: justify;
+}
+
+.text_label-1 {
+  align-self: stretch;
+  flex: 1;
+  line-height: 28px;
+  text-align: justify;
+}
+
+.span {
+  letter-spacing: 0;
+}
+
+.span1 {
+  letter-spacing: -0.16px;
+}
+
+.rectangle-154-1 {
+  align-self: stretch;
+  height: 176px;
+  object-fit: cover;
+  position: relative;
+  width: 100%;
+}
+
+.view {
+  background-color: #ffffff;
+  display: flex;
+  height: 101px;
+  left: calc(50.00% - 960px);
+  position: fixed;
+  top: 0;
+  width: 1920px;
+  z-index: 2;
+}
+
+.layer_1 {
+  height: 51px;
+  margin-left: 144px;
+  margin-top: 27px;
+  width: 147px;
+}
+
+.frame-5-1 {
+  align-items: center;
+  display: inline-flex;
+  gap: 56px;
+  height: 64px;
+  margin-left: 49px;
+  margin-top: 18px;
+  position: relative;
+  width: 423px;
+}
+
+.frame {
+  align-items: center;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 10px;
+  height: 64px;
+  justify-content: center;
+  padding: 10px;
+  position: relative;
+}
+
+.text-3 {
+  letter-spacing: 0;
+  line-height: normal;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.frame-1 {
+  align-items: flex-start;
+  display: inline-flex;
+  flex: 0 0 auto;
+  position: relative;
+}
+
+.frame-232 {
+  height: 39px;
+  margin-left: 371px;
+  margin-top: 36px;
+  position: relative;
+  width: 423px;
+}
+
+.view-1 {
+  display: flex;
+  height: 24px;
+  margin-left: 42px;
+  margin-top: 38px;
+  width: 128px;
+}
+
+.text-12 {
+  flex: 1;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+  width: 128px;
+}
+
+.text_label-2 {
+  margin-top: -1.00px;
+  position: relative;
+}
+
+:root {
+  --alto: #d9d9d9;
+  --black: #000000;
+
+  --font-size-l: 20px;
+  --font-size-m: 18px;
+  --font-size-xl: 24px;
+  --font-size-xxl: 26px;
+  --font-size-xxxl: 28px;
+
+  --font-family-pretendard_variable-light: "Pretendard Variable-Light", Helvetica;
+  --font-family-pretendard_variable-medium: "Pretendard Variable-Medium", Helvetica;
+  --font-family-pretendard_variable-regular: "Pretendard Variable-Regular", Helvetica;
+  --font-family-pretendard_variable-semibold: "Pretendard Variable-SemiBold", Helvetica;
+  --font-family-sb_aggro-light: "SB Aggro-Light", Helvetica;
+  --font-family-sb_aggro-medium: "SB Aggro-Medium", Helvetica;
+}
+.pretendardvariable-regular-normal-black-18px {
+  color: var(--black);
+  font-family: var(--font-family-pretendard_variable-regular);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.pretendardvariable-semi-bold-black-20px {
+  color: var(--black);
+  font-family: var(--font-family-pretendard_variable-semibold);
+  font-size: var(--font-size-l);
+  font-style: normal;
+  font-weight: 600;
+}
+
+.pretendardvariable-medium-black-20px {
+  color: var(--black);
+  font-family: var(--font-family-pretendard_variable-medium);
+  font-size: var(--font-size-l);
+  font-style: normal;
+  font-weight: 500;
+}
+
+.pretendardvariable-light-black-20px {
+  color: var(--black);
+  font-family: var(--font-family-pretendard_variable-light);
+  font-size: var(--font-size-l);
+  font-style: normal;
+  font-weight: 300;
+}
+
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+/* The following line is used to measure usage of this code. You can remove it if you want. */
+@import url("https://px.animaapp.com/66d08b39d824b3c6e4739bbb.66d08b3ad824b3c6e4739bbe.OWeC8Te.hcp.png");
+
+@font-face {
+  font-family: "SB Aggro-Medium";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/SB 어그로 M.ttf") format("truetype");
+}
+@font-face {
+  font-family: "SB Aggro-Light";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/ChangwonDangamAsac-Bold_0712.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Pretendard Variable-SemiBold";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/PretendardVariable.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Pretendard Variable-Medium";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/PretendardVariable.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Pretendard Variable-Regular";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/PretendardVariable.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Pretendard Variable-Light";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/PretendardVariable.ttf") format("truetype");
+}
+
+
+.screen a {
+  display: contents;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
