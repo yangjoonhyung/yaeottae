@@ -201,84 +201,7 @@ Spring Boot + Spring MVC :8081
 
 ---
 
-## 8. 로컬 실행
-
-### 8.1 사전 요구사항
-
-| 항목 | 용도 |
-|---|---|
-| Java 22 | Spring Boot 애플리케이션 빌드 및 실행 |
-| MySQL 8.x | 회원·리뷰·댓글·신뢰도 데이터 저장 |
-| 공공데이터 API 인증키 | 음식점 목록과 상세 정보 조회 |
-| Gmail 앱 비밀번호 | 회원가입·비밀번호 변경 이메일 인증 |
-| AI 분류 서비스 연결 | 리뷰 광고 가능성 분석 |
-
-### 8.2 데이터베이스 생성
-
-```sql
-CREATE DATABASE yaeottae CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
-```
-
-### 8.3 애플리케이션 설정
-
-현재 저장소에는 민감정보 보호를 위해 `application.properties`가 포함되어 있지 않습니다. `src/main/resources/application.properties`를 생성하고 실행 환경에 맞는 값을 설정합니다.
-
-```properties
-server.port=8081
-
-spring.datasource.url=jdbc:mysql://localhost:3306/yaeottae?serverTimezone=Asia/Seoul&characterEncoding=UTF-8
-spring.datasource.username=${DB_USERNAME}
-spring.datasource.password=${DB_PASSWORD}
-spring.jpa.hibernate.ddl-auto=update
-
-spring.mail.host=smtp.gmail.com
-spring.mail.port=587
-spring.mail.username=${MAIL_USERNAME}
-spring.mail.password=${MAIL_PASSWORD}
-spring.mail.properties.mail.smtp.auth=true
-spring.mail.properties.mail.smtp.starttls.enable=true
-
-openApi.serviceKey=${TOUR_API_KEY}
-openApi.callBackUrl1=${TOUR_API_LIST_URL}
-openApi.callBackUrl2=${TOUR_API_DETAIL_URL}
-openApi._type=json
-```
-
-민감정보는 저장소에 커밋하지 말고 환경변수로 주입합니다.
-
-```bash
-export DB_USERNAME='<MYSQL_USERNAME>'
-export DB_PASSWORD='<MYSQL_PASSWORD>'
-export MAIL_USERNAME='<GMAIL_ADDRESS>'
-export MAIL_PASSWORD='<GMAIL_APP_PASSWORD>'
-export TOUR_API_KEY='<PUBLIC_DATA_API_KEY>'
-export TOUR_API_LIST_URL='<RESTAURANT_LIST_API_URL>'
-export TOUR_API_DETAIL_URL='<RESTAURANT_DETAIL_API_URL>'
-```
-
-### 8.4 애플리케이션 실행
-
-macOS / Linux:
-
-```bash
-./gradlew bootRun
-```
-
-Windows:
-
-```powershell
-.\gradlew.bat bootRun
-```
-
-실행 후 브라우저에서 다음 주소에 접속합니다.
-
-```text
-http://localhost:8081
-```
-
----
-
-## 9. 주요 화면 흐름
+## 8. 주요 화면 흐름
 
 ```text
 메인
@@ -302,7 +225,7 @@ http://localhost:8081
 
 ---
 
-## 10. 테스트 및 빌드
+## 9. 테스트 및 빌드
 
 테스트:
 
@@ -320,7 +243,7 @@ http://localhost:8081
 
 ---
 
-## 11. 프로젝트 의의
+## 10. 프로젝트 의의
 
 야어때는 맛집 리뷰의 양보다 **정보를 믿을 수 있는가**에 초점을 맞춘 프로젝트입니다. 서비스 문제 정의와 사용자 흐름을 직접 기획하고, 공공데이터 음식점 정보·AI 리뷰 분석·사용자 신뢰도 평가를 하나의 서비스 흐름으로 연결했습니다.
 
@@ -328,7 +251,7 @@ Spring MVC와 Thymeleaf로 화면부터 서버 로직까지 구현하면서 세�
 
 ---
 
-## 12. 기획 확장 방향
+## 11. 기획 확장 방향
 
 초기 기획에서는 다음 기능까지 서비스 확장 대상으로 정의했습니다.
 
