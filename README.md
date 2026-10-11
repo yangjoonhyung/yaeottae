@@ -68,8 +68,10 @@ Spring Boot + Spring MVC :8081
   |
   +--> Email Verification -------------> Gmail SMTP
   |
-  +--> Review Classification ----------> External AI API
++--> Review Classification ----------> External AI API
 ```
+
+![야어때 시스템 아키텍처](docs/images/system-architecture.png)
 
 컨트롤러는 요청 처리와 화면 이동을 담당하고, 서비스는 음식점 API 호출·리뷰 분석·신뢰도 계산·성향 판별을 수행합니다. JPA 기반 저장소는 회원, 리뷰, 댓글과 추천·비추천 이력을 MySQL에 저장하며 Thymeleaf가 서버에서 전달받은 데이터를 화면에 렌더링합니다.
 
@@ -87,7 +89,13 @@ Spring Boot + Spring MVC :8081
 | `AiModel` | 외부 AI 응답 매핑 | 리뷰 광고 가능성 분석 결과 |
 | `inquiry` | 문의 데이터 모델 | 사용자 문의 정보 |
 
-### 4.1 음식 성향
+### 4.1 ERD
+
+회원은 리뷰와 문의를 작성하고, 리뷰에는 댓글과 사용자별 신뢰도 평가 이력이 연결됩니다. `TRUST_POINT`는 회원과 리뷰의 조합별 추천·비추천 여부를 관리해 중복 평가를 방지합니다.
+
+![야어때 ERD](docs/images/erd.png)
+
+### 4.2 음식 성향
 
 성향 테스트 결과는 다음 8가지 유형 중 하나로 저장됩니다.
 
@@ -104,7 +112,7 @@ Spring Boot + Spring MVC :8081
 
 테스트를 완료하지 않은 회원은 `NOTEST` 상태로 관리됩니다.
 
-### 4.2 리뷰 신뢰도
+### 4.3 리뷰 신뢰도
 
 - 회원은 하나의 리뷰에 추천과 비추천을 각각 한 번만 남길 수 있습니다.
 - 추천·비추천 참여자가 20명 이하일 때는 신뢰도 점수를 집계 중 상태로 표시합니다.
