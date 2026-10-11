@@ -71,8 +71,6 @@ Spring Boot + Spring MVC :8081
 +--> Review Classification ----------> External AI API
 ```
 
-![야어때 시스템 아키텍처](docs/images/system-architecture.png)
-
 컨트롤러는 요청 처리와 화면 이동을 담당하고, 서비스는 음식점 API 호출·리뷰 분석·신뢰도 계산·성향 판별을 수행합니다. JPA 기반 저장소는 회원, 리뷰, 댓글과 추천·비추천 이력을 MySQL에 저장하며 Thymeleaf가 서버에서 전달받은 데이터를 화면에 렌더링합니다.
 
 ---
